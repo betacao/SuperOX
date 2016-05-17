@@ -6,13 +6,13 @@
 //  Copyright © 2016年 changxicao. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SOAppDelegate.h"
 
-@interface AppDelegate ()
+@interface SOAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation SOAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
