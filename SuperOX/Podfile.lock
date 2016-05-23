@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - EaseMobSDK (2.1.9)
+  - HyphenateFullSDK (3.1.2)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
@@ -23,31 +23,40 @@ PODS:
   - Mantle/extobjc (2.0.7)
   - MBProgressHUD (0.9.2)
   - MJRefresh (3.1.0)
-  - SDAutoLayout (1.53)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDAutoLayout (2.0.0)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
 
 DEPENDENCIES:
   - AFNetworking
-  - EaseMobSDK
+  - HyphenateFullSDK
   - MagicalRecord
   - Mantle
   - MBProgressHUD
   - MJRefresh
+  - ReactiveCocoa
   - SDAutoLayout
   - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  EaseMobSDK: cc8415cb99a65debf4711fa2c9c349fd5c843299
+  HyphenateFullSDK: f6ed4f5fed2b41f344eab73b451a27f1e8aa8ba2
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
-  SDAutoLayout: ea6e2ae9fbb438aa2feb0c4363dba9297e98638a
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDAutoLayout: ae98d238e4721c1566abec57bcb2fa1fbe62a0df
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
 
-PODFILE CHECKSUM: 9d12127e66d4e0b51dd8f8df20612c202e364b5e
+PODFILE CHECKSUM: 147f0e7099e808c02cd196fa0c2a890e8c934882
 
 COCOAPODS: 1.0.0.rc.1

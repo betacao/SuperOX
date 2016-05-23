@@ -10,6 +10,7 @@ pod 'MBProgressHUD'
 pod 'SDWebImage'
 pod 'MagicalRecord'
 pod 'SDAutoLayout'
-pod 'EaseMobSDK'
+pod 'HyphenateFullSDK'
+pod 'ReactiveCocoa'
 
 end
