@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1D1E2A17D9118D27335A762B /* libPods-SuperOX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 613601ED8E642551B6407A31 /* libPods-SuperOX.a */; };
+		F9A2EF6A1CF2FE920054AE1C /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF671CF2FE920054AE1C /* SOAppDelegate.m */; };
+		F9A2EF6B1CF2FE920054AE1C /* SORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF691CF2FE920054AE1C /* SORootViewController.m */; };
+		F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */; };
+		F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */; };
 		F9FDBEEE1CEAFE5900056275 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FDBEED1CEAFE5900056275 /* main.m */; };
-		F9FDBEF11CEAFE5900056275 /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FDBEF01CEAFE5900056275 /* SOAppDelegate.m */; };
-		F9FDBEF41CEAFE5900056275 /* SORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FDBEF31CEAFE5900056275 /* SORootViewController.m */; };
 		F9FDBEF71CEAFE5900056275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FDBEF51CEAFE5900056275 /* Main.storyboard */; };
 		F9FDBEF91CEAFE5900056275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9FDBEF81CEAFE5900056275 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -19,12 +21,16 @@
 		438743E9E0FCA64206AA1BD4 /* Pods-SuperOX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.debug.xcconfig"; sourceTree = "<group>"; };
 		613601ED8E642551B6407A31 /* libPods-SuperOX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SuperOX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D621B8E60C40F83A90A82CA2 /* Pods-SuperOX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.release.xcconfig"; sourceTree = "<group>"; };
+		F9A2EF661CF2FE920054AE1C /* SOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
+		F9A2EF671CF2FE920054AE1C /* SOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAppDelegate.m; sourceTree = "<group>"; };
+		F9A2EF681CF2FE920054AE1C /* SORootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SORootViewController.h; sourceTree = "<group>"; };
+		F9A2EF691CF2FE920054AE1C /* SORootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SORootViewController.m; sourceTree = "<group>"; };
+		F9A2EF6C1CF2FED70054AE1C /* SOBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseTableViewCell.h; sourceTree = "<group>"; };
+		F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseTableViewCell.m; sourceTree = "<group>"; };
+		F9A2EF6E1CF2FED70054AE1C /* SOBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseViewController.h; sourceTree = "<group>"; };
+		F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseViewController.m; sourceTree = "<group>"; };
 		F9FDBEE91CEAFE5900056275 /* SuperOX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperOX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FDBEED1CEAFE5900056275 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F9FDBEEF1CEAFE5900056275 /* SOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
-		F9FDBEF01CEAFE5900056275 /* SOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SOAppDelegate.m; sourceTree = "<group>"; };
-		F9FDBEF21CEAFE5900056275 /* SORootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SORootViewController.h; sourceTree = "<group>"; };
-		F9FDBEF31CEAFE5900056275 /* SORootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SORootViewController.m; sourceTree = "<group>"; };
 		F9FDBEF61CEAFE5900056275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9FDBEF81CEAFE5900056275 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9FDBEFD1CEAFE5900056275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +66,84 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F9A2EF5B1CF2FD720054AE1C /* 动态 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "动态";
+			sourceTree = "<group>";
+		};
+		F9A2EF5C1CF2FD720054AE1C /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "发现";
+			sourceTree = "<group>";
+		};
+		F9A2EF5D1CF2FD720054AE1C /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		F9A2EF5E1CF2FD720054AE1C /* 业务 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "业务";
+			sourceTree = "<group>";
+		};
+		F9A2EF5F1CF2FDF00054AE1C /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		F9A2EF601CF2FDF00054AE1C /* 第三方 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "第三方";
+			sourceTree = "<group>";
+		};
+		F9A2EF611CF2FDF00054AE1C /* 扩展 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "扩展";
+			sourceTree = "<group>";
+		};
+		F9A2EF621CF2FDF00054AE1C /* 注册 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "注册";
+			sourceTree = "<group>";
+		};
+		F9A2EF631CF2FDF00054AE1C /* 自定义 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "自定义";
+			sourceTree = "<group>";
+		};
+		F9A2EF651CF2FE590054AE1C /* 基类 */ = {
+			isa = PBXGroup;
+			children = (
+				F9A2EF6C1CF2FED70054AE1C /* SOBaseTableViewCell.h */,
+				F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */,
+				F9A2EF6E1CF2FED70054AE1C /* SOBaseViewController.h */,
+				F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */,
+				F9A2EF681CF2FE920054AE1C /* SORootViewController.h */,
+				F9A2EF691CF2FE920054AE1C /* SORootViewController.m */,
+				F9A2EF661CF2FE920054AE1C /* SOAppDelegate.h */,
+				F9A2EF671CF2FE920054AE1C /* SOAppDelegate.m */,
+			);
+			path = "基类";
+			sourceTree = "<group>";
+		};
 		F9FDBEE01CEAFE5900056275 = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +165,16 @@
 		F9FDBEEB1CEAFE5900056275 /* SuperOX */ = {
 			isa = PBXGroup;
 			children = (
-				F9FDBEEF1CEAFE5900056275 /* SOAppDelegate.h */,
-				F9FDBEF01CEAFE5900056275 /* SOAppDelegate.m */,
-				F9FDBEF21CEAFE5900056275 /* SORootViewController.h */,
-				F9FDBEF31CEAFE5900056275 /* SORootViewController.m */,
+				F9A2EF5F1CF2FDF00054AE1C /* 登录 */,
+				F9A2EF601CF2FDF00054AE1C /* 第三方 */,
+				F9A2EF611CF2FDF00054AE1C /* 扩展 */,
+				F9A2EF621CF2FDF00054AE1C /* 注册 */,
+				F9A2EF631CF2FDF00054AE1C /* 自定义 */,
+				F9A2EF5B1CF2FD720054AE1C /* 动态 */,
+				F9A2EF5C1CF2FD720054AE1C /* 发现 */,
+				F9A2EF5D1CF2FD720054AE1C /* 我的 */,
+				F9A2EF5E1CF2FD720054AE1C /* 业务 */,
+				F9A2EF651CF2FE590054AE1C /* 基类 */,
 				F9FDBEF51CEAFE5900056275 /* Main.storyboard */,
 				F9FDBF041CEB076100056275 /* PrefixHeader.pch */,
 				F9FDBEF81CEAFE5900056275 /* Assets.xcassets */,
@@ -222,8 +312,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9FDBEF41CEAFE5900056275 /* SORootViewController.m in Sources */,
-				F9FDBEF11CEAFE5900056275 /* SOAppDelegate.m in Sources */,
+				F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */,
+				F9A2EF6B1CF2FE920054AE1C /* SORootViewController.m in Sources */,
+				F9A2EF6A1CF2FE920054AE1C /* SOAppDelegate.m in Sources */,
+				F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */,
 				F9FDBEEE1CEAFE5900056275 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
