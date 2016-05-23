@@ -9,8 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+//************* pod *************//
 #import "AFNetworking.h"
-#import "EaseMob.h"
 #import <MagicalRecord/MagicalRecord.h>
 #import "Mantle.h"
 #import "MJRefresh.h"
@@ -18,5 +18,11 @@
 #import "UIView+SDAutoLayout.h"
 #import "UITableView+SDAutoTableViewCellHeight.h"
 #import "UIImageView+WebCache.h"
+#import "EMSDKFull.h"
+#import "ReactiveCocoa.h"
+
+
+//*******************************//
+
 
 #endif /* PrefixHeader_pch */
