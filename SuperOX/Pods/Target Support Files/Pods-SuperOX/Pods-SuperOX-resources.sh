@@ -82,6 +82,9 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
 fi
+if [[ "$CONFIGURATION" == "Debug_TEST" ]]; then
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
+fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
 fi

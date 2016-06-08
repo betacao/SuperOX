@@ -11,6 +11,7 @@
 @interface SOBaseViewController : UIViewController
 
 - (void)backButtonClick:(UIButton *)button;
+- (void)rightButtonClick:(UIButton *)button;
 - (void)initView;
 - (void)addAutoLayout;
 - (void)addReactiveCocoa;

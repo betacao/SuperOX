@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  SOLoginViewController.m
 //  SuperOX
 //
-//  Created by changxicao on 16/5/17.
+//  Created by changxicao on 16/5/23.
 //  Copyright © 2016年 changxicao. All rights reserved.
 //
 
-#import "SORootViewController.h"
+#import "SOLoginViewController.h"
 
-@interface SORootViewController ()
+@interface SOLoginViewController ()
 
 @end
 
-@implementation SORootViewController
+@implementation SOLoginViewController
 
 - (void)viewDidLoad
 {

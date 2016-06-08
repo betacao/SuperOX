@@ -8,10 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1D1E2A17D9118D27335A762B /* libPods-SuperOX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 613601ED8E642551B6407A31 /* libPods-SuperOX.a */; };
-		F9A2EF6A1CF2FE920054AE1C /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF671CF2FE920054AE1C /* SOAppDelegate.m */; };
-		F9A2EF6B1CF2FE920054AE1C /* SORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF691CF2FE920054AE1C /* SORootViewController.m */; };
+		F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */; };
+		F978FB761D07F75700FBC8BC /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB731D07F75700FBC8BC /* SOAppDelegate.m */; };
+		F978FB771D07F75700FBC8BC /* SORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB751D07F75700FBC8BC /* SORootViewController.m */; };
+		F978FB7D1D07F84400FBC8BC /* SOLoginObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB7C1D07F84400FBC8BC /* SOLoginObject.m */; };
+		F978FB801D07F85300FBC8BC /* SOLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB7F1D07F85200FBC8BC /* SOLoginManager.m */; };
+		F978FB881D08033100FBC8BC /* MOCHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB831D08033100FBC8BC /* MOCHTTPRequestOperationManager.m */; };
+		F978FB891D08033100FBC8BC /* MOCHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB851D08033100FBC8BC /* MOCHTTPResponse.m */; };
+		F978FB8A1D08033100FBC8BC /* MOCNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB871D08033100FBC8BC /* MOCNetworkReachabilityManager.m */; };
+		F978FB8D1D0803A500FBC8BC /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB8C1D0803A500FBC8BC /* UIView+HUD.m */; };
+		F978FB901D08041800FBC8BC /* SHGEncryptionAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB8F1D08041800FBC8BC /* SHGEncryptionAlgorithm.m */; };
+		F978FB931D0804C000FBC8BC /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB921D0804C000FBC8BC /* NSString+Extend.m */; };
+		F978FB991D08124D00FBC8BC /* NSObject+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB981D08124D00FBC8BC /* NSObject+Extend.m */; };
 		F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */; };
 		F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */; };
+		F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF731CF309A00054AE1C /* SOLoginViewController.m */; };
+		F9A2EF761CF309A00054AE1C /* SOLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2EF741CF309A00054AE1C /* SOLoginViewController.xib */; };
+		F9A2EF7A1CF30AB90054AE1C /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF791CF30AB90054AE1C /* UIColor+Extend.m */; };
+		F9A2EF7E1CF30B7A0054AE1C /* SOGloble.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF7D1CF30B7A0054AE1C /* SOGloble.m */; };
+		F9A2EF811CF310A00054AE1C /* SOGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF801CF310A00054AE1C /* SOGuideView.m */; };
 		F9FDBEEE1CEAFE5900056275 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FDBEED1CEAFE5900056275 /* main.m */; };
 		F9FDBEF71CEAFE5900056275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FDBEF51CEAFE5900056275 /* Main.storyboard */; };
 		F9FDBEF91CEAFE5900056275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9FDBEF81CEAFE5900056275 /* Assets.xcassets */; };
@@ -21,14 +36,46 @@
 		438743E9E0FCA64206AA1BD4 /* Pods-SuperOX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.debug.xcconfig"; sourceTree = "<group>"; };
 		613601ED8E642551B6407A31 /* libPods-SuperOX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SuperOX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D621B8E60C40F83A90A82CA2 /* Pods-SuperOX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.release.xcconfig"; sourceTree = "<group>"; };
-		F9A2EF661CF2FE920054AE1C /* SOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
-		F9A2EF671CF2FE920054AE1C /* SOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAppDelegate.m; sourceTree = "<group>"; };
-		F9A2EF681CF2FE920054AE1C /* SORootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SORootViewController.h; sourceTree = "<group>"; };
-		F9A2EF691CF2FE920054AE1C /* SORootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SORootViewController.m; sourceTree = "<group>"; };
+		E81841C47950F5EEFB7AEDB7 /* Pods-SuperOX.debug_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.debug_test.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.debug_test.xcconfig"; sourceTree = "<group>"; };
+		F978FB6E1D07F40A00FBC8BC /* SOBaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseScrollViewController.h; sourceTree = "<group>"; };
+		F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseScrollViewController.m; sourceTree = "<group>"; };
+		F978FB721D07F75700FBC8BC /* SOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
+		F978FB731D07F75700FBC8BC /* SOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAppDelegate.m; sourceTree = "<group>"; };
+		F978FB741D07F75700FBC8BC /* SORootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SORootViewController.h; sourceTree = "<group>"; };
+		F978FB751D07F75700FBC8BC /* SORootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SORootViewController.m; sourceTree = "<group>"; };
+		F978FB7B1D07F84400FBC8BC /* SOLoginObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLoginObject.h; sourceTree = "<group>"; };
+		F978FB7C1D07F84400FBC8BC /* SOLoginObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLoginObject.m; sourceTree = "<group>"; };
+		F978FB7E1D07F85200FBC8BC /* SOLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLoginManager.h; sourceTree = "<group>"; };
+		F978FB7F1D07F85200FBC8BC /* SOLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLoginManager.m; sourceTree = "<group>"; };
+		F978FB821D08033100FBC8BC /* MOCHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		F978FB831D08033100FBC8BC /* MOCHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOCHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		F978FB841D08033100FBC8BC /* MOCHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCHTTPResponse.h; sourceTree = "<group>"; };
+		F978FB851D08033100FBC8BC /* MOCHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOCHTTPResponse.m; sourceTree = "<group>"; };
+		F978FB861D08033100FBC8BC /* MOCNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOCNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		F978FB871D08033100FBC8BC /* MOCNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOCNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		F978FB8B1D0803A500FBC8BC /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		F978FB8C1D0803A500FBC8BC /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		F978FB8E1D08041800FBC8BC /* SHGEncryptionAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGEncryptionAlgorithm.h; sourceTree = "<group>"; };
+		F978FB8F1D08041800FBC8BC /* SHGEncryptionAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGEncryptionAlgorithm.m; sourceTree = "<group>"; };
+		F978FB911D0804C000FBC8BC /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
+		F978FB921D0804C000FBC8BC /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
+		F978FB971D08124D00FBC8BC /* NSObject+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extend.h"; sourceTree = "<group>"; };
+		F978FB981D08124D00FBC8BC /* NSObject+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extend.m"; sourceTree = "<group>"; };
 		F9A2EF6C1CF2FED70054AE1C /* SOBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseTableViewCell.h; sourceTree = "<group>"; };
 		F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseTableViewCell.m; sourceTree = "<group>"; };
 		F9A2EF6E1CF2FED70054AE1C /* SOBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseViewController.h; sourceTree = "<group>"; };
 		F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseViewController.m; sourceTree = "<group>"; };
+		F9A2EF721CF309A00054AE1C /* SOLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLoginViewController.h; sourceTree = "<group>"; };
+		F9A2EF731CF309A00054AE1C /* SOLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLoginViewController.m; sourceTree = "<group>"; };
+		F9A2EF741CF309A00054AE1C /* SOLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOLoginViewController.xib; sourceTree = "<group>"; };
+		F9A2EF771CF30A600054AE1C /* defineConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defineConst.h; sourceTree = "<group>"; };
+		F9A2EF781CF30AB90054AE1C /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
+		F9A2EF791CF30AB90054AE1C /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
+		F9A2EF7C1CF30B7A0054AE1C /* SOGloble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOGloble.h; sourceTree = "<group>"; };
+		F9A2EF7D1CF30B7A0054AE1C /* SOGloble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOGloble.m; sourceTree = "<group>"; };
+		F9A2EF7F1CF310A00054AE1C /* SOGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOGuideView.h; sourceTree = "<group>"; };
+		F9A2EF801CF310A00054AE1C /* SOGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOGuideView.m; sourceTree = "<group>"; };
+		F9A2EF821CF3E4390054AE1C /* defineString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defineString.h; sourceTree = "<group>"; };
 		F9FDBEE91CEAFE5900056275 /* SuperOX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperOX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FDBEED1CEAFE5900056275 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9FDBEF61CEAFE5900056275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +101,7 @@
 			children = (
 				438743E9E0FCA64206AA1BD4 /* Pods-SuperOX.debug.xcconfig */,
 				D621B8E60C40F83A90A82CA2 /* Pods-SuperOX.release.xcconfig */,
+				E81841C47950F5EEFB7AEDB7 /* Pods-SuperOX.debug_test.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -64,6 +112,32 @@
 				613601ED8E642551B6407A31 /* libPods-SuperOX.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F978FB711D07F75700FBC8BC /* 根视图 */ = {
+			isa = PBXGroup;
+			children = (
+				F978FB741D07F75700FBC8BC /* SORootViewController.h */,
+				F978FB751D07F75700FBC8BC /* SORootViewController.m */,
+				F978FB721D07F75700FBC8BC /* SOAppDelegate.h */,
+				F978FB731D07F75700FBC8BC /* SOAppDelegate.m */,
+			);
+			path = "根视图";
+			sourceTree = "<group>";
+		};
+		F978FB811D08033100FBC8BC /* 网络 */ = {
+			isa = PBXGroup;
+			children = (
+				F978FB821D08033100FBC8BC /* MOCHTTPRequestOperationManager.h */,
+				F978FB831D08033100FBC8BC /* MOCHTTPRequestOperationManager.m */,
+				F978FB841D08033100FBC8BC /* MOCHTTPResponse.h */,
+				F978FB851D08033100FBC8BC /* MOCHTTPResponse.m */,
+				F978FB861D08033100FBC8BC /* MOCNetworkReachabilityManager.h */,
+				F978FB871D08033100FBC8BC /* MOCNetworkReachabilityManager.m */,
+				F978FB8E1D08041800FBC8BC /* SHGEncryptionAlgorithm.h */,
+				F978FB8F1D08041800FBC8BC /* SHGEncryptionAlgorithm.m */,
+			);
+			path = "网络";
 			sourceTree = "<group>";
 		};
 		F9A2EF5B1CF2FD720054AE1C /* 动态 */ = {
@@ -97,6 +171,15 @@
 		F9A2EF5F1CF2FDF00054AE1C /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
+				F978FB7B1D07F84400FBC8BC /* SOLoginObject.h */,
+				F978FB7C1D07F84400FBC8BC /* SOLoginObject.m */,
+				F978FB7E1D07F85200FBC8BC /* SOLoginManager.h */,
+				F978FB7F1D07F85200FBC8BC /* SOLoginManager.m */,
+				F9A2EF721CF309A00054AE1C /* SOLoginViewController.h */,
+				F9A2EF731CF309A00054AE1C /* SOLoginViewController.m */,
+				F9A2EF741CF309A00054AE1C /* SOLoginViewController.xib */,
+				F9A2EF7F1CF310A00054AE1C /* SOGuideView.h */,
+				F9A2EF801CF310A00054AE1C /* SOGuideView.m */,
 			);
 			path = "登录";
 			sourceTree = "<group>";
@@ -104,6 +187,7 @@
 		F9A2EF601CF2FDF00054AE1C /* 第三方 */ = {
 			isa = PBXGroup;
 			children = (
+				F978FB811D08033100FBC8BC /* 网络 */,
 			);
 			path = "第三方";
 			sourceTree = "<group>";
@@ -111,6 +195,14 @@
 		F9A2EF611CF2FDF00054AE1C /* 扩展 */ = {
 			isa = PBXGroup;
 			children = (
+				F978FB971D08124D00FBC8BC /* NSObject+Extend.h */,
+				F978FB981D08124D00FBC8BC /* NSObject+Extend.m */,
+				F9A2EF781CF30AB90054AE1C /* UIColor+Extend.h */,
+				F9A2EF791CF30AB90054AE1C /* UIColor+Extend.m */,
+				F978FB911D0804C000FBC8BC /* NSString+Extend.h */,
+				F978FB921D0804C000FBC8BC /* NSString+Extend.m */,
+				F978FB8B1D0803A500FBC8BC /* UIView+HUD.h */,
+				F978FB8C1D0803A500FBC8BC /* UIView+HUD.m */,
 			);
 			path = "扩展";
 			sourceTree = "<group>";
@@ -134,14 +226,21 @@
 			children = (
 				F9A2EF6C1CF2FED70054AE1C /* SOBaseTableViewCell.h */,
 				F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */,
+				F978FB6E1D07F40A00FBC8BC /* SOBaseScrollViewController.h */,
+				F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */,
 				F9A2EF6E1CF2FED70054AE1C /* SOBaseViewController.h */,
 				F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */,
-				F9A2EF681CF2FE920054AE1C /* SORootViewController.h */,
-				F9A2EF691CF2FE920054AE1C /* SORootViewController.m */,
-				F9A2EF661CF2FE920054AE1C /* SOAppDelegate.h */,
-				F9A2EF671CF2FE920054AE1C /* SOAppDelegate.m */,
 			);
 			path = "基类";
+			sourceTree = "<group>";
+		};
+		F9A2EF7B1CF30B450054AE1C /* 通用 */ = {
+			isa = PBXGroup;
+			children = (
+				F9A2EF7C1CF30B7A0054AE1C /* SOGloble.h */,
+				F9A2EF7D1CF30B7A0054AE1C /* SOGloble.m */,
+			);
+			path = "通用";
 			sourceTree = "<group>";
 		};
 		F9FDBEE01CEAFE5900056275 = {
@@ -165,6 +264,7 @@
 		F9FDBEEB1CEAFE5900056275 /* SuperOX */ = {
 			isa = PBXGroup;
 			children = (
+				F9A2EF7B1CF30B450054AE1C /* 通用 */,
 				F9A2EF5F1CF2FDF00054AE1C /* 登录 */,
 				F9A2EF601CF2FDF00054AE1C /* 第三方 */,
 				F9A2EF611CF2FDF00054AE1C /* 扩展 */,
@@ -175,7 +275,10 @@
 				F9A2EF5D1CF2FD720054AE1C /* 我的 */,
 				F9A2EF5E1CF2FD720054AE1C /* 业务 */,
 				F9A2EF651CF2FE590054AE1C /* 基类 */,
+				F978FB711D07F75700FBC8BC /* 根视图 */,
 				F9FDBEF51CEAFE5900056275 /* Main.storyboard */,
+				F9A2EF771CF30A600054AE1C /* defineConst.h */,
+				F9A2EF821CF3E4390054AE1C /* defineString.h */,
 				F9FDBF041CEB076100056275 /* PrefixHeader.pch */,
 				F9FDBEF81CEAFE5900056275 /* Assets.xcassets */,
 				F9FDBEFD1CEAFE5900056275 /* Info.plist */,
@@ -252,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A2EF761CF309A00054AE1C /* SOLoginViewController.xib in Resources */,
 				F9FDBEF91CEAFE5900056275 /* Assets.xcassets in Resources */,
 				F9FDBEF71CEAFE5900056275 /* Main.storyboard in Resources */,
 			);
@@ -312,10 +416,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F978FB771D07F75700FBC8BC /* SORootViewController.m in Sources */,
+				F978FB991D08124D00FBC8BC /* NSObject+Extend.m in Sources */,
+				F978FB801D07F85300FBC8BC /* SOLoginManager.m in Sources */,
+				F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */,
+				F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */,
+				F978FB761D07F75700FBC8BC /* SOAppDelegate.m in Sources */,
+				F978FB881D08033100FBC8BC /* MOCHTTPRequestOperationManager.m in Sources */,
 				F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */,
-				F9A2EF6B1CF2FE920054AE1C /* SORootViewController.m in Sources */,
-				F9A2EF6A1CF2FE920054AE1C /* SOAppDelegate.m in Sources */,
+				F9A2EF7E1CF30B7A0054AE1C /* SOGloble.m in Sources */,
+				F9A2EF7A1CF30AB90054AE1C /* UIColor+Extend.m in Sources */,
+				F978FB7D1D07F84400FBC8BC /* SOLoginObject.m in Sources */,
+				F978FB891D08033100FBC8BC /* MOCHTTPResponse.m in Sources */,
+				F978FB931D0804C000FBC8BC /* NSString+Extend.m in Sources */,
 				F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */,
+				F978FB901D08041800FBC8BC /* SHGEncryptionAlgorithm.m in Sources */,
+				F978FB8D1D0803A500FBC8BC /* UIView+HUD.m in Sources */,
+				F978FB8A1D08033100FBC8BC /* MOCNetworkReachabilityManager.m in Sources */,
+				F9A2EF811CF310A00054AE1C /* SOGuideView.m in Sources */,
 				F9FDBEEE1CEAFE5900056275 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +452,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F978FB951D08072800FBC8BC /* Debug_TEST */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug_TEST;
+		};
+		F978FB961D08072800FBC8BC /* Debug_TEST */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E81841C47950F5EEFB7AEDB7 /* Pods-SuperOX.debug_test.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT)/PrefixHeader.pch";
+				INFOPLIST_FILE = SuperOX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = beta.SuperOX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug_TEST;
+		};
 		F9FDBEFE1CEAFE5900056275 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -457,6 +636,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9FDBEFE1CEAFE5900056275 /* Debug */,
+				F978FB951D08072800FBC8BC /* Debug_TEST */,
 				F9FDBEFF1CEAFE5900056275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -466,6 +646,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9FDBF011CEAFE5900056275 /* Debug */,
+				F978FB961D08072800FBC8BC /* Debug_TEST */,
 				F9FDBF021CEAFE5900056275 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

@@ -23,6 +23,12 @@
 
 
 //*******************************//
-
+#import "defineConst.h"
+#import "defineString.h"
+#import "SOGloble.h"
+#import "MOCHTTPResponse.h"
+#import "MOCHTTPRequestOperationManager.h"
+#import "NSString+Extend.h"
+#import "UIView+HUD.h"
 
 #endif /* PrefixHeader_pch */
