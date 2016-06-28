@@ -7,6 +7,7 @@
 //
 
 #import "SOLoginViewController.h"
+#import "WXApi.h"
 
 @interface SOLoginViewController ()
 
@@ -57,6 +58,8 @@
 
     self.middleLabel.textColor = Color(@"9d9d9d");
     self.middleLabel.font = FontFactor(13.0f);
+
+    self.leftView.backgroundColor = self.rightView.backgroundColor = Color(@"E6E7E8");
 }
 
 - (void)addAutoLayout

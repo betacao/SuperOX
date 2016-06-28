@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D1E2A17D9118D27335A762B /* libPods-SuperOX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 613601ED8E642551B6407A31 /* libPods-SuperOX.a */; };
+		E65128564572E050CDD6D42D /* libPods-SuperOX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B8DD563411F37566C2CEA3 /* libPods-SuperOX.a */; };
 		F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */; };
 		F978FB761D07F75700FBC8BC /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB731D07F75700FBC8BC /* SOAppDelegate.m */; };
 		F978FB771D07F75700FBC8BC /* SORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB751D07F75700FBC8BC /* SORootViewController.m */; };
@@ -36,8 +36,8 @@
 
 /* Begin PBXFileReference section */
 		438743E9E0FCA64206AA1BD4 /* Pods-SuperOX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.debug.xcconfig"; sourceTree = "<group>"; };
-		613601ED8E642551B6407A31 /* libPods-SuperOX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SuperOX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D621B8E60C40F83A90A82CA2 /* Pods-SuperOX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.release.xcconfig"; sourceTree = "<group>"; };
+		E5B8DD563411F37566C2CEA3 /* libPods-SuperOX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SuperOX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81841C47950F5EEFB7AEDB7 /* Pods-SuperOX.debug_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.debug_test.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.debug_test.xcconfig"; sourceTree = "<group>"; };
 		F978FB6E1D07F40A00FBC8BC /* SOBaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseScrollViewController.h; sourceTree = "<group>"; };
 		F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseScrollViewController.m; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D1E2A17D9118D27335A762B /* libPods-SuperOX.a in Frameworks */,
+				E65128564572E050CDD6D42D /* libPods-SuperOX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +115,7 @@
 		41C4EF7879621B3EBEA837F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				613601ED8E642551B6407A31 /* libPods-SuperOX.a */,
+				E5B8DD563411F37566C2CEA3 /* libPods-SuperOX.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
