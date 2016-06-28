@@ -712,10 +712,27 @@
 {
     NSAssert(self.ownLayoutModel, @"请在布局完成之后再做此步设置！");
     if (lineCount > 0) {
-        self.sd_layout.maxHeightIs(self.font.lineHeight * lineCount);
+        self.sd_layout.maxHeightIs(self.font.lineHeight * lineCount + 0.1);
     } else {
         self.sd_layout.maxHeightIs(MAXFLOAT);
     }
+}
+
+@end
+
+@implementation UIButton (SDExtention)
+
+- (void)setupAutoSizeWithHorizontalPadding:(CGFloat)hPadding buttonHeight:(CGFloat)buttonHeight
+{
+    self.fixedHeight = @(buttonHeight);
+    
+    self.titleLabel.sd_layout
+    .leftSpaceToView(self, hPadding)
+    .topEqualToView(self)
+    .heightIs(buttonHeight);
+    
+    [self.titleLabel setSingleLineAutoResizeWithMaxWidth:MAXFLOAT];
+    [self setupAutoWidthWithRightView:self.titleLabel rightMargin:hPadding];
 }
 
 @end
@@ -908,6 +925,22 @@
     return [self sd_layout];
 }
 
+- (BOOL)sd_isClosingAotuLayout
+{
+    return self.sd_categoryManager.sd_isClosingAotuLayout;
+}
+
+- (void)setSd_closeAotuLayout:(BOOL)sd_closeAotuLayout
+{
+    self.sd_categoryManager.sd_closeAotuLayout = sd_closeAotuLayout;
+}
+
+- (void)removeFromSuperviewAndClearAutoLayoutSettings
+{
+    [self sd_clearAutoLayoutSettings];
+    [self removeFromSuperview];
+}
+
 - (void)sd_clearAutoLayoutSettings
 {
     SDAutoLayoutModel *model = [self ownLayoutModel];
@@ -979,7 +1012,7 @@
         CGFloat w = 0;
         if (self.sd_categoryManager.shouldShowAsAutoMarginViews) {
             w = self.sd_categoryManager.flowItemWidth;
-            long itemsCount = self.sd_categoryManager.flowItems.count;
+            long itemsCount = self.sd_categoryManager.perRowItemsCount;
             if (itemsCount > 1) {
                 horizontalMargin = (self.width_sd - itemsCount * w) / (itemsCount - 1);
             }
@@ -1118,7 +1151,7 @@
 {
     UIView *view = model.needsAutoResizeView;
     
-    if (!view) return;
+    if (!view || view.sd_isClosingAotuLayout) return;
     
     if (view.sd_maxWidth && (model.rightSpaceToView || model.rightEqualToView)) { // 靠右布局前提设置
         [self layoutAutoWidthWidthView:view model:model];
@@ -1582,6 +1615,93 @@
     CGRect frame = self.frame;
     frame.size = size;
     self.frame = frame;
+}
+
+// 兼容旧版本
+
+- (CGFloat)left
+{
+    return self.left_sd;
+}
+
+- (void)setLeft:(CGFloat)left
+{
+    self.left_sd = left;
+}
+
+- (CGFloat)right
+{
+    return self.right_sd;
+}
+
+- (void)setRight:(CGFloat)right
+{
+    self.right_sd = right;
+}
+
+- (CGFloat)width
+{
+    return self.width_sd;
+}
+
+- (CGFloat)height
+{
+    return self.height_sd;
+}
+
+- (CGFloat)top
+{
+    return self.top_sd;
+}
+
+- (void)setTop:(CGFloat)top
+{
+    self.top_sd = top;
+}
+
+- (CGFloat)bottom
+{
+    return self.bottom_sd;
+}
+
+- (void)setBottom:(CGFloat)bottom
+{
+    self.bottom_sd = bottom;
+}
+
+- (CGFloat)centerX
+{
+    return self.centerX_sd;
+}
+
+- (void)setCenterX:(CGFloat)centerX
+{
+    self.centerX_sd = centerX;
+}
+
+- (CGFloat)centerY
+{
+    return self.centerY_sd;
+}
+
+- (void)setCenterY:(CGFloat)centerY
+{
+    self.centerY_sd = centerY;
+}
+
+- (CGPoint)origin
+{
+    return self.origin_sd;
+}
+
+- (void)setOrigin:(CGPoint)origin
+{
+    self.origin_sd = origin;
+}
+
+- (CGSize)size
+{
+    return self.size_sd;
 }
 
 @end
