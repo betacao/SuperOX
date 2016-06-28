@@ -20,6 +20,8 @@
 		F978FB901D08041800FBC8BC /* SHGEncryptionAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB8F1D08041800FBC8BC /* SHGEncryptionAlgorithm.m */; };
 		F978FB931D0804C000FBC8BC /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB921D0804C000FBC8BC /* NSString+Extend.m */; };
 		F978FB991D08124D00FBC8BC /* NSObject+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB981D08124D00FBC8BC /* NSObject+Extend.m */; };
+		F9796DBE1D224FBD0079579E /* SOBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9796DBD1D224FBD0079579E /* SOBaseView.m */; };
+		F9796DC11D2250440079579E /* SHGAdvertisementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9796DC01D2250440079579E /* SHGAdvertisementView.m */; };
 		F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */; };
 		F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */; };
 		F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF731CF309A00054AE1C /* SOLoginViewController.m */; };
@@ -61,6 +63,10 @@
 		F978FB921D0804C000FBC8BC /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
 		F978FB971D08124D00FBC8BC /* NSObject+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extend.h"; sourceTree = "<group>"; };
 		F978FB981D08124D00FBC8BC /* NSObject+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extend.m"; sourceTree = "<group>"; };
+		F9796DBC1D224FBD0079579E /* SOBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseView.h; sourceTree = "<group>"; };
+		F9796DBD1D224FBD0079579E /* SOBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseView.m; sourceTree = "<group>"; };
+		F9796DBF1D2250440079579E /* SHGAdvertisementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGAdvertisementView.h; sourceTree = "<group>"; };
+		F9796DC01D2250440079579E /* SHGAdvertisementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGAdvertisementView.m; sourceTree = "<group>"; };
 		F9A2EF6C1CF2FED70054AE1C /* SOBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseTableViewCell.h; sourceTree = "<group>"; };
 		F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseTableViewCell.m; sourceTree = "<group>"; };
 		F9A2EF6E1CF2FED70054AE1C /* SOBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseViewController.h; sourceTree = "<group>"; };
@@ -171,15 +177,17 @@
 		F9A2EF5F1CF2FDF00054AE1C /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
-				F978FB7B1D07F84400FBC8BC /* SOLoginObject.h */,
-				F978FB7C1D07F84400FBC8BC /* SOLoginObject.m */,
+				F9A2EF7F1CF310A00054AE1C /* SOGuideView.h */,
+				F9A2EF801CF310A00054AE1C /* SOGuideView.m */,
 				F978FB7E1D07F85200FBC8BC /* SOLoginManager.h */,
 				F978FB7F1D07F85200FBC8BC /* SOLoginManager.m */,
+				F978FB7B1D07F84400FBC8BC /* SOLoginObject.h */,
+				F978FB7C1D07F84400FBC8BC /* SOLoginObject.m */,
 				F9A2EF721CF309A00054AE1C /* SOLoginViewController.h */,
 				F9A2EF731CF309A00054AE1C /* SOLoginViewController.m */,
 				F9A2EF741CF309A00054AE1C /* SOLoginViewController.xib */,
-				F9A2EF7F1CF310A00054AE1C /* SOGuideView.h */,
-				F9A2EF801CF310A00054AE1C /* SOGuideView.m */,
+				F9796DBF1D2250440079579E /* SHGAdvertisementView.h */,
+				F9796DC01D2250440079579E /* SHGAdvertisementView.m */,
 			);
 			path = "登录";
 			sourceTree = "<group>";
@@ -230,6 +238,8 @@
 				F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */,
 				F9A2EF6E1CF2FED70054AE1C /* SOBaseViewController.h */,
 				F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */,
+				F9796DBC1D224FBD0079579E /* SOBaseView.h */,
+				F9796DBD1D224FBD0079579E /* SOBaseView.m */,
 			);
 			path = "基类";
 			sourceTree = "<group>";
@@ -246,10 +256,10 @@
 		F9FDBEE01CEAFE5900056275 = {
 			isa = PBXGroup;
 			children = (
-				F9FDBEEB1CEAFE5900056275 /* SuperOX */,
-				F9FDBEEA1CEAFE5900056275 /* Products */,
-				1B754073629A68DF2C3416B9 /* Pods */,
 				41C4EF7879621B3EBEA837F2 /* Frameworks */,
+				1B754073629A68DF2C3416B9 /* Pods */,
+				F9FDBEEA1CEAFE5900056275 /* Products */,
+				F9FDBEEB1CEAFE5900056275 /* SuperOX */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,24 +274,24 @@
 		F9FDBEEB1CEAFE5900056275 /* SuperOX */ = {
 			isa = PBXGroup;
 			children = (
-				F9A2EF7B1CF30B450054AE1C /* 通用 */,
 				F9A2EF5F1CF2FDF00054AE1C /* 登录 */,
 				F9A2EF601CF2FDF00054AE1C /* 第三方 */,
-				F9A2EF611CF2FDF00054AE1C /* 扩展 */,
-				F9A2EF621CF2FDF00054AE1C /* 注册 */,
-				F9A2EF631CF2FDF00054AE1C /* 自定义 */,
 				F9A2EF5B1CF2FD720054AE1C /* 动态 */,
 				F9A2EF5C1CF2FD720054AE1C /* 发现 */,
+				F978FB711D07F75700FBC8BC /* 根视图 */,
+				F9A2EF651CF2FE590054AE1C /* 基类 */,
+				F9A2EF611CF2FDF00054AE1C /* 扩展 */,
+				F9A2EF7B1CF30B450054AE1C /* 通用 */,
 				F9A2EF5D1CF2FD720054AE1C /* 我的 */,
 				F9A2EF5E1CF2FD720054AE1C /* 业务 */,
-				F9A2EF651CF2FE590054AE1C /* 基类 */,
-				F978FB711D07F75700FBC8BC /* 根视图 */,
-				F9FDBEF51CEAFE5900056275 /* Main.storyboard */,
+				F9A2EF621CF2FDF00054AE1C /* 注册 */,
+				F9A2EF631CF2FDF00054AE1C /* 自定义 */,
+				F9FDBEF81CEAFE5900056275 /* Assets.xcassets */,
 				F9A2EF771CF30A600054AE1C /* defineConst.h */,
 				F9A2EF821CF3E4390054AE1C /* defineString.h */,
-				F9FDBF041CEB076100056275 /* PrefixHeader.pch */,
-				F9FDBEF81CEAFE5900056275 /* Assets.xcassets */,
 				F9FDBEFD1CEAFE5900056275 /* Info.plist */,
+				F9FDBEF51CEAFE5900056275 /* Main.storyboard */,
+				F9FDBF041CEB076100056275 /* PrefixHeader.pch */,
 				F9FDBEEC1CEAFE5900056275 /* Supporting Files */,
 			);
 			path = SuperOX;
@@ -419,12 +429,14 @@
 				F978FB771D07F75700FBC8BC /* SORootViewController.m in Sources */,
 				F978FB991D08124D00FBC8BC /* NSObject+Extend.m in Sources */,
 				F978FB801D07F85300FBC8BC /* SOLoginManager.m in Sources */,
+				F9796DBE1D224FBD0079579E /* SOBaseView.m in Sources */,
 				F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */,
 				F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */,
 				F978FB761D07F75700FBC8BC /* SOAppDelegate.m in Sources */,
 				F978FB881D08033100FBC8BC /* MOCHTTPRequestOperationManager.m in Sources */,
 				F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */,
 				F9A2EF7E1CF30B7A0054AE1C /* SOGloble.m in Sources */,
+				F9796DC11D2250440079579E /* SHGAdvertisementView.m in Sources */,
 				F9A2EF7A1CF30AB90054AE1C /* UIColor+Extend.m in Sources */,
 				F978FB7D1D07F84400FBC8BC /* SOLoginObject.m in Sources */,
 				F978FB891D08033100FBC8BC /* MOCHTTPResponse.m in Sources */,

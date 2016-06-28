@@ -13,7 +13,6 @@
 
 @interface SORootViewController ()
 
-@property (strong, nonatomic) UIImageView *launchImage;
 @property (strong, nonatomic) SOGuideView *guideView;
 
 @end
@@ -23,15 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if(SCREENHEIGHT < 568.000000){
-        self.launchImage.image = [UIImage imageNamed:@"480"];
-    } else if(SCREENHEIGHT == 568.000000){
-        self.launchImage.image = [UIImage imageNamed:@"568"];
-    } else if(SCREENHEIGHT == 667.000000){
-        self.launchImage.image = [UIImage imageNamed:@"667"];
-    } else if(SCREENHEIGHT > 667.000000){
-        self.launchImage.image=[UIImage imageNamed:@"736"];
-    }
+    [NSThread sleepForTimeInterval:1.2f];
     if([[SOGloble sharedGloble] isShowGuideView]){
         [self startGuideView];
     } else{
