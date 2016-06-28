@@ -1,18 +1,18 @@
 //
-//  SHGAdvertisementView.h
+//  SOAdvertisementView.h
 //  Finance
 //
 //  Created by changxicao on 16/6/24.
 //  Copyright © 2016年 HuMin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SOBaseView.h"
 
-typedef void(^SHGAdvertisementViewDismissBlock)(void);
+typedef void(^SOAdvertisementViewDismissBlock)(void);
 
-@interface SHGAdvertisementView : UIView
+@interface SOAdvertisementView : SOBaseView
 
-@property (copy, nonatomic) SHGAdvertisementViewDismissBlock dissmissBlock;
+@property (copy, nonatomic) SOAdvertisementViewDismissBlock dissmissBlock;
 
 @end
 

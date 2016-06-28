@@ -10,9 +10,11 @@
 #import "SOLoginViewController.h"
 #import "SOLoginManager.h"
 #import "SOGuideView.h"
+#import "SOAdvertisementView.h"
 
 @interface SORootViewController ()
 
+@property (weak, nonatomic) IBOutlet SOAdvertisementView *advertisementView;
 @property (strong, nonatomic) SOGuideView *guideView;
 
 @end
@@ -22,12 +24,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [NSThread sleepForTimeInterval:1.2f];
-    if([[SOGloble sharedGloble] isShowGuideView]){
-        [self startGuideView];
-    } else{
-        [self moveToHomePage];
-    }
+
+    __weak typeof(self) weakSelf = self;
+    self.advertisementView.dissmissBlock = ^{
+        if([[SOGloble sharedGloble] isShowGuideView]){
+            [weakSelf startGuideView];
+        } else{
+            [weakSelf moveToHomePage];
+        }
+    };
 }
 
 - (void)startGuideView

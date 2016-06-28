@@ -1,21 +1,21 @@
 //
-//  SHGAdvertisementView.m
+//  SOAdvertisementView.m
 //  Finance
 //
 //  Created by changxicao on 16/6/24.
 //  Copyright © 2016年 HuMin. All rights reserved.
 //
 
-#import "SHGAdvertisementView.h"
+#import "SOAdvertisementView.h"
 #import "SDWebImageManager.h"
 
-@interface SHGAdvertisementView()
+@interface SOAdvertisementView()
 
 @property (strong, nonatomic) UIImageView *imageView;
 
 @end
 
-@implementation SHGAdvertisementView
+@implementation SOAdvertisementView
 
 - (instancetype)init
 {
@@ -29,6 +29,7 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     [self initView];
     [self addAutoLayout];
 }
@@ -84,7 +85,7 @@
     if ([[NSFileManager defaultManager] fileExistsAtPath:kSplashScreenAdCacheImgLocalPath]) {
         NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfURL:[NSURL fileURLWithPath:kSplashScreenAdCacheImgLocalPath]] options:NSJSONReadingAllowFragments error:nil];
         NSString *phototUrl = [dictionary objectForKey:@"phototurl"];
-        block([[dictionary objectForKey:@"flag"] isEqualToString:@"1"], [NSString stringWithFormat:@"%@%@",rBaseAddressForImage,phototUrl]);
+        block([[dictionary objectForKey:@"flag"] isEqualToString:@"1"], [NSString stringWithFormat:@"%@%@",kImageHostName,phototUrl]);
     } else{
         block(NO, nil);
     }
@@ -92,10 +93,10 @@
 
 + (void)loadRemoteAdvertisement
 {
-    [MOCHTTPRequestOperationManager postWithURL:[rBaseAddressForHttp stringByAppendingString:@"/appImage/getStartAppImage"] parameters:@{@"os":@"ios", @"width":@(SCREENWIDTH * SCALE), @"height":@(SCREENHEIGHT * SCALE)} success:^(MOCHTTPResponse *response) {
+    [MOCHTTPRequestOperationManager postWithURL:[kApiPath stringByAppendingString:@"/appImage/getStartAppImage"] parameters:@{@"os":@"ios", @"width":@(SCREENWIDTH * SCALE), @"height":@(SCREENHEIGHT * SCALE)} success:^(MOCHTTPResponse *response) {
         NSDictionary *dictionary = [response.dataDictionary objectForKey:@"appimage"];
         NSString *phototUrl = [dictionary objectForKey:@"phototurl"];
-        [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",rBaseAddressForImage,phototUrl]] options:SDWebImageRetryFailed|SDWebImageLowPriority progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+        [[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",kImageHostName,phototUrl]] options:SDWebImageRetryFailed|SDWebImageLowPriority progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
 
         }];
         if (dictionary) {

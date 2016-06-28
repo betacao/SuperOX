@@ -8,6 +8,11 @@
 
 #import "SOAppDelegate.h"
 
+#define resultcodekey       @"code"
+#define successcode         @"000"
+#define datakey             @"data"
+#define messagekey          @"msg"
+
 @interface SOAppDelegate ()
 
 @end
@@ -16,7 +21,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    [MOCHTTPRequestOperationManager setupRequestOperationManager:resultcodekey successCode:successcode dataKey:datakey messageKey:messagekey];
     return YES;
 }
 

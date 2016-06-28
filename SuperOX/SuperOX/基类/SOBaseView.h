@@ -10,4 +10,8 @@
 
 @interface SOBaseView : UIView
 
+- (void)initView;
+- (void)addAutoLayout;
+- (void)addReactiveCocoa;
+
 @end

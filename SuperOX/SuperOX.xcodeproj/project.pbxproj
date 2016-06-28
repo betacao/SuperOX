@@ -21,7 +21,7 @@
 		F978FB931D0804C000FBC8BC /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB921D0804C000FBC8BC /* NSString+Extend.m */; };
 		F978FB991D08124D00FBC8BC /* NSObject+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB981D08124D00FBC8BC /* NSObject+Extend.m */; };
 		F9796DBE1D224FBD0079579E /* SOBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9796DBD1D224FBD0079579E /* SOBaseView.m */; };
-		F9796DC11D2250440079579E /* SHGAdvertisementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9796DC01D2250440079579E /* SHGAdvertisementView.m */; };
+		F9796DC11D2250440079579E /* SOAdvertisementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9796DC01D2250440079579E /* SOAdvertisementView.m */; };
 		F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */; };
 		F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */; };
 		F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF731CF309A00054AE1C /* SOLoginViewController.m */; };
@@ -65,8 +65,8 @@
 		F978FB981D08124D00FBC8BC /* NSObject+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extend.m"; sourceTree = "<group>"; };
 		F9796DBC1D224FBD0079579E /* SOBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseView.h; sourceTree = "<group>"; };
 		F9796DBD1D224FBD0079579E /* SOBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseView.m; sourceTree = "<group>"; };
-		F9796DBF1D2250440079579E /* SHGAdvertisementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGAdvertisementView.h; sourceTree = "<group>"; };
-		F9796DC01D2250440079579E /* SHGAdvertisementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGAdvertisementView.m; sourceTree = "<group>"; };
+		F9796DBF1D2250440079579E /* SOAdvertisementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAdvertisementView.h; sourceTree = "<group>"; };
+		F9796DC01D2250440079579E /* SOAdvertisementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAdvertisementView.m; sourceTree = "<group>"; };
 		F9A2EF6C1CF2FED70054AE1C /* SOBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseTableViewCell.h; sourceTree = "<group>"; };
 		F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseTableViewCell.m; sourceTree = "<group>"; };
 		F9A2EF6E1CF2FED70054AE1C /* SOBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseViewController.h; sourceTree = "<group>"; };
@@ -186,8 +186,8 @@
 				F9A2EF721CF309A00054AE1C /* SOLoginViewController.h */,
 				F9A2EF731CF309A00054AE1C /* SOLoginViewController.m */,
 				F9A2EF741CF309A00054AE1C /* SOLoginViewController.xib */,
-				F9796DBF1D2250440079579E /* SHGAdvertisementView.h */,
-				F9796DC01D2250440079579E /* SHGAdvertisementView.m */,
+				F9796DBF1D2250440079579E /* SOAdvertisementView.h */,
+				F9796DC01D2250440079579E /* SOAdvertisementView.m */,
 			);
 			path = "登录";
 			sourceTree = "<group>";
@@ -436,7 +436,7 @@
 				F978FB881D08033100FBC8BC /* MOCHTTPRequestOperationManager.m in Sources */,
 				F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */,
 				F9A2EF7E1CF30B7A0054AE1C /* SOGloble.m in Sources */,
-				F9796DC11D2250440079579E /* SHGAdvertisementView.m in Sources */,
+				F9796DC11D2250440079579E /* SOAdvertisementView.m in Sources */,
 				F9A2EF7A1CF30AB90054AE1C /* UIColor+Extend.m in Sources */,
 				F978FB7D1D07F84400FBC8BC /* SOLoginObject.m in Sources */,
 				F978FB891D08033100FBC8BC /* MOCHTTPResponse.m in Sources */,
@@ -492,7 +492,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+					"DEBUG_TEST=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -553,7 +553,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+					"DEBUG=2",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

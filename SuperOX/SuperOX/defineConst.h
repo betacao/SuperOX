@@ -9,14 +9,19 @@
 #ifndef const_h
 #define const_h
 
-#if defined(DEBUG_TEST)
+#ifdef DEBUG_TEST
+
 #define kHostName @"http://120.26.114.154:8080/api"
+#define kImageHostName @"http://daniuquan-test.oss-cn-qingdao.aliyuncs.com/"
+
 #else
+
 #define kHostName @"http://www.daniuq.com/api"
+#define kImageHostName @"http://daniuquan.oss-cn-qingdao.aliyuncs.com/"
+
 #endif
 
 #define kApiPath  [kHostName stringByAppendingString:@"/v2"]
-
 
 
 #define SCREENWIDTH [[UIScreen mainScreen] bounds].size.width
