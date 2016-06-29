@@ -14,4 +14,6 @@
 
 - (NSString *)md5;
 
+- (BOOL)isValidateMobile;
+
 @end

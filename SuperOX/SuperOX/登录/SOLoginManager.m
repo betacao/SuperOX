@@ -41,4 +41,17 @@
     }];
 }
 
++ (void)login:(NSString *)phone inView:(UIView *)view complete:(void (^)(BOOL))block
+{
+    [view showLoading];
+    [MOCHTTPRequestOperationManager getWithURL:[NSString stringWithFormat:@"%@/%@/%@",kApiPath,@"login",@"validate"] parameters:@{@"phone":phone}success:^(MOCHTTPResponse *response){
+        [view hideHud];
+        [[NSUserDefaults standardUserDefaults] setObject:phone forKey:KEY_PHONE];
+        NSString *state = response.dataDictionary[@"state"];
+        block([state boolValue]);
+    } failed:^(MOCHTTPResponse *response){
+        [view hideHud];
+        [view showWithText:response.errorMessage];
+    }];
+}
 @end

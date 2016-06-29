@@ -186,8 +186,6 @@
 		F9A2EF5F1CF2FDF00054AE1C /* 登录 */ = {
 			isa = PBXGroup;
 			children = (
-				F9A2EF7F1CF310A00054AE1C /* SOGuideView.h */,
-				F9A2EF801CF310A00054AE1C /* SOGuideView.m */,
 				F978FB7E1D07F85200FBC8BC /* SOLoginManager.h */,
 				F978FB7F1D07F85200FBC8BC /* SOLoginManager.m */,
 				F978FB7B1D07F84400FBC8BC /* SOLoginObject.h */,
@@ -197,6 +195,8 @@
 				F9A2EF741CF309A00054AE1C /* SOLoginViewController.xib */,
 				F9796DBF1D2250440079579E /* SOAdvertisementView.h */,
 				F9796DC01D2250440079579E /* SOAdvertisementView.m */,
+				F9A2EF7F1CF310A00054AE1C /* SOGuideView.h */,
+				F9A2EF801CF310A00054AE1C /* SOGuideView.m */,
 			);
 			path = "登录";
 			sourceTree = "<group>";

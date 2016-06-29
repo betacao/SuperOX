@@ -7,6 +7,7 @@
 //
 
 #import "SOLoginViewController.h"
+#import "SOLoginManager.h"
 #import "WXApi.h"
 
 @interface SOLoginViewController ()
@@ -139,6 +140,27 @@
     .centerYEqualToView(self.middleLabel)
     .widthIs(MarginFactor(125.0f))
     .heightIs(0.5f);
+}
+
+- (void)addReactiveCocoa
+{
+    [[[self.nextButton rac_signalForControlEvents:UIControlEventTouchUpInside] filter:^BOOL(id value) {
+        if (IsStringEmpty(self.textUser.text)) {
+            [self.view showWithText:@"手机号码不能为空"];
+            return NO;
+        }
+        if (![self.textUser.text isValidateMobile]) {
+            [self.view showWithText:@"手机号码不合法"];
+            return NO;
+        }
+        return YES;
+    }] subscribeNext:^(NSNumber *x) {
+        if ([x boolValue]) {
+            [SOLoginManager login:self.textUser.text inView:self.view complete:^(BOOL success) {
+
+            }];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning

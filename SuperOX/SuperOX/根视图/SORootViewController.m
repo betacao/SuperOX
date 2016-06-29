@@ -25,10 +25,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
     __weak typeof(self) weakSelf = self;
     self.advertisementView.dissmissBlock = ^{
         if([[SOGloble sharedGloble] isShowGuideView]){
@@ -78,14 +74,18 @@
 - (void)showLoginViewController
 {
     SOLoginViewController *controller = [[SOLoginViewController alloc] init];
-    [self.navigationController pushViewController:controller animated:YES];
-//    SOBaseNavigationViewController *navigationViewController = [[SOBaseNavigationViewController alloc] initWithRootViewController:controller];
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//
-//        [self presentViewController:navigationViewController animated:YES completion:^{
-//
-//        }];
-//    });
+    SOBaseNavigationViewController *navigationViewController = [[SOBaseNavigationViewController alloc] initWithRootViewController:controller];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+
+        [self presentViewController:navigationViewController animated:YES completion:^{
+
+        }];
+    });
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning

@@ -24,4 +24,6 @@
 
 #define kSplashScreenAdCacheImgLocalPath ([kPathDocument stringByAppendingPathComponent:@"SplashScreenAdCacheImg.ad"])
 
+#define kSplashScreenAdCacheLocalPath ([kPathDocument stringByAppendingPathComponent:@"SplashScreenAdCache.ad"])
+
 #endif /* defineString_h */
