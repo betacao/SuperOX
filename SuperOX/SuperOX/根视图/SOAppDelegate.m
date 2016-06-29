@@ -22,6 +22,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:FontFactor(17.0f),NSForegroundColorAttributeName:[UIColor whiteColor]}];
+
     [MOCHTTPRequestOperationManager setupRequestOperationManager:resultcodekey successCode:successcode dataKey:datakey messageKey:messagekey];
     return YES;
 }

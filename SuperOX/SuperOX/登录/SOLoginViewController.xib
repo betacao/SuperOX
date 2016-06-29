@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOLoginViewController">
             <connections>
-                <outlet property="QQButton" destination="rRh-5K-tpd" id="yFr-e5-HYg"/>
+                <outlet property="QQButton" destination="1md-rn-iQq" id="ie7-aD-LfP"/>
                 <outlet property="introduceLabel" destination="P8e-kK-rQh" id="hpb-fo-7Tj"/>
                 <outlet property="leftView" destination="2TY-Km-qpB" id="Znp-XA-sLM"/>
                 <outlet property="middleLabel" destination="g5z-kH-W0k" id="LQM-dl-C66"/>
@@ -15,7 +15,7 @@
                 <outlet property="rightView" destination="BwP-NV-DFG" id="Bop-Ke-XUB"/>
                 <outlet property="textUser" destination="6FL-mG-JUC" id="SCs-ML-RuS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="weChatButton" destination="1md-rn-iQq" id="hrl-DJ-uSM"/>
+                <outlet property="weChatButton" destination="rRh-5K-tpd" id="ElU-TO-v23"/>
                 <outlet property="weiBoButton" destination="TVc-t9-2yN" id="N7u-bN-eg1"/>
             </connections>
         </placeholder>
@@ -99,7 +99,7 @@
         </view>
     </objects>
     <resources>
-        <image name="qq_icon" width="65" height="65"/>
+        <image name="qq_icon" width="64" height="64"/>
         <image name="wechat_icon" width="65" height="65"/>
         <image name="weibo_icon" width="65" height="65"/>
     </resources>

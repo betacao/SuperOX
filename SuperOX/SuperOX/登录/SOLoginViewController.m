@@ -84,7 +84,7 @@
 
     CGFloat margin = 0.0f;
     CGSize size = self.weChatButton.currentImage.size;
-    if(![WXApi isWXAppInstalled]){
+    if(![WXApi isWXAppSupportApi]){
         self.weChatButton.hidden = YES;
         margin = ceilf((SCREENWIDTH - 2 * size.width) / 3.0f);
 
