@@ -14,6 +14,8 @@
 
 + (void)autoLoginBlock:(void(^)(void))block;
 
-+ (void)login:(NSString *)phone inView:(UIView *)view complete:(void(^)(BOOL success))block;
++ (void)validate:(NSString *)phone inView:(UIView *)view complete:(void(^)(BOOL success))block;
+
++ (void)login:(NSString *)password inView:(UIView *)view complete:(void(^)(BOOL success))block;
 
 @end

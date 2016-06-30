@@ -32,6 +32,13 @@
  */
 @property (strong, nonatomic) NSString *currentVersion;
 
+/**
+ @brief 当前手机的型号
+
+ @since 1.8.2
+ */
+@property (strong, nonatomic) NSString *platform;
+
 
 #pragma mark ------函数------
 

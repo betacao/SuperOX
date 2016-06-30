@@ -7,6 +7,7 @@
 //
 
 #import "SOGloble.h"
+#import "sys/utsname.h"
 
 @interface SOGloble()
 
@@ -37,7 +38,6 @@
     if(self){
         self.cityName = @"";
         self.provinceName = @"";
-        self.currentVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     }
     return self;
 }
@@ -45,14 +45,26 @@
 - (BOOL)isShowGuideView
 {
     NSString *oldVersion = [[NSUserDefaults standardUserDefaults] objectForKey:kSuperOXVersion];
-    NSString *newVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
-    if(!oldVersion || ![oldVersion isEqualToString:newVersion]){
-        [[NSUserDefaults standardUserDefaults] setObject:newVersion forKey:kSuperOXVersion];
+    if(!oldVersion || ![oldVersion isEqualToString:self.currentVersion]){
+        [[NSUserDefaults standardUserDefaults] setObject:self.currentVersion forKey:kSuperOXVersion];
         [[NSUserDefaults standardUserDefaults] synchronize];
         return YES;
     }
     return NO;
 }
+
+- (NSString *)currentVersion
+{
+    return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+}
+
+- (NSString *)platform
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+}
+
 
 - (NSArray *)parseServerJsonArrayToJSONModel:(NSArray *)array class:(Class)class
 {

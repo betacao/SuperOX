@@ -8,6 +8,8 @@
 
 #import "SOLoginViewController.h"
 #import "SOLoginManager.h"
+#import "SOLoginNextViewController.h"
+#import "SORegisterViewController.h"
 #import "WXApi.h"
 
 @interface SOLoginViewController ()
@@ -30,17 +32,11 @@
 {
     [super viewDidLoad];
     self.title = @"登录/注册";
+    self.navigationItem.leftBarButtonItem = nil;
 }
 
 - (void)initView
 {
-    if ([[NSUserDefaults standardUserDefaults]objectForKey:KEY_PHONE]){
-        self.textUser.text = [[NSUserDefaults standardUserDefaults]objectForKey:KEY_PHONE];
-    }
-
-    self.navigationItem.leftBarButtonItem = nil;
-    self.view.backgroundColor = Color(@"efeeef");
-
     self.textUser.font = FontFactor(16.0f);
     self.textUser.textColor = Color(@"161616");
 
@@ -61,6 +57,13 @@
     self.middleLabel.font = FontFactor(13.0f);
 
     self.leftView.backgroundColor = self.rightView.backgroundColor = Color(@"E6E7E8");
+
+    self.view.backgroundColor = Color(@"efeeef");
+
+    if ([[NSUserDefaults standardUserDefaults]objectForKey:KEY_PHONE]){
+        self.textUser.text = [[NSUserDefaults standardUserDefaults]objectForKey:KEY_PHONE];
+    }
+
 }
 
 - (void)addAutoLayout
@@ -154,13 +157,22 @@
             return NO;
         }
         return YES;
-    }] subscribeNext:^(NSNumber *x) {
-        if ([x boolValue]) {
-            [SOLoginManager login:self.textUser.text inView:self.view complete:^(BOOL success) {
-
-            }];
-        }
+    }] subscribeNext:^(id x) {
+        [SOLoginManager validate:self.textUser.text inView:self.view complete:^(BOOL success) {
+            if (success) {
+                SOLoginNextViewController *controller = [[SOLoginNextViewController alloc] init];
+                [self.navigationController pushViewController:controller animated:YES];
+            } else{
+                SORegisterViewController *controller = [[SORegisterViewController alloc] init];
+                [self.navigationController pushViewController:controller animated:YES];
+            }
+        }];
     }];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.textUser resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning

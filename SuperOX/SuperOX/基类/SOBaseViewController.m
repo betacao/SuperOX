@@ -23,7 +23,7 @@
     [self initView];
     [self addAutoLayout];
     [self addReactiveCocoa];
-    [self addLeftNavigationItem:nil normalImage:[UIImage imageNamed:@"button_back_normal"] highlightedImage:[UIImage imageNamed:@"button_back_normal_down"]];
+    [self addLeftNavigationItem:nil normalImage:[UIImage imageNamed:@"common_backImage"] highlightedImage:nil];
 
     self.bgImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg"]];
     [self.view addSubview:self.bgImageView];
@@ -56,24 +56,39 @@
 
 - (void)addLeftNavigationItem:(NSString *)title normalImage:(UIImage *)normalImage highlightedImage:(UIImage *)highlightedImage
 {
-    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftButton setImage:normalImage forState:UIControlStateNormal];
-    [leftButton setImage:highlightedImage forState:UIControlStateHighlighted];
-    [leftButton addTarget:self action:@selector(backButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-    [leftButton sizeToFit];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    if (normalImage) {
+        [button setImage:normalImage forState:UIControlStateNormal];
+    }
+    if (highlightedImage) {
+        [button setImage:highlightedImage forState:UIControlStateHighlighted];
+    }
+    if (title) {
+        [button setTitle:title forState:UIControlStateNormal];
+    }
 
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+    [button addTarget:self action:@selector(backButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [button sizeToFit];
+
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 
 - (void)addRightNavigationItem:(NSString *)title normalImage:(UIImage *)normalImage highlightedImage:(UIImage *)highlightedImage
 {
-    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rightButton setImage:normalImage forState:UIControlStateNormal];
-    [rightButton setImage:highlightedImage forState:UIControlStateHighlighted];
-    [rightButton addTarget:self action:@selector(rightButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-    [rightButton sizeToFit];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    if (normalImage) {
+        [button setImage:normalImage forState:UIControlStateNormal];
+    }
+    if (highlightedImage) {
+        [button setImage:highlightedImage forState:UIControlStateHighlighted];
+    }
+    if (title) {
+        [button setTitle:title forState:UIControlStateNormal];
+    }
+    [button addTarget:self action:@selector(rightButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [button sizeToFit];
 
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 
 - (void)backButtonClick:(UIButton *)button
