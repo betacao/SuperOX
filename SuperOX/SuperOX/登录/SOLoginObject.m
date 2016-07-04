@@ -10,9 +10,20 @@
 
 @implementation SOLoginObject
 
-+ (NSDictionary *)JSONKeyPathsByPropertyKey
++ (instancetype)sharedLoginObject
 {
-    return @{@"userIdentfier":@"uid", @"userPhoneNumber":@"phone", @"userName":@"name", @"userLocation":@"area", @"userHeaderImageUrl":@"head_img", @"userAuthState":@"state", @"userIsFull":@"isfull"};
+    static SOLoginObject *sharedObject = nil;
+    static dispatch_once_t predicate;
+    dispatch_once(&predicate, ^{
+        sharedObject = [[self alloc] init];
+    });
+    return sharedObject;
+}
+
+- (void)setUserIdentfier:(NSString *)userIdentfier
+{
+    _userIdentfier = userIdentfier;
+    [[NSUserDefaults standardUserDefaults] setObject:userIdentfier forKey:KEY_USERIDENTFIER];
 }
 
 @end

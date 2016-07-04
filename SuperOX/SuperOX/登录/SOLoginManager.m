@@ -28,12 +28,10 @@
     [MOCHTTPRequestOperationManager postWithURL:[kApiPath stringByAppendingString:@"/login/auto"]parameters:param success:^(MOCHTTPResponse *response){
         NSString *code =[response.data valueForKey:@"code"];
         if ([code isEqualToString:@"000"]){
-            NSDictionary *dictionary = response.dataDictionary;
-            SOLoginObject *object = [[[SOGloble sharedGloble] parseServerJsonArrayToJSONModel:@[dictionary] class:[SOLoginObject class]] firstObject];
+            
 
-            [[NSUserDefaults standardUserDefaults] setObject:object.userIdentfier forKey:KEY_USERIDENTFIER];
             [[NSUserDefaults standardUserDefaults] setObject:token forKey:KEY_TOKEN];
-            [[NSUserDefaults standardUserDefaults] setObject:@"1" forKey:KEY_AUTOLOGIN];
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:KEY_AUTOLOGIN];
             [[NSUserDefaults standardUserDefaults] synchronize];
         }
     }failed:^(MOCHTTPResponse *response){
@@ -64,25 +62,20 @@
 
     [MOCHTTPRequestOperationManager postWithURL:[kApiPath stringByAppendingString:@"/login"] class:nil parameters:param success:^(MOCHTTPResponse *response){
         [view hideHud];
-//        NSString *uid = response.dataDictionary[@"uid"];
-//        NSString *token = response.dataDictionary[@"token"];
-//        NSString *state = response.dataDictionary[@"state"];
-//        NSString *name = response.dataDictionary[@"name"];
-//        NSString *head_img = response.dataDictionary[@"head_img"];
-//        NSString *area = response.dataDictionary[@"area"];
-//        weakSelf.isFull = response.dataDictionary[@"isfull"];
-//        weakSelf.recommend = response.dataDictionary[@"recommend"];
-//        [[NSUserDefaults standardUserDefaults] setObject:uid forKey:KEY_UID];
-//        [[NSUserDefaults standardUserDefaults] setObject:password forKey:KEY_PASSWORD];
-//        [[NSUserDefaults standardUserDefaults] setObject:state forKey:KEY_AUTHSTATE];
-//        [[NSUserDefaults standardUserDefaults] setObject:name forKey:KEY_USER_NAME];
-//        [[NSUserDefaults standardUserDefaults] setObject:head_img forKey:KEY_HEAD_IMAGE];
-//        [[NSUserDefaults standardUserDefaults] setObject:token forKey:KEY_TOKEN];
-//        [[NSUserDefaults standardUserDefaults] setObject:area forKey:KEY_USER_AREA];
-//        [[NSUserDefaults standardUserDefaults] setObject:@"1" forKey: KEY_AUTOLOGIN];
-//        [[NSUserDefaults standardUserDefaults] synchronize];
-//        //环信登录
-//        [weakSelf registerToken];
+        NSDictionary *dictionary = response.dataDictionary;
+        SOLoginObject *object = [SOLoginObject sharedLoginObject];
+        object.userLocation = [dictionary objectForKey:@"area"];
+        object.userHeaderImageUrl = [dictionary objectForKey:@"head_img"];
+        object.userIsFull = [dictionary objectForKey:@"isfull"];
+        object.userName = [dictionary objectForKey:@"name"];
+        object.userRecommend = [dictionary objectForKey:@"recommend"];
+        object.userAuthState = [dictionary objectForKey:@"state"];
+        object.userIdentfier = [dictionary objectForKey:@"uid"];
+
+        NSString *token = [dictionary objectForKey:@"token"];
+        [[NSUserDefaults standardUserDefaults] setObject:token forKey:KEY_TOKEN];
+
+        block(YES);
     } failed:^(MOCHTTPResponse *response){
         [view hideHud];
         [view showWithText:response.errorMessage];

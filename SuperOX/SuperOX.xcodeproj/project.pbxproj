@@ -36,6 +36,10 @@
 		F9A2EF7A1CF30AB90054AE1C /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF791CF30AB90054AE1C /* UIColor+Extend.m */; };
 		F9A2EF7E1CF30B7A0054AE1C /* SOGloble.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF7D1CF30B7A0054AE1C /* SOGloble.m */; };
 		F9A2EF811CF310A00054AE1C /* SOGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF801CF310A00054AE1C /* SOGuideView.m */; };
+		F9DE59AF1D2A404800CB4CAB /* SOTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE59AD1D2A404800CB4CAB /* SOTabbarViewController.m */; };
+		F9DE59B01D2A404800CB4CAB /* SOTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DE59AE1D2A404800CB4CAB /* SOTabbarViewController.xib */; };
+		F9DE59B31D2A440600CB4CAB /* SOAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE59B21D2A440600CB4CAB /* SOAlertView.m */; };
+		F9DE59B61D2A471F00CB4CAB /* UIButton+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE59B51D2A471F00CB4CAB /* UIButton+Extend.m */; };
 		F9FDBEEE1CEAFE5900056275 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FDBEED1CEAFE5900056275 /* main.m */; };
 		F9FDBEF71CEAFE5900056275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FDBEF51CEAFE5900056275 /* Main.storyboard */; };
 		F9FDBEF91CEAFE5900056275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9FDBEF81CEAFE5900056275 /* Assets.xcassets */; };
@@ -101,6 +105,13 @@
 		F9A2EF7F1CF310A00054AE1C /* SOGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOGuideView.h; sourceTree = "<group>"; };
 		F9A2EF801CF310A00054AE1C /* SOGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOGuideView.m; sourceTree = "<group>"; };
 		F9A2EF821CF3E4390054AE1C /* defineString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defineString.h; sourceTree = "<group>"; };
+		F9DE59AC1D2A404800CB4CAB /* SOTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOTabbarViewController.h; sourceTree = "<group>"; };
+		F9DE59AD1D2A404800CB4CAB /* SOTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOTabbarViewController.m; sourceTree = "<group>"; };
+		F9DE59AE1D2A404800CB4CAB /* SOTabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOTabbarViewController.xib; sourceTree = "<group>"; };
+		F9DE59B11D2A440600CB4CAB /* SOAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAlertView.h; sourceTree = "<group>"; };
+		F9DE59B21D2A440600CB4CAB /* SOAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAlertView.m; sourceTree = "<group>"; };
+		F9DE59B41D2A471F00CB4CAB /* UIButton+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extend.h"; sourceTree = "<group>"; };
+		F9DE59B51D2A471F00CB4CAB /* UIButton+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extend.m"; sourceTree = "<group>"; };
 		F9FDBEE91CEAFE5900056275 /* SuperOX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperOX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FDBEED1CEAFE5900056275 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9FDBEF61CEAFE5900056275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,6 +153,9 @@
 		F978FB711D07F75700FBC8BC /* 根视图 */ = {
 			isa = PBXGroup;
 			children = (
+				F9DE59AC1D2A404800CB4CAB /* SOTabbarViewController.h */,
+				F9DE59AD1D2A404800CB4CAB /* SOTabbarViewController.m */,
+				F9DE59AE1D2A404800CB4CAB /* SOTabbarViewController.xib */,
 				F978FB741D07F75700FBC8BC /* SORootViewController.h */,
 				F978FB751D07F75700FBC8BC /* SORootViewController.m */,
 				F978FB721D07F75700FBC8BC /* SOAppDelegate.h */,
@@ -238,6 +252,8 @@
 				F978FB8C1D0803A500FBC8BC /* UIView+HUD.m */,
 				F932BF2E1D226CC5005311C0 /* UIImage+Extend.h */,
 				F932BF2F1D226CC5005311C0 /* UIImage+Extend.m */,
+				F9DE59B41D2A471F00CB4CAB /* UIButton+Extend.h */,
+				F9DE59B51D2A471F00CB4CAB /* UIButton+Extend.m */,
 			);
 			path = "扩展";
 			sourceTree = "<group>";
@@ -278,6 +294,8 @@
 		F9A2EF7B1CF30B450054AE1C /* 通用 */ = {
 			isa = PBXGroup;
 			children = (
+				F9DE59B11D2A440600CB4CAB /* SOAlertView.h */,
+				F9DE59B21D2A440600CB4CAB /* SOAlertView.m */,
 				F9A2EF7C1CF30B7A0054AE1C /* SOGloble.h */,
 				F9A2EF7D1CF30B7A0054AE1C /* SOGloble.m */,
 			);
@@ -398,6 +416,7 @@
 			files = (
 				F9A2EF761CF309A00054AE1C /* SOLoginViewController.xib in Resources */,
 				F9FDBEF91CEAFE5900056275 /* Assets.xcassets in Resources */,
+				F9DE59B01D2A404800CB4CAB /* SOTabbarViewController.xib in Resources */,
 				F927227C1D23AD7F00B50C93 /* SORegisterViewController.xib in Resources */,
 				F9FDBEF71CEAFE5900056275 /* Main.storyboard in Resources */,
 				F92722771D23AD5D00B50C93 /* SOLoginNextViewController.xib in Resources */,
@@ -463,6 +482,7 @@
 				F978FB991D08124D00FBC8BC /* NSObject+Extend.m in Sources */,
 				F932BF2A1D226B08005311C0 /* SOBaseNavigationViewController.m in Sources */,
 				F978FB801D07F85300FBC8BC /* SOLoginManager.m in Sources */,
+				F9DE59B61D2A471F00CB4CAB /* UIButton+Extend.m in Sources */,
 				F932BF2D1D226B21005311C0 /* SOBaseTableViewController.m in Sources */,
 				F92722761D23AD5D00B50C93 /* SOLoginNextViewController.m in Sources */,
 				F9796DBE1D224FBD0079579E /* SOBaseView.m in Sources */,
@@ -476,10 +496,12 @@
 				F9A2EF7A1CF30AB90054AE1C /* UIColor+Extend.m in Sources */,
 				F978FB7D1D07F84400FBC8BC /* SOLoginObject.m in Sources */,
 				F978FB891D08033100FBC8BC /* MOCHTTPResponse.m in Sources */,
+				F9DE59AF1D2A404800CB4CAB /* SOTabbarViewController.m in Sources */,
 				F978FB931D0804C000FBC8BC /* NSString+Extend.m in Sources */,
 				F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */,
 				F978FB901D08041800FBC8BC /* SHGEncryptionAlgorithm.m in Sources */,
 				F978FB8D1D0803A500FBC8BC /* UIView+HUD.m in Sources */,
+				F9DE59B31D2A440600CB4CAB /* SOAlertView.m in Sources */,
 				F927227B1D23AD7F00B50C93 /* SORegisterViewController.m in Sources */,
 				F978FB8A1D08033100FBC8BC /* MOCNetworkReachabilityManager.m in Sources */,
 				F9A2EF811CF310A00054AE1C /* SOGuideView.m in Sources */,
@@ -552,6 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT)/PrefixHeader.pch";
@@ -651,6 +674,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT)/PrefixHeader.pch";

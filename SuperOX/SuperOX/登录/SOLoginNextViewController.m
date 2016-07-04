@@ -7,6 +7,8 @@
 //
 
 #import "SOLoginNextViewController.h"
+#import "SOLoginManager.h"
+#import "SOBaseNavigationViewController.h"
 
 @interface SOLoginNextViewController ()
 
@@ -81,7 +83,11 @@
         }
         return YES;
     }] subscribeNext:^(id x) {
-
+        [SOLoginManager login:self.lblPassward.text inView:self.view complete:^(BOOL success) {
+            SOTabbarViewController *controller = [SOTabbarViewController sharedController];
+            SOBaseNavigationViewController *navigationViewController = [[SOBaseNavigationViewController alloc] initWithRootViewController:controller];
+            [self presentViewController:navigationViewController animated:NO completion:nil];
+        }];
     }];
 }
 

@@ -90,4 +90,53 @@
     }
 }
 
+- (void)checkForUpdate:(void (^)(BOOL state))block
+{
+    NSString *request = [NSString stringWithFormat:@"%@%@",kApiPath,@"/version"];
+    [MOCHTTPRequestOperationManager getWithURL:request parameters:@{@"os":@"iOS"} success:^(MOCHTTPResponse *response) {
+        NSDictionary *dictionary = response.dataDictionary;
+        NSString *version = [dictionary objectForKey:@"version"];
+        BOOL force = [[dictionary objectForKey:@"force"] isEqualToString:@"Y"] ? YES : NO;
+        NSString *detail = [dictionary objectForKey:@"detail"];
+
+        NSString *localVersion = [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"];
+        if ([localVersion compare:version options:NSNumericSearch] == NSOrderedAscending) {
+            if (block) {
+                block(YES);
+            } else{
+                UILabel *label = [[UILabel alloc] init];
+                NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+                style.lineSpacing = MarginFactor(4.0f);
+                NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:detail attributes:@{NSParagraphStyleAttributeName:style, NSForegroundColorAttributeName:Color(@"8d8d8d"), NSFontAttributeName:FontFactor(17.0f)}];
+                label.attributedText = string;
+                label.numberOfLines = 0;
+                label.origin = CGPointMake(MarginFactor(26.0f), MarginFactor(17.0f));
+                CGSize size = [label sizeThatFits:CGSizeMake(MarginFactor(300.0f) - 2 * MarginFactor(26.0f), CGFLOAT_MAX)];
+                label.size = size;
+                UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, MarginFactor(300.0f), size.height + MarginFactor(17.0f))];
+                [contentView addSubview:label];
+                SOAlertView *alert = [[SOAlertView alloc] initWithTitle:@"版本更新" customView:contentView leftButtonTitle:nil rightButtonTitle:@"立即更新"];
+                [alert addSubTitle:[@"V" stringByAppendingString: version]];
+                alert.rightBlock = ^{
+                    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/da-niu-quan-jin-rong-zheng/id984379568?mt=8"]];
+                };
+                alert.shouldDismiss = NO;
+                if(force){
+                    [alert show];
+                } else{
+                    [alert showWithClose];
+                }
+            }
+        } else{
+            if (block) {
+                block(NO);
+            }
+        }
+
+    } failed:^(MOCHTTPResponse *response) {
+        if (block) {
+            block(NO);
+        }
+    }];
+}
 @end

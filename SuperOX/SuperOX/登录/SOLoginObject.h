@@ -7,7 +7,9 @@
 //
 
 
-@interface SOLoginObject : MTLModel<MTLJSONSerializing>
+@interface SOLoginObject : NSObject
+
++ (instancetype)sharedLoginObject;
 
 @property (strong, nonatomic) NSString *userIdentfier;
 @property (strong, nonatomic) NSString *userPhoneNumber;
@@ -16,5 +18,7 @@
 @property (strong, nonatomic) NSString *userHeaderImageUrl;
 @property (strong, nonatomic) NSString *userAuthState;
 @property (strong, nonatomic) NSString *userIsFull;
+//是否显示推荐界面
+@property (strong, nonatomic) NSString *userRecommend;
 
 @end

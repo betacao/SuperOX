@@ -66,6 +66,8 @@
                 }
             });
         } else{
+            NSString *imageName = [NSString stringWithFormat:@"%ldx%ld",(long)(SCREENWIDTH * SCALE), (long)(SCREENHEIGHT * SCALE)];
+            self.imageView.image = [UIImage imageNamed:imageName];
             if (dissmissBlock) {
                 dissmissBlock();
             }

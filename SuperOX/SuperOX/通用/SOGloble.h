@@ -72,5 +72,14 @@
  */
 - (NSArray *)parseServerJsonArrayToJSONModel:(NSArray *)array class:(Class)class;
 
+/**
+ @brief  检查更新并提示
+
+ @param state 是否有新版本
+ @param block 有新版本的操作
+
+ @since 1.8
+ */
+- (void)checkForUpdate:(void(^)(BOOL state))block;
 
 @end
