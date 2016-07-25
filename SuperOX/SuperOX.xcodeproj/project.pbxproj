@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E65128564572E050CDD6D42D /* libPods-SuperOX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B8DD563411F37566C2CEA3 /* libPods-SuperOX.a */; };
+		F91E8E8E1D41AD2000A4BAF4 /* SODynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91E8E8C1D41AD2000A4BAF4 /* SODynamicViewController.m */; };
+		F91E8E8F1D41AD2000A4BAF4 /* SODynamicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F91E8E8D1D41AD2000A4BAF4 /* SODynamicViewController.xib */; };
 		F92722761D23AD5D00B50C93 /* SOLoginNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92722741D23AD5D00B50C93 /* SOLoginNextViewController.m */; };
 		F92722771D23AD5D00B50C93 /* SOLoginNextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F92722751D23AD5D00B50C93 /* SOLoginNextViewController.xib */; };
 		F927227B1D23AD7F00B50C93 /* SORegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92722791D23AD7F00B50C93 /* SORegisterViewController.m */; };
 		F927227C1D23AD7F00B50C93 /* SORegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F927227A1D23AD7F00B50C93 /* SORegisterViewController.xib */; };
 		F932BF2A1D226B08005311C0 /* SOBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F932BF291D226B08005311C0 /* SOBaseNavigationViewController.m */; };
 		F932BF2D1D226B21005311C0 /* SOBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F932BF2C1D226B21005311C0 /* SOBaseTableViewController.m */; };
-		F932BF301D226CC5005311C0 /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F932BF2F1D226CC5005311C0 /* UIImage+Extend.m */; };
 		F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */; };
 		F978FB761D07F75700FBC8BC /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB731D07F75700FBC8BC /* SOAppDelegate.m */; };
 		F978FB771D07F75700FBC8BC /* SORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB751D07F75700FBC8BC /* SORootViewController.m */; };
@@ -33,7 +34,6 @@
 		F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */; };
 		F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF731CF309A00054AE1C /* SOLoginViewController.m */; };
 		F9A2EF761CF309A00054AE1C /* SOLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2EF741CF309A00054AE1C /* SOLoginViewController.xib */; };
-		F9A2EF7A1CF30AB90054AE1C /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF791CF30AB90054AE1C /* UIColor+Extend.m */; };
 		F9A2EF7E1CF30B7A0054AE1C /* SOGloble.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF7D1CF30B7A0054AE1C /* SOGloble.m */; };
 		F9A2EF811CF310A00054AE1C /* SOGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF801CF310A00054AE1C /* SOGuideView.m */; };
 		F9DE59AF1D2A404800CB4CAB /* SOTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE59AD1D2A404800CB4CAB /* SOTabbarViewController.m */; };
@@ -50,6 +50,9 @@
 		D621B8E60C40F83A90A82CA2 /* Pods-SuperOX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.release.xcconfig"; sourceTree = "<group>"; };
 		E5B8DD563411F37566C2CEA3 /* libPods-SuperOX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SuperOX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81841C47950F5EEFB7AEDB7 /* Pods-SuperOX.debug_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.debug_test.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.debug_test.xcconfig"; sourceTree = "<group>"; };
+		F91E8E8B1D41AD2000A4BAF4 /* SODynamicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODynamicViewController.h; sourceTree = "<group>"; };
+		F91E8E8C1D41AD2000A4BAF4 /* SODynamicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODynamicViewController.m; sourceTree = "<group>"; };
+		F91E8E8D1D41AD2000A4BAF4 /* SODynamicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SODynamicViewController.xib; sourceTree = "<group>"; };
 		F92722731D23AD5D00B50C93 /* SOLoginNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLoginNextViewController.h; sourceTree = "<group>"; };
 		F92722741D23AD5D00B50C93 /* SOLoginNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLoginNextViewController.m; sourceTree = "<group>"; };
 		F92722751D23AD5D00B50C93 /* SOLoginNextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOLoginNextViewController.xib; sourceTree = "<group>"; };
@@ -60,8 +63,6 @@
 		F932BF291D226B08005311C0 /* SOBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseNavigationViewController.m; sourceTree = "<group>"; };
 		F932BF2B1D226B21005311C0 /* SOBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseTableViewController.h; sourceTree = "<group>"; };
 		F932BF2C1D226B21005311C0 /* SOBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseTableViewController.m; sourceTree = "<group>"; };
-		F932BF2E1D226CC5005311C0 /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
-		F932BF2F1D226CC5005311C0 /* UIImage+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extend.m"; sourceTree = "<group>"; };
 		F978FB6E1D07F40A00FBC8BC /* SOBaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseScrollViewController.h; sourceTree = "<group>"; };
 		F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseScrollViewController.m; sourceTree = "<group>"; };
 		F978FB721D07F75700FBC8BC /* SOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
@@ -98,8 +99,6 @@
 		F9A2EF731CF309A00054AE1C /* SOLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLoginViewController.m; sourceTree = "<group>"; };
 		F9A2EF741CF309A00054AE1C /* SOLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOLoginViewController.xib; sourceTree = "<group>"; };
 		F9A2EF771CF30A600054AE1C /* defineConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defineConst.h; sourceTree = "<group>"; };
-		F9A2EF781CF30AB90054AE1C /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
-		F9A2EF791CF30AB90054AE1C /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
 		F9A2EF7C1CF30B7A0054AE1C /* SOGloble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOGloble.h; sourceTree = "<group>"; };
 		F9A2EF7D1CF30B7A0054AE1C /* SOGloble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOGloble.m; sourceTree = "<group>"; };
 		F9A2EF7F1CF310A00054AE1C /* SOGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOGuideView.h; sourceTree = "<group>"; };
@@ -182,6 +181,9 @@
 		F9A2EF5B1CF2FD720054AE1C /* 动态 */ = {
 			isa = PBXGroup;
 			children = (
+				F91E8E8B1D41AD2000A4BAF4 /* SODynamicViewController.h */,
+				F91E8E8C1D41AD2000A4BAF4 /* SODynamicViewController.m */,
+				F91E8E8D1D41AD2000A4BAF4 /* SODynamicViewController.xib */,
 			);
 			path = "动态";
 			sourceTree = "<group>";
@@ -244,14 +246,10 @@
 			children = (
 				F978FB971D08124D00FBC8BC /* NSObject+Extend.h */,
 				F978FB981D08124D00FBC8BC /* NSObject+Extend.m */,
-				F9A2EF781CF30AB90054AE1C /* UIColor+Extend.h */,
-				F9A2EF791CF30AB90054AE1C /* UIColor+Extend.m */,
 				F978FB911D0804C000FBC8BC /* NSString+Extend.h */,
 				F978FB921D0804C000FBC8BC /* NSString+Extend.m */,
 				F978FB8B1D0803A500FBC8BC /* UIView+HUD.h */,
 				F978FB8C1D0803A500FBC8BC /* UIView+HUD.m */,
-				F932BF2E1D226CC5005311C0 /* UIImage+Extend.h */,
-				F932BF2F1D226CC5005311C0 /* UIImage+Extend.m */,
 				F9DE59B41D2A471F00CB4CAB /* UIButton+Extend.h */,
 				F9DE59B51D2A471F00CB4CAB /* UIButton+Extend.m */,
 			);
@@ -416,6 +414,7 @@
 			files = (
 				F9A2EF761CF309A00054AE1C /* SOLoginViewController.xib in Resources */,
 				F9FDBEF91CEAFE5900056275 /* Assets.xcassets in Resources */,
+				F91E8E8F1D41AD2000A4BAF4 /* SODynamicViewController.xib in Resources */,
 				F9DE59B01D2A404800CB4CAB /* SOTabbarViewController.xib in Resources */,
 				F927227C1D23AD7F00B50C93 /* SORegisterViewController.xib in Resources */,
 				F9FDBEF71CEAFE5900056275 /* Main.storyboard in Resources */,
@@ -484,6 +483,7 @@
 				F978FB801D07F85300FBC8BC /* SOLoginManager.m in Sources */,
 				F9DE59B61D2A471F00CB4CAB /* UIButton+Extend.m in Sources */,
 				F932BF2D1D226B21005311C0 /* SOBaseTableViewController.m in Sources */,
+				F91E8E8E1D41AD2000A4BAF4 /* SODynamicViewController.m in Sources */,
 				F92722761D23AD5D00B50C93 /* SOLoginNextViewController.m in Sources */,
 				F9796DBE1D224FBD0079579E /* SOBaseView.m in Sources */,
 				F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */,
@@ -493,7 +493,6 @@
 				F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */,
 				F9A2EF7E1CF30B7A0054AE1C /* SOGloble.m in Sources */,
 				F9796DC11D2250440079579E /* SOAdvertisementView.m in Sources */,
-				F9A2EF7A1CF30AB90054AE1C /* UIColor+Extend.m in Sources */,
 				F978FB7D1D07F84400FBC8BC /* SOLoginObject.m in Sources */,
 				F978FB891D08033100FBC8BC /* MOCHTTPResponse.m in Sources */,
 				F9DE59AF1D2A404800CB4CAB /* SOTabbarViewController.m in Sources */,
@@ -506,7 +505,6 @@
 				F978FB8A1D08033100FBC8BC /* MOCNetworkReachabilityManager.m in Sources */,
 				F9A2EF811CF310A00054AE1C /* SOGuideView.m in Sources */,
 				F9FDBEEE1CEAFE5900056275 /* main.m in Sources */,
-				F932BF301D226CC5005311C0 /* UIImage+Extend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

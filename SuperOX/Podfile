@@ -2,12 +2,11 @@
 platform :ios, '7.0'
 
 target 'SuperOX' do
-
-    pod 'Mantle'
     pod 'AFNetworking'
     pod 'MJRefresh'
     pod 'MBProgressHUD'
-    pod 'SDWebImage'
+    pod 'Mantle'
+    pod 'YYKit'
     pod 'MagicalRecord'
     pod 'SDAutoLayout'
     pod 'HyphenateFullSDK'
