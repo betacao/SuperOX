@@ -28,6 +28,8 @@
 - (void)initView
 {
     self.title = @"输入密码";
+    self.view.backgroundColor = Color(@"efeeef");
+
     UIView *leftView = [[UIView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, MarginFactor(12.0f), MarginFactor(55.0f))];
     self.lblPassward.leftView = leftView;
     self.lblPassward.leftViewMode = UITextFieldViewModeAlways;
@@ -41,9 +43,6 @@
     [self.loginButton setTitleColor:[UIColor colorWithHexString:@"ffffff"] forState:UIControlStateNormal];
     [self.loginButton setBackgroundColor:[UIColor colorWithHexString:@"f04241"]];
     self.loginButton.titleLabel.font = FontFactor(17.0f);
-
-    self.view.backgroundColor = Color(@"efeeef");
-
     self.lblPassward.text = @"111111";
 }
 
@@ -90,6 +89,12 @@
             [self presentViewController:navigationViewController animated:YES completion:nil];
         }];
     }];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesEnded:touches withEvent:event];
+    [self.lblPassward resignFirstResponder];
 }
 
 

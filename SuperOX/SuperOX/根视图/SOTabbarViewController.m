@@ -49,6 +49,7 @@
 - (void)initView
 {
     self.delegate = self;
+    self.tabBar.translucent = NO;
     self.titleArray = @[@"业务", @"动态", @"发现", @"我"];
     [self.tabBar setBackgroundImage:[[UIImage alloc] init]];
     [self.tabBar setShadowImage:[UIImage imageWithColor:Color(@"e2e2e2")]];

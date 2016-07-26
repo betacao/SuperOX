@@ -88,13 +88,13 @@
 
 + (void)loadRemoteAdvertisement
 {
-    [MOCHTTPRequestOperationManager postWithURL:[kApiPath stringByAppendingString:@"/appImage/getStartAppImage"] parameters:@{@"os":@"ios", @"width":@(SCREENWIDTH * SCALE), @"height":@(SCREENHEIGHT * SCALE)} success:^(MOCHTTPResponse *response) {
-        if (response.dataDictionary) {
-            NSData *data = [NSJSONSerialization dataWithJSONObject:response.dataDictionary options:NSJSONWritingPrettyPrinted error:nil];
+    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/appImage/getStartAppImage"] parameters:@{@"os":@"ios", @"width":@(SCREENWIDTH * SCALE), @"height":@(SCREENHEIGHT * SCALE)} success:^(NSURLSessionDataTask *task, id responseObject, NSDictionary *dictionary) {
+        if (responseObject) {
+            NSData *data = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
             NSLog(@"%@", kSplashScreenAdCacheLocalPath);
             [data writeToFile:kSplashScreenAdCacheLocalPath atomically:YES];
         }
-    } failed:nil];
+    } failure:nil];
 }
 
 + (YYWebImageManager *)adImageManager

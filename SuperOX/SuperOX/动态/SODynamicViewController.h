@@ -7,6 +7,8 @@
 //
 
 #import "SOBaseViewController.h"
+#import "SODynamicObject.h"
+#import "SODynamicManager.h"
 
 @interface SODynamicViewController : SOBaseViewController
 

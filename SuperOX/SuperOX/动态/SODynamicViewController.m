@@ -7,8 +7,16 @@
 //
 
 #import "SODynamicViewController.h"
+#import "SOEmptyDataView.h"
 
-@interface SODynamicViewController ()
+@interface SODynamicViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) SOEmptyDataView *emptyDateView;
+
+@property (strong, nonatomic) NSMutableArray *dataArray;
+@property (strong, nonatomic) NSMutableArray *listArray;
+@property (strong, nonatomic) NSMutableArray *adArray;
 
 @end
 
@@ -31,7 +39,42 @@
 
 - (void)initView
 {
+    self.tableView.hidden = YES;
 
+    self.emptyDateView = [[SOEmptyDataView alloc] init];
+    [self.view insertSubview:self.emptyDateView belowSubview:self.tableView];
+
+    self.dataArray = [NSMutableArray array];
+    self.listArray = [NSMutableArray array];
+    self.adArray = [NSMutableArray array];
+}
+
+- (void)addAutoLayout
+{
+    self.tableView.sd_layout
+    .spaceToSuperView(UIEdgeInsetsMake(0.0f, 0.0f, kTabBarHeight, 0.0f));
+}
+
+- (void)loadData
+{
+    [SODynamicManager loadDynamic:@{} inView:self.view block:^(NSArray *array) {
+
+    }];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataArray.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 0.0f;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return nil;
 }
 
 - (void)didReceiveMemoryWarning

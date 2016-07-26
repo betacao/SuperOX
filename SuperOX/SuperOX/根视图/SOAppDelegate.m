@@ -8,11 +8,6 @@
 
 #import "SOAppDelegate.h"
 
-#define resultcodekey       @"code"
-#define successcode         @"000"
-#define datakey             @"data"
-#define messagekey          @"msg"
-
 @interface SOAppDelegate ()
 
 @end
@@ -22,10 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [[UINavigationBar appearance] setTranslucent:NO];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:FontFactor(17.0f),NSForegroundColorAttributeName:[UIColor whiteColor]}];
-
-    [MOCHTTPRequestOperationManager setupRequestOperationManager:resultcodekey successCode:successcode dataKey:datakey messageKey:messagekey];
+    [UINavigationBar appearance].translucent = NO;
+    [UINavigationBar appearance].titleTextAttributes = @{NSFontAttributeName:FontFactor(17.0f),NSForegroundColorAttributeName:[UIColor whiteColor]};
     return YES;
 }
 

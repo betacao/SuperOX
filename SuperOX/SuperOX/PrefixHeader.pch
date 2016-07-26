@@ -32,8 +32,7 @@
 #import "defineString.h"
 #import "SOAlertView.h"
 #import "SOGloble.h"
-#import "MOCHTTPResponse.h"
-#import "MOCHTTPRequestOperationManager.h"
+#import "SONetWork.h"
 #import "SOTabbarViewController.h"
 
 #endif /* PrefixHeader_pch */

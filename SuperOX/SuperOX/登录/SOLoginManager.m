@@ -25,11 +25,10 @@
 {
     NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:KEY_TOKEN];
     NSDictionary *param = @{@"uid":KUID,@"t":token, @"appv":[SOGloble sharedGloble].currentVersion};
-    [MOCHTTPRequestOperationManager postWithURL:[kApiPath stringByAppendingString:@"/login/auto"]parameters:param success:^(MOCHTTPResponse *response){
-        NSString *code =[response.data valueForKey:@"code"];
+
+    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/login/auto"] parameters:param success:^(NSURLSessionDataTask *task, id responseObject, NSDictionary *dictionary) {
+        NSString *code = [responseObject objectForKey:@"code"];
         if ([code isEqualToString:@"000"]){
-            
-            NSDictionary *dictionary = response.dataDictionary;
             SOLoginObject *object = [SOLoginObject currentObject];
             object.userLocation = [dictionary objectForKey:@"area"];
             object.userHeaderImageUrl = [dictionary objectForKey:@"head_img"];
@@ -38,13 +37,14 @@
             object.userRecommend = [dictionary objectForKey:@"recommend"];
             object.userAuthState = [dictionary objectForKey:@"state"];
             object.userIdentfier = [dictionary objectForKey:@"uid"];
+            object.userCompanyName = [dictionary objectForKey:@"companyname"];
 
             NSString *token = [dictionary objectForKey:@"token"];
             [[NSUserDefaults standardUserDefaults] setObject:token forKey:KEY_TOKEN];
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:KEY_AUTOLOGIN];
             block(YES);
         }
-    }failed:^(MOCHTTPResponse *response){
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
         block(NO);
     }];
 }
@@ -52,15 +52,15 @@
 + (void)validate:(NSString *)phone inView:(UIView *)view complete:(void (^)(BOOL))block
 {
     [view showLoading];
-
-    [MOCHTTPRequestOperationManager getWithURL:[kApiPath stringByAppendingString:@"/login/validate"] parameters:@{@"phone":phone}success:^(MOCHTTPResponse *response){
+    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/login/validate"] parameters:@{@"phone":phone} success:^(NSURLSessionDataTask *task, id responseObject, NSDictionary *dictionary) {
         [view hideHud];
         [[NSUserDefaults standardUserDefaults] setObject:phone forKey:KEY_PHONE];
-        NSString *state = [response.dataDictionary objectForKey:@"state"];
+        NSString *state = [dictionary objectForKey:@"state"];
         block([state boolValue]);
-    } failed:^(MOCHTTPResponse *response){
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [view hideHud];
-        [view showWithText:response.errorMessage];
+        block(NO);
+        [view showWithText:error.localizedDescription];
     }];
 }
 
@@ -70,9 +70,8 @@
     password = [password md5];
     NSDictionary *param = @{@"phone":[[NSUserDefaults standardUserDefaults] objectForKey:KEY_PHONE], @"pwd":password, @"ctype":@"iPhone", @"os":@"iOS", @"osv":[UIDevice currentDevice].systemVersion, @"appv":[SOGloble sharedGloble].currentVersion, @"yuncid":@"", @"yunuid":@"", @"phoneType":[SOGloble sharedGloble].platform};
 
-    [MOCHTTPRequestOperationManager postWithURL:[kApiPath stringByAppendingString:@"/login"] class:nil parameters:param success:^(MOCHTTPResponse *response){
+    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/login"] parameters:param success:^(NSURLSessionDataTask *task, id responseObject, NSDictionary *dictionary) {
         [view hideHud];
-        NSDictionary *dictionary = response.dataDictionary;
         SOLoginObject *object = [SOLoginObject currentObject];
         object.userLocation = [dictionary objectForKey:@"area"];
         object.userHeaderImageUrl = [dictionary objectForKey:@"head_img"];
@@ -87,9 +86,10 @@
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:KEY_AUTOLOGIN];
 
         block(YES);
-    } failed:^(MOCHTTPResponse *response){
+
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [view hideHud];
-        [view showWithText:response.errorMessage];
+        [view showWithText:error.localizedDescription];
     }];
 }
 @end

@@ -41,6 +41,8 @@
 
 #define kNavigationBarHeight CGRectGetHeight(self.navigationController.navigationBar.frame)
 
+#define kTabBarHeight CGRectGetHeight([SOTabbarViewController sharedController].tabBar.frame)
+
 #define SCALE [UIScreen mainScreen].scale
 
 #define KUID [[NSUserDefaults standardUserDefaults] objectForKey:KEY_USERIDENTFIER]

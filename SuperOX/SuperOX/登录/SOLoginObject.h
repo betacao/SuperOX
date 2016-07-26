@@ -18,6 +18,7 @@
 @property (strong, nonatomic) NSString *userHeaderImageUrl;
 @property (strong, nonatomic) NSString *userAuthState;
 @property (strong, nonatomic) NSString *userIsFull;
+@property (strong, nonatomic) NSString *userCompanyName;
 //是否显示推荐界面
 @property (strong, nonatomic) NSString *userRecommend;
 
