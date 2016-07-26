@@ -47,11 +47,7 @@
 
 - (void)moveToHomePage
 {
-    NSString *flagStr = [[NSUserDefaults standardUserDefaults] objectForKey:KEY_AUTOLOGIN];
-    BOOL flag = NO;
-    if (!IsStringEmpty(flagStr)){
-        flag = [flagStr boolValue];
-    }
+    BOOL flag = [[NSUserDefaults standardUserDefaults] boolForKey:KEY_AUTOLOGIN];
     if (flag){
         [self autoLogin];
     } else{
@@ -66,8 +62,16 @@
         [self showLoginViewController];
         return;
     }
-    [SOLoginManager autoLoginBlock:^{
-
+    [SOLoginManager autoLoginBlock:^(BOOL success) {
+        if (success) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                SOTabbarViewController *controller = [SOTabbarViewController sharedController];
+                SOBaseNavigationViewController *navigationViewController = [[SOBaseNavigationViewController alloc] initWithRootViewController:controller];
+                [self presentViewController:navigationViewController animated:YES completion:nil];
+            });
+        } else{
+            [self showLoginViewController];
+        }
     }];
 }
 

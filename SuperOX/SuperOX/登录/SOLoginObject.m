@@ -10,7 +10,7 @@
 
 @implementation SOLoginObject
 
-+ (instancetype)sharedLoginObject
++ (instancetype)currentObject
 {
     static SOLoginObject *sharedObject = nil;
     static dispatch_once_t predicate;

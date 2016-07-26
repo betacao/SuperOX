@@ -29,11 +29,6 @@
     return self;
 }
 
-- (void)awakeFromNib
-{
-    
-}
-
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
 //    if ([viewController isKindOfClass:[SHGBusinessNewDetailViewController class]]) {

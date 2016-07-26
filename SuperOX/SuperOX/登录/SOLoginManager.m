@@ -21,7 +21,7 @@
     return sharedGlobleInstance;
 }
 
-+ (void)autoLoginBlock:(void (^)(void))block
++ (void)autoLoginBlock:(void (^)(BOOL))block
 {
     NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:KEY_TOKEN];
     NSDictionary *param = @{@"uid":KUID,@"t":token, @"appv":[SOGloble sharedGloble].currentVersion};
@@ -29,13 +29,23 @@
         NSString *code =[response.data valueForKey:@"code"];
         if ([code isEqualToString:@"000"]){
             
+            NSDictionary *dictionary = response.dataDictionary;
+            SOLoginObject *object = [SOLoginObject currentObject];
+            object.userLocation = [dictionary objectForKey:@"area"];
+            object.userHeaderImageUrl = [dictionary objectForKey:@"head_img"];
+            object.userIsFull = [dictionary objectForKey:@"isfull"];
+            object.userName = [dictionary objectForKey:@"name"];
+            object.userRecommend = [dictionary objectForKey:@"recommend"];
+            object.userAuthState = [dictionary objectForKey:@"state"];
+            object.userIdentfier = [dictionary objectForKey:@"uid"];
 
+            NSString *token = [dictionary objectForKey:@"token"];
             [[NSUserDefaults standardUserDefaults] setObject:token forKey:KEY_TOKEN];
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:KEY_AUTOLOGIN];
-            [[NSUserDefaults standardUserDefaults] synchronize];
+            block(YES);
         }
     }failed:^(MOCHTTPResponse *response){
-        
+        block(NO);
     }];
 }
 
@@ -63,7 +73,7 @@
     [MOCHTTPRequestOperationManager postWithURL:[kApiPath stringByAppendingString:@"/login"] class:nil parameters:param success:^(MOCHTTPResponse *response){
         [view hideHud];
         NSDictionary *dictionary = response.dataDictionary;
-        SOLoginObject *object = [SOLoginObject sharedLoginObject];
+        SOLoginObject *object = [SOLoginObject currentObject];
         object.userLocation = [dictionary objectForKey:@"area"];
         object.userHeaderImageUrl = [dictionary objectForKey:@"head_img"];
         object.userIsFull = [dictionary objectForKey:@"isfull"];
@@ -74,6 +84,7 @@
 
         NSString *token = [dictionary objectForKey:@"token"];
         [[NSUserDefaults standardUserDefaults] setObject:token forKey:KEY_TOKEN];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:KEY_AUTOLOGIN];
 
         block(YES);
     } failed:^(MOCHTTPResponse *response){

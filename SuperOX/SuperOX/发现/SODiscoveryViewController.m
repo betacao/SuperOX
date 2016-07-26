@@ -1,22 +1,22 @@
 //
-//  SODynamicViewController.m
+//  SODiscoveryViewController.m
 //  SuperOX
 //
-//  Created by changxicao on 16/7/22.
+//  Created by changxicao on 16/7/25.
 //  Copyright © 2016年 changxicao. All rights reserved.
 //
 
-#import "SODynamicViewController.h"
+#import "SODiscoveryViewController.h"
 
-@interface SODynamicViewController ()
+@interface SODiscoveryViewController ()
 
 @end
 
-@implementation SODynamicViewController
+@implementation SODiscoveryViewController
 
 + (instancetype)sharedController
 {
-    static SODynamicViewController *controller = nil;
+    static SODiscoveryViewController *controller = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
         controller = [[self alloc] init];
@@ -29,15 +29,9 @@
     [super viewDidLoad];
 }
 
-- (void)initView
-{
-
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
 }
-
 
 @end

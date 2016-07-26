@@ -54,6 +54,11 @@
 
 }
 
+- (void)loadData
+{
+
+}
+
 - (void)addLeftNavigationItem:(NSString *)title normalImage:(UIImage *)normalImage highlightedImage:(UIImage *)highlightedImage
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

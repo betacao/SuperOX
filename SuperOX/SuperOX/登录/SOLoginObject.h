@@ -9,7 +9,7 @@
 
 @interface SOLoginObject : NSObject
 
-+ (instancetype)sharedLoginObject;
++ (instancetype)currentObject;
 
 @property (strong, nonatomic) NSString *userIdentfier;
 @property (strong, nonatomic) NSString *userPhoneNumber;

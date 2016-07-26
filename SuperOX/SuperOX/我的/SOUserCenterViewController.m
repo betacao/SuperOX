@@ -1,22 +1,22 @@
 //
-//  SODynamicViewController.m
+//  SOUserCenterViewController.m
 //  SuperOX
 //
-//  Created by changxicao on 16/7/22.
+//  Created by changxicao on 16/7/25.
 //  Copyright © 2016年 changxicao. All rights reserved.
 //
 
-#import "SODynamicViewController.h"
+#import "SOUserCenterViewController.h"
 
-@interface SODynamicViewController ()
+@interface SOUserCenterViewController ()
 
 @end
 
-@implementation SODynamicViewController
+@implementation SOUserCenterViewController
 
 + (instancetype)sharedController
 {
-    static SODynamicViewController *controller = nil;
+    static SOUserCenterViewController *controller = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
         controller = [[self alloc] init];
@@ -27,11 +27,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}
-
-- (void)initView
-{
-
 }
 
 - (void)didReceiveMemoryWarning

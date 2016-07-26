@@ -1,22 +1,22 @@
 //
-//  SODynamicViewController.m
+//  SOBusinessViewController.m
 //  SuperOX
 //
-//  Created by changxicao on 16/7/22.
+//  Created by changxicao on 16/7/25.
 //  Copyright © 2016年 changxicao. All rights reserved.
 //
 
-#import "SODynamicViewController.h"
+#import "SOBusinessViewController.h"
 
-@interface SODynamicViewController ()
+@interface SOBusinessViewController ()
 
 @end
 
-@implementation SODynamicViewController
+@implementation SOBusinessViewController
 
 + (instancetype)sharedController
 {
-    static SODynamicViewController *controller = nil;
+    static SOBusinessViewController *controller = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
         controller = [[self alloc] init];
@@ -27,11 +27,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-}
-
-- (void)initView
-{
-
 }
 
 - (void)didReceiveMemoryWarning

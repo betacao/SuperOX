@@ -44,6 +44,7 @@
 
     self.view.backgroundColor = Color(@"efeeef");
 
+    self.lblPassward.text = @"111111";
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -86,7 +87,7 @@
         [SOLoginManager login:self.lblPassward.text inView:self.view complete:^(BOOL success) {
             SOTabbarViewController *controller = [SOTabbarViewController sharedController];
             SOBaseNavigationViewController *navigationViewController = [[SOBaseNavigationViewController alloc] initWithRootViewController:controller];
-            [self presentViewController:navigationViewController animated:NO completion:nil];
+            [self presentViewController:navigationViewController animated:YES completion:nil];
         }];
     }];
 }

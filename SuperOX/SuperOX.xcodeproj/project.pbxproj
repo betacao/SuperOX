@@ -40,6 +40,13 @@
 		F9DE59B01D2A404800CB4CAB /* SOTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DE59AE1D2A404800CB4CAB /* SOTabbarViewController.xib */; };
 		F9DE59B31D2A440600CB4CAB /* SOAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE59B21D2A440600CB4CAB /* SOAlertView.m */; };
 		F9DE59B61D2A471F00CB4CAB /* UIButton+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE59B51D2A471F00CB4CAB /* UIButton+Extend.m */; };
+		F9DEC6D71D46FADD0048EE18 /* SODynamicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DEC6D61D46FADD0048EE18 /* SODynamicObject.m */; };
+		F9FD01CD1D462ECB00A99825 /* SOBusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FD01CB1D462ECB00A99825 /* SOBusinessViewController.m */; };
+		F9FD01CE1D462ECB00A99825 /* SOBusinessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FD01CC1D462ECB00A99825 /* SOBusinessViewController.xib */; };
+		F9FD01D21D462EDB00A99825 /* SODiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FD01D01D462EDB00A99825 /* SODiscoveryViewController.m */; };
+		F9FD01D31D462EDB00A99825 /* SODiscoveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FD01D11D462EDB00A99825 /* SODiscoveryViewController.xib */; };
+		F9FD01D71D462EEC00A99825 /* SOUserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FD01D51D462EEC00A99825 /* SOUserCenterViewController.m */; };
+		F9FD01D81D462EEC00A99825 /* SOUserCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FD01D61D462EEC00A99825 /* SOUserCenterViewController.xib */; };
 		F9FDBEEE1CEAFE5900056275 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FDBEED1CEAFE5900056275 /* main.m */; };
 		F9FDBEF71CEAFE5900056275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9FDBEF51CEAFE5900056275 /* Main.storyboard */; };
 		F9FDBEF91CEAFE5900056275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9FDBEF81CEAFE5900056275 /* Assets.xcassets */; };
@@ -111,6 +118,17 @@
 		F9DE59B21D2A440600CB4CAB /* SOAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAlertView.m; sourceTree = "<group>"; };
 		F9DE59B41D2A471F00CB4CAB /* UIButton+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extend.h"; sourceTree = "<group>"; };
 		F9DE59B51D2A471F00CB4CAB /* UIButton+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extend.m"; sourceTree = "<group>"; };
+		F9DEC6D51D46FADD0048EE18 /* SODynamicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODynamicObject.h; sourceTree = "<group>"; };
+		F9DEC6D61D46FADD0048EE18 /* SODynamicObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODynamicObject.m; sourceTree = "<group>"; };
+		F9FD01CA1D462ECB00A99825 /* SOBusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBusinessViewController.h; sourceTree = "<group>"; };
+		F9FD01CB1D462ECB00A99825 /* SOBusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBusinessViewController.m; sourceTree = "<group>"; };
+		F9FD01CC1D462ECB00A99825 /* SOBusinessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOBusinessViewController.xib; sourceTree = "<group>"; };
+		F9FD01CF1D462EDB00A99825 /* SODiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODiscoveryViewController.h; sourceTree = "<group>"; };
+		F9FD01D01D462EDB00A99825 /* SODiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODiscoveryViewController.m; sourceTree = "<group>"; };
+		F9FD01D11D462EDB00A99825 /* SODiscoveryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SODiscoveryViewController.xib; sourceTree = "<group>"; };
+		F9FD01D41D462EEC00A99825 /* SOUserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOUserCenterViewController.h; sourceTree = "<group>"; };
+		F9FD01D51D462EEC00A99825 /* SOUserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOUserCenterViewController.m; sourceTree = "<group>"; };
+		F9FD01D61D462EEC00A99825 /* SOUserCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOUserCenterViewController.xib; sourceTree = "<group>"; };
 		F9FDBEE91CEAFE5900056275 /* SuperOX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperOX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FDBEED1CEAFE5900056275 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9FDBEF61CEAFE5900056275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -181,6 +199,8 @@
 		F9A2EF5B1CF2FD720054AE1C /* 动态 */ = {
 			isa = PBXGroup;
 			children = (
+				F9DEC6D51D46FADD0048EE18 /* SODynamicObject.h */,
+				F9DEC6D61D46FADD0048EE18 /* SODynamicObject.m */,
 				F91E8E8B1D41AD2000A4BAF4 /* SODynamicViewController.h */,
 				F91E8E8C1D41AD2000A4BAF4 /* SODynamicViewController.m */,
 				F91E8E8D1D41AD2000A4BAF4 /* SODynamicViewController.xib */,
@@ -191,6 +211,9 @@
 		F9A2EF5C1CF2FD720054AE1C /* 发现 */ = {
 			isa = PBXGroup;
 			children = (
+				F9FD01CF1D462EDB00A99825 /* SODiscoveryViewController.h */,
+				F9FD01D01D462EDB00A99825 /* SODiscoveryViewController.m */,
+				F9FD01D11D462EDB00A99825 /* SODiscoveryViewController.xib */,
 			);
 			path = "发现";
 			sourceTree = "<group>";
@@ -198,6 +221,9 @@
 		F9A2EF5D1CF2FD720054AE1C /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				F9FD01D41D462EEC00A99825 /* SOUserCenterViewController.h */,
+				F9FD01D51D462EEC00A99825 /* SOUserCenterViewController.m */,
+				F9FD01D61D462EEC00A99825 /* SOUserCenterViewController.xib */,
 			);
 			path = "我的";
 			sourceTree = "<group>";
@@ -205,6 +231,9 @@
 		F9A2EF5E1CF2FD720054AE1C /* 业务 */ = {
 			isa = PBXGroup;
 			children = (
+				F9FD01CA1D462ECB00A99825 /* SOBusinessViewController.h */,
+				F9FD01CB1D462ECB00A99825 /* SOBusinessViewController.m */,
+				F9FD01CC1D462ECB00A99825 /* SOBusinessViewController.xib */,
 			);
 			path = "业务";
 			sourceTree = "<group>";
@@ -412,13 +441,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FD01D81D462EEC00A99825 /* SOUserCenterViewController.xib in Resources */,
 				F9A2EF761CF309A00054AE1C /* SOLoginViewController.xib in Resources */,
 				F9FDBEF91CEAFE5900056275 /* Assets.xcassets in Resources */,
+				F9FD01CE1D462ECB00A99825 /* SOBusinessViewController.xib in Resources */,
 				F91E8E8F1D41AD2000A4BAF4 /* SODynamicViewController.xib in Resources */,
 				F9DE59B01D2A404800CB4CAB /* SOTabbarViewController.xib in Resources */,
 				F927227C1D23AD7F00B50C93 /* SORegisterViewController.xib in Resources */,
 				F9FDBEF71CEAFE5900056275 /* Main.storyboard in Resources */,
 				F92722771D23AD5D00B50C93 /* SOLoginNextViewController.xib in Resources */,
+				F9FD01D31D462EDB00A99825 /* SODiscoveryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,11 +512,14 @@
 				F978FB771D07F75700FBC8BC /* SORootViewController.m in Sources */,
 				F978FB991D08124D00FBC8BC /* NSObject+Extend.m in Sources */,
 				F932BF2A1D226B08005311C0 /* SOBaseNavigationViewController.m in Sources */,
+				F9FD01D71D462EEC00A99825 /* SOUserCenterViewController.m in Sources */,
 				F978FB801D07F85300FBC8BC /* SOLoginManager.m in Sources */,
+				F9FD01CD1D462ECB00A99825 /* SOBusinessViewController.m in Sources */,
 				F9DE59B61D2A471F00CB4CAB /* UIButton+Extend.m in Sources */,
 				F932BF2D1D226B21005311C0 /* SOBaseTableViewController.m in Sources */,
 				F91E8E8E1D41AD2000A4BAF4 /* SODynamicViewController.m in Sources */,
 				F92722761D23AD5D00B50C93 /* SOLoginNextViewController.m in Sources */,
+				F9DEC6D71D46FADD0048EE18 /* SODynamicObject.m in Sources */,
 				F9796DBE1D224FBD0079579E /* SOBaseView.m in Sources */,
 				F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */,
 				F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */,
@@ -499,6 +534,7 @@
 				F978FB931D0804C000FBC8BC /* NSString+Extend.m in Sources */,
 				F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */,
 				F978FB901D08041800FBC8BC /* SHGEncryptionAlgorithm.m in Sources */,
+				F9FD01D21D462EDB00A99825 /* SODiscoveryViewController.m in Sources */,
 				F978FB8D1D0803A500FBC8BC /* UIView+HUD.m in Sources */,
 				F9DE59B31D2A440600CB4CAB /* SOAlertView.m in Sources */,
 				F927227B1D23AD7F00B50C93 /* SORegisterViewController.m in Sources */,
