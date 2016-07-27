@@ -5,7 +5,6 @@ target 'SuperOX' do
     pod 'AFNetworking'
     pod 'MJRefresh'
     pod 'MBProgressHUD'
-    pod 'Mantle'
     pod 'YYKit'
     pod 'MagicalRecord'
     pod 'SDAutoLayout'

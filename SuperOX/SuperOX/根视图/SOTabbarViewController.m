@@ -40,7 +40,7 @@
 {
     [super viewDidLoad];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.2f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [[SOGloble sharedGloble] checkForUpdate:nil];
+        [SOGloble checkForUpdate:nil];
     });
 
     [self initView];

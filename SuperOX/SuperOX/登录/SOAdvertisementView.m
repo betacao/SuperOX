@@ -88,7 +88,7 @@
 
 + (void)loadRemoteAdvertisement
 {
-    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/appImage/getStartAppImage"] parameters:@{@"os":@"ios", @"width":@(SCREENWIDTH * SCALE), @"height":@(SCREENHEIGHT * SCALE)} success:^(NSURLSessionDataTask *task, id responseObject, NSDictionary *dictionary) {
+    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/appImage/getStartAppImage"] parameters:@{@"os":@"ios", @"width":@(SCREENWIDTH * SCALE), @"height":@(SCREENHEIGHT * SCALE)} success:^(NSURLSessionDataTask *task, id responseObject, NSString *string) {
         if (responseObject) {
             NSData *data = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
             NSLog(@"%@", kSplashScreenAdCacheLocalPath);

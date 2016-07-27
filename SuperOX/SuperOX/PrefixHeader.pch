@@ -12,7 +12,6 @@
 //************* pod *************//
 #import "AFNetworking.h"
 #import <MagicalRecord/MagicalRecord.h>
-#import "Mantle.h"
 #import "YYKit.h"
 #import "MJRefresh.h"
 #import "MBProgressHUD.h"
@@ -20,7 +19,6 @@
 #import "UITableView+SDAutoTableViewCellHeight.h"
 #import "EMSDKFull.h"
 #import "ReactiveCocoa.h"
-
 
 //************* 扩展 *************//
 #import "NSString+Extend.h"
@@ -34,5 +32,6 @@
 #import "SOGloble.h"
 #import "SONetWork.h"
 #import "SOTabbarViewController.h"
+#import "SOUserHeaderView.h"
 
 #endif /* PrefixHeader_pch */

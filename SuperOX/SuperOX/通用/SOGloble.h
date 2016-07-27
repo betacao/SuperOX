@@ -61,18 +61,6 @@
 - (BOOL)isShowGuideView;
 
 /**
- @brief  格式化得到的数据到object数组
-
- @param array 字典数据
- @param class 固定的类
-
- @return object数据
-
- @since 1.5.0
- */
-- (NSArray *)parseServerJsonArrayToJSONModel:(NSArray *)array class:(Class)class;
-
-/**
  @brief  检查更新并提示
 
  @param state 是否有新版本
@@ -80,6 +68,13 @@
 
  @since 1.8
  */
-- (void)checkForUpdate:(void(^)(BOOL state))block;
++ (void)checkForUpdate:(void(^)(BOOL state))block;
+
+/**
+ @breief  记录用户行为
+
+ @since 1.7
+ */
++ (void)recordUserAction:(NSString *)recordIdStr type:(NSString *)typeStr;
 
 @end

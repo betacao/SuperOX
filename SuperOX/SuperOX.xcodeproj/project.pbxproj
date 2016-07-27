@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		E65128564572E050CDD6D42D /* libPods-SuperOX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B8DD563411F37566C2CEA3 /* libPods-SuperOX.a */; };
+		F91852731D48434F00D04BC9 /* SONewFriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F91852721D48434F00D04BC9 /* SONewFriendTableViewCell.m */; };
+		F91852751D4843A100D04BC9 /* SONewFriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F91852741D4843A100D04BC9 /* SONewFriendTableViewCell.xib */; };
+		F91852781D4845CD00D04BC9 /* SOUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F91852771D4845CD00D04BC9 /* SOUserHeaderView.m */; };
+		F918527B1D484F5100D04BC9 /* NSArray+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F918527A1D484F5100D04BC9 /* NSArray+Extend.m */; };
 		F91E8E8E1D41AD2000A4BAF4 /* SODynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91E8E8C1D41AD2000A4BAF4 /* SODynamicViewController.m */; };
 		F91E8E8F1D41AD2000A4BAF4 /* SODynamicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F91E8E8D1D41AD2000A4BAF4 /* SODynamicViewController.xib */; };
 		F92722761D23AD5D00B50C93 /* SOLoginNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92722741D23AD5D00B50C93 /* SOLoginNextViewController.m */; };
@@ -15,7 +19,6 @@
 		F927227B1D23AD7F00B50C93 /* SORegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92722791D23AD7F00B50C93 /* SORegisterViewController.m */; };
 		F927227C1D23AD7F00B50C93 /* SORegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F927227A1D23AD7F00B50C93 /* SORegisterViewController.xib */; };
 		F932BF2A1D226B08005311C0 /* SOBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F932BF291D226B08005311C0 /* SOBaseNavigationViewController.m */; };
-		F932BF2D1D226B21005311C0 /* SOBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F932BF2C1D226B21005311C0 /* SOBaseTableViewController.m */; };
 		F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */; };
 		F978FB761D07F75700FBC8BC /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB731D07F75700FBC8BC /* SOAppDelegate.m */; };
 		F978FB771D07F75700FBC8BC /* SORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB751D07F75700FBC8BC /* SORootViewController.m */; };
@@ -26,6 +29,8 @@
 		F978FB991D08124D00FBC8BC /* NSObject+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB981D08124D00FBC8BC /* NSObject+Extend.m */; };
 		F9796DBE1D224FBD0079579E /* SOBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9796DBD1D224FBD0079579E /* SOBaseView.m */; };
 		F9796DC11D2250440079579E /* SOAdvertisementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9796DC01D2250440079579E /* SOAdvertisementView.m */; };
+		F99D7EDE1D48656E00ED19ED /* SOExtendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F99D7EDC1D48656E00ED19ED /* SOExtendTableViewCell.m */; };
+		F99D7EDF1D48656E00ED19ED /* SOExtendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F99D7EDD1D48656E00ED19ED /* SOExtendTableViewCell.xib */; };
 		F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */; };
 		F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */; };
 		F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF731CF309A00054AE1C /* SOLoginViewController.m */; };
@@ -41,6 +46,9 @@
 		F9E3331D1D47025800DD0C58 /* SOEmptyDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E3331C1D47025800DD0C58 /* SOEmptyDataView.m */; };
 		F9E333211D4715E900DD0C58 /* SONetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E333201D4715E900DD0C58 /* SONetWork.m */; };
 		F9E333241D47377D00DD0C58 /* SHGEncryptionAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E333231D47377D00DD0C58 /* SHGEncryptionAlgorithm.m */; };
+		F9E333271D47606100DD0C58 /* SONoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E333261D47606100DD0C58 /* SONoticeView.m */; };
+		F9E3332A1D47666500DD0C58 /* UITableView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E333291D47666500DD0C58 /* UITableView+MJRefresh.m */; };
+		F9E3332D1D47675000DD0C58 /* SOProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E3332C1D47675000DD0C58 /* SOProgressHUD.m */; };
 		F9FD01CD1D462ECB00A99825 /* SOBusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FD01CB1D462ECB00A99825 /* SOBusinessViewController.m */; };
 		F9FD01CE1D462ECB00A99825 /* SOBusinessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FD01CC1D462ECB00A99825 /* SOBusinessViewController.xib */; };
 		F9FD01D21D462EDB00A99825 /* SODiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FD01D01D462EDB00A99825 /* SODiscoveryViewController.m */; };
@@ -57,6 +65,13 @@
 		D621B8E60C40F83A90A82CA2 /* Pods-SuperOX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.release.xcconfig"; sourceTree = "<group>"; };
 		E5B8DD563411F37566C2CEA3 /* libPods-SuperOX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SuperOX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81841C47950F5EEFB7AEDB7 /* Pods-SuperOX.debug_test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperOX.debug_test.xcconfig"; path = "Pods/Target Support Files/Pods-SuperOX/Pods-SuperOX.debug_test.xcconfig"; sourceTree = "<group>"; };
+		F91852711D48434F00D04BC9 /* SONewFriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONewFriendTableViewCell.h; sourceTree = "<group>"; };
+		F91852721D48434F00D04BC9 /* SONewFriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONewFriendTableViewCell.m; sourceTree = "<group>"; };
+		F91852741D4843A100D04BC9 /* SONewFriendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SONewFriendTableViewCell.xib; sourceTree = "<group>"; };
+		F91852761D4845CD00D04BC9 /* SOUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOUserHeaderView.h; sourceTree = "<group>"; };
+		F91852771D4845CD00D04BC9 /* SOUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOUserHeaderView.m; sourceTree = "<group>"; };
+		F91852791D484F5100D04BC9 /* NSArray+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extend.h"; sourceTree = "<group>"; };
+		F918527A1D484F5100D04BC9 /* NSArray+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extend.m"; sourceTree = "<group>"; };
 		F91E8E8B1D41AD2000A4BAF4 /* SODynamicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODynamicViewController.h; sourceTree = "<group>"; };
 		F91E8E8C1D41AD2000A4BAF4 /* SODynamicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODynamicViewController.m; sourceTree = "<group>"; };
 		F91E8E8D1D41AD2000A4BAF4 /* SODynamicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SODynamicViewController.xib; sourceTree = "<group>"; };
@@ -68,8 +83,6 @@
 		F927227A1D23AD7F00B50C93 /* SORegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SORegisterViewController.xib; sourceTree = "<group>"; };
 		F932BF281D226B08005311C0 /* SOBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseNavigationViewController.h; sourceTree = "<group>"; };
 		F932BF291D226B08005311C0 /* SOBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseNavigationViewController.m; sourceTree = "<group>"; };
-		F932BF2B1D226B21005311C0 /* SOBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseTableViewController.h; sourceTree = "<group>"; };
-		F932BF2C1D226B21005311C0 /* SOBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseTableViewController.m; sourceTree = "<group>"; };
 		F978FB6E1D07F40A00FBC8BC /* SOBaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseScrollViewController.h; sourceTree = "<group>"; };
 		F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseScrollViewController.m; sourceTree = "<group>"; };
 		F978FB721D07F75700FBC8BC /* SOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +103,10 @@
 		F9796DBD1D224FBD0079579E /* SOBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseView.m; sourceTree = "<group>"; };
 		F9796DBF1D2250440079579E /* SOAdvertisementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAdvertisementView.h; sourceTree = "<group>"; };
 		F9796DC01D2250440079579E /* SOAdvertisementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAdvertisementView.m; sourceTree = "<group>"; };
+		F99D7EDB1D48656E00ED19ED /* SOExtendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOExtendTableViewCell.h; sourceTree = "<group>"; };
+		F99D7EDC1D48656E00ED19ED /* SOExtendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOExtendTableViewCell.m; sourceTree = "<group>"; };
+		F99D7EDD1D48656E00ED19ED /* SOExtendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOExtendTableViewCell.xib; sourceTree = "<group>"; };
+		F99D7EE01D48673900ED19ED /* SOMainPageConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOMainPageConst.h; sourceTree = "<group>"; };
 		F9A2EF6C1CF2FED70054AE1C /* SOBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseTableViewCell.h; sourceTree = "<group>"; };
 		F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseTableViewCell.m; sourceTree = "<group>"; };
 		F9A2EF6E1CF2FED70054AE1C /* SOBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseViewController.h; sourceTree = "<group>"; };
@@ -120,6 +137,12 @@
 		F9E333201D4715E900DD0C58 /* SONetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONetWork.m; sourceTree = "<group>"; };
 		F9E333221D47377D00DD0C58 /* SHGEncryptionAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGEncryptionAlgorithm.h; sourceTree = "<group>"; };
 		F9E333231D47377D00DD0C58 /* SHGEncryptionAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGEncryptionAlgorithm.m; sourceTree = "<group>"; };
+		F9E333251D47606100DD0C58 /* SONoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONoticeView.h; sourceTree = "<group>"; };
+		F9E333261D47606100DD0C58 /* SONoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONoticeView.m; sourceTree = "<group>"; };
+		F9E333281D47666500DD0C58 /* UITableView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+MJRefresh.h"; sourceTree = "<group>"; };
+		F9E333291D47666500DD0C58 /* UITableView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MJRefresh.m"; sourceTree = "<group>"; };
+		F9E3332B1D47675000DD0C58 /* SOProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOProgressHUD.h; sourceTree = "<group>"; };
+		F9E3332C1D47675000DD0C58 /* SOProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOProgressHUD.m; sourceTree = "<group>"; };
 		F9FD01CA1D462ECB00A99825 /* SOBusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBusinessViewController.h; sourceTree = "<group>"; };
 		F9FD01CB1D462ECB00A99825 /* SOBusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBusinessViewController.m; sourceTree = "<group>"; };
 		F9FD01CC1D462ECB00A99825 /* SOBusinessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOBusinessViewController.xib; sourceTree = "<group>"; };
@@ -191,6 +214,13 @@
 				F91E8E8B1D41AD2000A4BAF4 /* SODynamicViewController.h */,
 				F91E8E8C1D41AD2000A4BAF4 /* SODynamicViewController.m */,
 				F91E8E8D1D41AD2000A4BAF4 /* SODynamicViewController.xib */,
+				F91852711D48434F00D04BC9 /* SONewFriendTableViewCell.h */,
+				F91852721D48434F00D04BC9 /* SONewFriendTableViewCell.m */,
+				F91852741D4843A100D04BC9 /* SONewFriendTableViewCell.xib */,
+				F99D7EE01D48673900ED19ED /* SOMainPageConst.h */,
+				F99D7EDB1D48656E00ED19ED /* SOExtendTableViewCell.h */,
+				F99D7EDC1D48656E00ED19ED /* SOExtendTableViewCell.m */,
+				F99D7EDD1D48656E00ED19ED /* SOExtendTableViewCell.xib */,
 			);
 			path = "动态";
 			sourceTree = "<group>";
@@ -268,6 +298,10 @@
 				F978FB8C1D0803A500FBC8BC /* UIView+HUD.m */,
 				F9DE59B41D2A471F00CB4CAB /* UIButton+Extend.h */,
 				F9DE59B51D2A471F00CB4CAB /* UIButton+Extend.m */,
+				F9E333281D47666500DD0C58 /* UITableView+MJRefresh.h */,
+				F9E333291D47666500DD0C58 /* UITableView+MJRefresh.m */,
+				F91852791D484F5100D04BC9 /* NSArray+Extend.h */,
+				F918527A1D484F5100D04BC9 /* NSArray+Extend.m */,
 			);
 			path = "扩展";
 			sourceTree = "<group>";
@@ -297,8 +331,6 @@
 				F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */,
 				F932BF281D226B08005311C0 /* SOBaseNavigationViewController.h */,
 				F932BF291D226B08005311C0 /* SOBaseNavigationViewController.m */,
-				F932BF2B1D226B21005311C0 /* SOBaseTableViewController.h */,
-				F932BF2C1D226B21005311C0 /* SOBaseTableViewController.m */,
 				F9796DBC1D224FBD0079579E /* SOBaseView.h */,
 				F9796DBD1D224FBD0079579E /* SOBaseView.m */,
 			);
@@ -314,6 +346,12 @@
 				F9DE59B21D2A440600CB4CAB /* SOAlertView.m */,
 				F9E3331B1D47025800DD0C58 /* SOEmptyDataView.h */,
 				F9E3331C1D47025800DD0C58 /* SOEmptyDataView.m */,
+				F9E333251D47606100DD0C58 /* SONoticeView.h */,
+				F9E333261D47606100DD0C58 /* SONoticeView.m */,
+				F9E3332B1D47675000DD0C58 /* SOProgressHUD.h */,
+				F9E3332C1D47675000DD0C58 /* SOProgressHUD.m */,
+				F91852761D4845CD00D04BC9 /* SOUserHeaderView.h */,
+				F91852771D4845CD00D04BC9 /* SOUserHeaderView.m */,
 			);
 			path = "通用";
 			sourceTree = "<group>";
@@ -442,11 +480,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99D7EDF1D48656E00ED19ED /* SOExtendTableViewCell.xib in Resources */,
 				F9FD01D81D462EEC00A99825 /* SOUserCenterViewController.xib in Resources */,
 				F9A2EF761CF309A00054AE1C /* SOLoginViewController.xib in Resources */,
 				F9FDBEF91CEAFE5900056275 /* Assets.xcassets in Resources */,
 				F9FD01CE1D462ECB00A99825 /* SOBusinessViewController.xib in Resources */,
 				F91E8E8F1D41AD2000A4BAF4 /* SODynamicViewController.xib in Resources */,
+				F91852751D4843A100D04BC9 /* SONewFriendTableViewCell.xib in Resources */,
 				F9DE59B01D2A404800CB4CAB /* SOTabbarViewController.xib in Resources */,
 				F927227C1D23AD7F00B50C93 /* SORegisterViewController.xib in Resources */,
 				F9FDBEF71CEAFE5900056275 /* Main.storyboard in Resources */,
@@ -519,28 +559,34 @@
 				F9FD01CD1D462ECB00A99825 /* SOBusinessViewController.m in Sources */,
 				F9E333241D47377D00DD0C58 /* SHGEncryptionAlgorithm.m in Sources */,
 				F9DE59B61D2A471F00CB4CAB /* UIButton+Extend.m in Sources */,
-				F932BF2D1D226B21005311C0 /* SOBaseTableViewController.m in Sources */,
 				F91E8E8E1D41AD2000A4BAF4 /* SODynamicViewController.m in Sources */,
 				F92722761D23AD5D00B50C93 /* SOLoginNextViewController.m in Sources */,
 				F9DEC6D71D46FADD0048EE18 /* SODynamicObject.m in Sources */,
 				F9796DBE1D224FBD0079579E /* SOBaseView.m in Sources */,
 				F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */,
+				F9E333271D47606100DD0C58 /* SONoticeView.m in Sources */,
 				F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */,
+				F918527B1D484F5100D04BC9 /* NSArray+Extend.m in Sources */,
+				F91852731D48434F00D04BC9 /* SONewFriendTableViewCell.m in Sources */,
 				F978FB761D07F75700FBC8BC /* SOAppDelegate.m in Sources */,
 				F9E3331D1D47025800DD0C58 /* SOEmptyDataView.m in Sources */,
+				F9E3332D1D47675000DD0C58 /* SOProgressHUD.m in Sources */,
 				F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */,
 				F9A2EF7E1CF30B7A0054AE1C /* SOGloble.m in Sources */,
 				F9796DC11D2250440079579E /* SOAdvertisementView.m in Sources */,
 				F9E333211D4715E900DD0C58 /* SONetWork.m in Sources */,
 				F978FB7D1D07F84400FBC8BC /* SOLoginObject.m in Sources */,
 				F9DE59AF1D2A404800CB4CAB /* SOTabbarViewController.m in Sources */,
+				F91852781D4845CD00D04BC9 /* SOUserHeaderView.m in Sources */,
 				F978FB931D0804C000FBC8BC /* NSString+Extend.m in Sources */,
 				F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */,
 				F9FD01D21D462EDB00A99825 /* SODiscoveryViewController.m in Sources */,
 				F978FB8D1D0803A500FBC8BC /* UIView+HUD.m in Sources */,
 				F9DE59B31D2A440600CB4CAB /* SOAlertView.m in Sources */,
 				F927227B1D23AD7F00B50C93 /* SORegisterViewController.m in Sources */,
+				F99D7EDE1D48656E00ED19ED /* SOExtendTableViewCell.m in Sources */,
 				F9A2EF811CF310A00054AE1C /* SOGuideView.m in Sources */,
+				F9E3332A1D47666500DD0C58 /* UITableView+MJRefresh.m in Sources */,
 				F9FDBEEE1CEAFE5900056275 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

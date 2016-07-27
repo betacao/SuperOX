@@ -25,10 +25,10 @@
 {
     NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:KEY_TOKEN];
     NSDictionary *param = @{@"uid":KUID,@"t":token, @"appv":[SOGloble sharedGloble].currentVersion};
-
-    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/login/auto"] parameters:param success:^(NSURLSessionDataTask *task, id responseObject, NSDictionary *dictionary) {
+    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/login/auto"] parameters:param success:^(NSURLSessionDataTask *task, id responseObject, NSString *string) {
         NSString *code = [responseObject objectForKey:@"code"];
         if ([code isEqualToString:@"000"]){
+            NSDictionary *dictionary = [string jsonValueDecoded];
             SOLoginObject *object = [SOLoginObject currentObject];
             object.userLocation = [dictionary objectForKey:@"area"];
             object.userHeaderImageUrl = [dictionary objectForKey:@"head_img"];
@@ -52,14 +52,14 @@
 + (void)validate:(NSString *)phone inView:(UIView *)view complete:(void (^)(BOOL))block
 {
     [view showLoading];
-    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/login/validate"] parameters:@{@"phone":phone} success:^(NSURLSessionDataTask *task, id responseObject, NSDictionary *dictionary) {
+    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/login/validate"] parameters:@{@"phone":phone} success:^(NSURLSessionDataTask *task, id responseObject, NSString *string) {
         [view hideHud];
+        NSDictionary *dictionary = [string jsonValueDecoded];
         [[NSUserDefaults standardUserDefaults] setObject:phone forKey:KEY_PHONE];
         NSString *state = [dictionary objectForKey:@"state"];
         block([state boolValue]);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [view hideHud];
-        block(NO);
         [view showWithText:error.localizedDescription];
     }];
 }
@@ -70,8 +70,9 @@
     password = [password md5];
     NSDictionary *param = @{@"phone":[[NSUserDefaults standardUserDefaults] objectForKey:KEY_PHONE], @"pwd":password, @"ctype":@"iPhone", @"os":@"iOS", @"osv":[UIDevice currentDevice].systemVersion, @"appv":[SOGloble sharedGloble].currentVersion, @"yuncid":@"", @"yunuid":@"", @"phoneType":[SOGloble sharedGloble].platform};
 
-    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/login"] parameters:param success:^(NSURLSessionDataTask *task, id responseObject, NSDictionary *dictionary) {
+    [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/login"] parameters:param success:^(NSURLSessionDataTask *task, id responseObject, NSString *string) {
         [view hideHud];
+        NSDictionary *dictionary = [string jsonValueDecoded];
         SOLoginObject *object = [SOLoginObject currentObject];
         object.userLocation = [dictionary objectForKey:@"area"];
         object.userHeaderImageUrl = [dictionary objectForKey:@"head_img"];

@@ -10,21 +10,37 @@
 
 @implementation SODynamicManager
 
-+ (void)loadDynamic:(NSDictionary *)dictionary inView:(UIView *)view block:(void (^)(NSArray *))block
++ (void)loadDynamic:(NSDictionary *)param inView:(UIView *)view block:(void (^)(NSArray *, NSArray *))block
 {
     [view showLoading];
-//    [MOCHTTPRequestOperationManager getWithURL:[NSString stringWithFormat:@"%@/%@",kApiPath,@"dynamic/dynamicNew"] parameters:dictionary success:^(MOCHTTPResponse *response){
-//        [view hideHud];
-//        [weakSelf assembleDictionary:response.dataDictionary target:target];
-//
-//    } failed:^(MOCHTTPResponse *response){
-//        weakSelf.isRefreshing = NO;
-//        [Hud showMessageWithText:response.errorMessage];
-//        NSLog(@"%@",response.errorMessage);
-//        [weakSelf.tableView.mj_header endRefreshing];
-//        [weakSelf.tableView.mj_footer endRefreshing];
-//        [Hud hideHud];
-//    }];
+    [SONetWork getWithURL:[NSString stringWithFormat:@"%@/%@",kApiPath,@"dynamic/dynamicNew"] parameters:param success:^(NSURLSessionDataTask *task, id responseObject, NSString *string) {
+        [view hideHud];
+        NSDictionary *dictionary = [string jsonValueDecoded];
+        //普通数据
+        NSArray *normalArray = [dictionary objectForKey:@"normalpostlist"];
+        normalArray = [NSArray modelArrayWithClass:[SODynamicObject class] json:normalArray];
+        //推广数据
+        NSArray *adArray = [dictionary objectForKey:@"adlist"];
+        adArray = [NSArray modelArrayWithClass:[SODynamicObject class] json:adArray];
+        block(normalArray, adArray);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        [view hideHud];
+        block(nil, nil);
+    }];
+}
+
++ (void)loadRegisterPushFriend:(NSDictionary *)param block:(void(^)(SONewFriendObject *))block
+{
+    [SONetWork getWithURL:[kApiPath stringByAppendingString:@"/recommended/friends/registerPushFriendGrade"] parameters:@{@"uid":KUID} success:^(NSURLSessionDataTask *task, id responseObject, NSString *string) {
+        
+    } failure:nil];
+}
+
++ (void)loadRecommendFriends:(NSDictionary *)param block:(void (^)(NSArray *))block
+{
+    [SONetWork getWithURL:[kApiPath stringByAppendingString:@"/recommended/friends/recommendedFriendGrade"] parameters:@{@"uid":KUID} success:^(NSURLSessionDataTask *task, id responseObject, NSString *string) {
+
+    } failure:nil];
 }
 
 @end
