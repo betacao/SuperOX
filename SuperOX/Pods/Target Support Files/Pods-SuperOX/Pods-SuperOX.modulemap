@@ -1,0 +1,6 @@
+framework module Pods_SuperOX {
+  umbrella header "Pods-SuperOX-umbrella.h"
+
+  export *
+  module * { export * }
+}
