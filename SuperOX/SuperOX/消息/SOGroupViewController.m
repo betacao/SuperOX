@@ -122,7 +122,6 @@
     return self.titleArray.count;
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section == 0) {
@@ -369,6 +368,7 @@
 
 
 #pragma mark ------SHGGroupHeaderView
+
 @interface SHGGroupHeaderView()
 @property (strong, nonatomic) UIButton *leftButton;
 @property (strong, nonatomic) UILabel *titleLabel;
@@ -377,15 +377,6 @@
 @end
 
 @implementation SHGGroupHeaderView
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        [self initView];
-        [self addAutoLayout];
-    }
-    return self;
-}
 
 - (void)initView
 {

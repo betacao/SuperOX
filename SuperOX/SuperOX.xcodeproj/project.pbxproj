@@ -10,7 +10,6 @@
 		18C07C6F2BB33C06E8B051EC /* libPods-SuperOX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 656C72F342B0FC97E28C7D5C /* libPods-SuperOX.a */; };
 		F91852731D48434F00D04BC9 /* SONewFriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F91852721D48434F00D04BC9 /* SONewFriendTableViewCell.m */; };
 		F91852751D4843A100D04BC9 /* SONewFriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F91852741D4843A100D04BC9 /* SONewFriendTableViewCell.xib */; };
-		F91852781D4845CD00D04BC9 /* SOUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F91852771D4845CD00D04BC9 /* SOUserHeaderView.m */; };
 		F918527B1D484F5100D04BC9 /* NSArray+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F918527A1D484F5100D04BC9 /* NSArray+Extend.m */; };
 		F91E8E8E1D41AD2000A4BAF4 /* SODynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91E8E8C1D41AD2000A4BAF4 /* SODynamicViewController.m */; };
 		F91E8E8F1D41AD2000A4BAF4 /* SODynamicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F91E8E8D1D41AD2000A4BAF4 /* SODynamicViewController.xib */; };
@@ -22,13 +21,18 @@
 		F9559BB51D499F5600BF6BC8 /* SOChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BB31D499F5600BF6BC8 /* SOChatViewController.m */; };
 		F9559BB61D499F5600BF6BC8 /* SOChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9559BB41D499F5600BF6BC8 /* SOChatViewController.xib */; };
 		F9559BB91D49AFFA00BF6BC8 /* SOEaseMobManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BB81D49AFFA00BF6BC8 /* SOEaseMobManager.m */; };
-		F9559BBC1D49B9FD00BF6BC8 /* SOSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BBB1D49B9FD00BF6BC8 /* SOSearchBar.m */; };
 		F9559BC01D49DF1200BF6BC8 /* SOCreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BBE1D49DF1200BF6BC8 /* SOCreateGroupViewController.m */; };
-		F9559BC11D49DF1200BF6BC8 /* SOCreateGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9559BBF1D49DF1200BF6BC8 /* SOCreateGroupViewController.xib */; };
 		F9559BC51D49E0C700BF6BC8 /* SOGroupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BC31D49E0C700BF6BC8 /* SOGroupDetailViewController.m */; };
 		F9559BC61D49E0C700BF6BC8 /* SOGroupDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9559BC41D49E0C700BF6BC8 /* SOGroupDetailViewController.xib */; };
 		F9559BCA1D49E29100BF6BC8 /* SOChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BC81D49E29100BF6BC8 /* SOChatListViewController.m */; };
 		F9559BCB1D49E29100BF6BC8 /* SOChatListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9559BC91D49E29100BF6BC8 /* SOChatListViewController.xib */; };
+		F9559BD81D4A004A00BF6BC8 /* SOAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BCD1D4A004A00BF6BC8 /* SOAlertView.m */; };
+		F9559BD91D4A004A00BF6BC8 /* SOEmptyDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BCF1D4A004A00BF6BC8 /* SOEmptyDataView.m */; };
+		F9559BDA1D4A004A00BF6BC8 /* SONoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BD11D4A004A00BF6BC8 /* SONoticeView.m */; };
+		F9559BDB1D4A004A00BF6BC8 /* SOProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BD31D4A004A00BF6BC8 /* SOProgressHUD.m */; };
+		F9559BDC1D4A004A00BF6BC8 /* SOSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BD51D4A004A00BF6BC8 /* SOSearchBar.m */; };
+		F9559BDD1D4A004A00BF6BC8 /* SOUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BD71D4A004A00BF6BC8 /* SOUserHeaderView.m */; };
+		F9559BE01D4A005C00BF6BC8 /* SOTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BDF1D4A005C00BF6BC8 /* SOTextView.m */; };
 		F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */; };
 		F978FB761D07F75700FBC8BC /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB731D07F75700FBC8BC /* SOAppDelegate.m */; };
 		F978FB771D07F75700FBC8BC /* SORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB751D07F75700FBC8BC /* SORootViewController.m */; };
@@ -52,16 +56,12 @@
 		F9DB427D1D48BDA8008D8E19 /* SOGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DB427B1D48BDA8008D8E19 /* SOGroupViewController.xib */; };
 		F9DE59AF1D2A404800CB4CAB /* SOTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE59AD1D2A404800CB4CAB /* SOTabbarViewController.m */; };
 		F9DE59B01D2A404800CB4CAB /* SOTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DE59AE1D2A404800CB4CAB /* SOTabbarViewController.xib */; };
-		F9DE59B31D2A440600CB4CAB /* SOAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE59B21D2A440600CB4CAB /* SOAlertView.m */; };
 		F9DE59B61D2A471F00CB4CAB /* UIButton+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE59B51D2A471F00CB4CAB /* UIButton+Extend.m */; };
 		F9DEC6D71D46FADD0048EE18 /* SODynamicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DEC6D61D46FADD0048EE18 /* SODynamicObject.m */; };
 		F9E3331A1D47014F00DD0C58 /* SODynamicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E333191D47014F00DD0C58 /* SODynamicManager.m */; };
-		F9E3331D1D47025800DD0C58 /* SOEmptyDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E3331C1D47025800DD0C58 /* SOEmptyDataView.m */; };
 		F9E333211D4715E900DD0C58 /* SONetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E333201D4715E900DD0C58 /* SONetWork.m */; };
 		F9E333241D47377D00DD0C58 /* SHGEncryptionAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E333231D47377D00DD0C58 /* SHGEncryptionAlgorithm.m */; };
-		F9E333271D47606100DD0C58 /* SONoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E333261D47606100DD0C58 /* SONoticeView.m */; };
 		F9E3332A1D47666500DD0C58 /* UITableView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E333291D47666500DD0C58 /* UITableView+MJRefresh.m */; };
-		F9E3332D1D47675000DD0C58 /* SOProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E3332C1D47675000DD0C58 /* SOProgressHUD.m */; };
 		F9FD01CD1D462ECB00A99825 /* SOBusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FD01CB1D462ECB00A99825 /* SOBusinessViewController.m */; };
 		F9FD01CE1D462ECB00A99825 /* SOBusinessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FD01CC1D462ECB00A99825 /* SOBusinessViewController.xib */; };
 		F9FD01D21D462EDB00A99825 /* SODiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FD01D01D462EDB00A99825 /* SODiscoveryViewController.m */; };
@@ -81,8 +81,6 @@
 		F91852711D48434F00D04BC9 /* SONewFriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONewFriendTableViewCell.h; sourceTree = "<group>"; };
 		F91852721D48434F00D04BC9 /* SONewFriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONewFriendTableViewCell.m; sourceTree = "<group>"; };
 		F91852741D4843A100D04BC9 /* SONewFriendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SONewFriendTableViewCell.xib; sourceTree = "<group>"; };
-		F91852761D4845CD00D04BC9 /* SOUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOUserHeaderView.h; sourceTree = "<group>"; };
-		F91852771D4845CD00D04BC9 /* SOUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOUserHeaderView.m; sourceTree = "<group>"; };
 		F91852791D484F5100D04BC9 /* NSArray+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extend.h"; sourceTree = "<group>"; };
 		F918527A1D484F5100D04BC9 /* NSArray+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extend.m"; sourceTree = "<group>"; };
 		F91E8E8B1D41AD2000A4BAF4 /* SODynamicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODynamicViewController.h; sourceTree = "<group>"; };
@@ -101,17 +99,28 @@
 		F9559BB41D499F5600BF6BC8 /* SOChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOChatViewController.xib; sourceTree = "<group>"; };
 		F9559BB71D49AFFA00BF6BC8 /* SOEaseMobManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOEaseMobManager.h; sourceTree = "<group>"; };
 		F9559BB81D49AFFA00BF6BC8 /* SOEaseMobManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOEaseMobManager.m; sourceTree = "<group>"; };
-		F9559BBA1D49B9FD00BF6BC8 /* SOSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSearchBar.h; sourceTree = "<group>"; };
-		F9559BBB1D49B9FD00BF6BC8 /* SOSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSearchBar.m; sourceTree = "<group>"; };
 		F9559BBD1D49DF1200BF6BC8 /* SOCreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCreateGroupViewController.h; sourceTree = "<group>"; };
 		F9559BBE1D49DF1200BF6BC8 /* SOCreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCreateGroupViewController.m; sourceTree = "<group>"; };
-		F9559BBF1D49DF1200BF6BC8 /* SOCreateGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOCreateGroupViewController.xib; sourceTree = "<group>"; };
 		F9559BC21D49E0C700BF6BC8 /* SOGroupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOGroupDetailViewController.h; sourceTree = "<group>"; };
 		F9559BC31D49E0C700BF6BC8 /* SOGroupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOGroupDetailViewController.m; sourceTree = "<group>"; };
 		F9559BC41D49E0C700BF6BC8 /* SOGroupDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOGroupDetailViewController.xib; sourceTree = "<group>"; };
 		F9559BC71D49E29100BF6BC8 /* SOChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOChatListViewController.h; sourceTree = "<group>"; };
 		F9559BC81D49E29100BF6BC8 /* SOChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOChatListViewController.m; sourceTree = "<group>"; };
 		F9559BC91D49E29100BF6BC8 /* SOChatListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOChatListViewController.xib; sourceTree = "<group>"; };
+		F9559BCC1D4A004A00BF6BC8 /* SOAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAlertView.h; sourceTree = "<group>"; };
+		F9559BCD1D4A004A00BF6BC8 /* SOAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAlertView.m; sourceTree = "<group>"; };
+		F9559BCE1D4A004A00BF6BC8 /* SOEmptyDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOEmptyDataView.h; sourceTree = "<group>"; };
+		F9559BCF1D4A004A00BF6BC8 /* SOEmptyDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOEmptyDataView.m; sourceTree = "<group>"; };
+		F9559BD01D4A004A00BF6BC8 /* SONoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONoticeView.h; sourceTree = "<group>"; };
+		F9559BD11D4A004A00BF6BC8 /* SONoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONoticeView.m; sourceTree = "<group>"; };
+		F9559BD21D4A004A00BF6BC8 /* SOProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOProgressHUD.h; sourceTree = "<group>"; };
+		F9559BD31D4A004A00BF6BC8 /* SOProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOProgressHUD.m; sourceTree = "<group>"; };
+		F9559BD41D4A004A00BF6BC8 /* SOSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSearchBar.h; sourceTree = "<group>"; };
+		F9559BD51D4A004A00BF6BC8 /* SOSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSearchBar.m; sourceTree = "<group>"; };
+		F9559BD61D4A004A00BF6BC8 /* SOUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOUserHeaderView.h; sourceTree = "<group>"; };
+		F9559BD71D4A004A00BF6BC8 /* SOUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOUserHeaderView.m; sourceTree = "<group>"; };
+		F9559BDE1D4A005C00BF6BC8 /* SOTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOTextView.h; sourceTree = "<group>"; };
+		F9559BDF1D4A005C00BF6BC8 /* SOTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOTextView.m; sourceTree = "<group>"; };
 		F978FB6E1D07F40A00FBC8BC /* SOBaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseScrollViewController.h; sourceTree = "<group>"; };
 		F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseScrollViewController.m; sourceTree = "<group>"; };
 		F978FB721D07F75700FBC8BC /* SOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
@@ -157,26 +166,18 @@
 		F9DE59AC1D2A404800CB4CAB /* SOTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOTabbarViewController.h; sourceTree = "<group>"; };
 		F9DE59AD1D2A404800CB4CAB /* SOTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOTabbarViewController.m; sourceTree = "<group>"; };
 		F9DE59AE1D2A404800CB4CAB /* SOTabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOTabbarViewController.xib; sourceTree = "<group>"; };
-		F9DE59B11D2A440600CB4CAB /* SOAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAlertView.h; sourceTree = "<group>"; };
-		F9DE59B21D2A440600CB4CAB /* SOAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOAlertView.m; sourceTree = "<group>"; };
 		F9DE59B41D2A471F00CB4CAB /* UIButton+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extend.h"; sourceTree = "<group>"; };
 		F9DE59B51D2A471F00CB4CAB /* UIButton+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extend.m"; sourceTree = "<group>"; };
 		F9DEC6D51D46FADD0048EE18 /* SODynamicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODynamicObject.h; sourceTree = "<group>"; };
 		F9DEC6D61D46FADD0048EE18 /* SODynamicObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODynamicObject.m; sourceTree = "<group>"; };
 		F9E333181D47014F00DD0C58 /* SODynamicManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SODynamicManager.h; sourceTree = "<group>"; };
 		F9E333191D47014F00DD0C58 /* SODynamicManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SODynamicManager.m; sourceTree = "<group>"; };
-		F9E3331B1D47025800DD0C58 /* SOEmptyDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOEmptyDataView.h; sourceTree = "<group>"; };
-		F9E3331C1D47025800DD0C58 /* SOEmptyDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOEmptyDataView.m; sourceTree = "<group>"; };
 		F9E3331F1D4715E900DD0C58 /* SONetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONetWork.h; sourceTree = "<group>"; };
 		F9E333201D4715E900DD0C58 /* SONetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONetWork.m; sourceTree = "<group>"; };
 		F9E333221D47377D00DD0C58 /* SHGEncryptionAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHGEncryptionAlgorithm.h; sourceTree = "<group>"; };
 		F9E333231D47377D00DD0C58 /* SHGEncryptionAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGEncryptionAlgorithm.m; sourceTree = "<group>"; };
-		F9E333251D47606100DD0C58 /* SONoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SONoticeView.h; sourceTree = "<group>"; };
-		F9E333261D47606100DD0C58 /* SONoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SONoticeView.m; sourceTree = "<group>"; };
 		F9E333281D47666500DD0C58 /* UITableView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+MJRefresh.h"; sourceTree = "<group>"; };
 		F9E333291D47666500DD0C58 /* UITableView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+MJRefresh.m"; sourceTree = "<group>"; };
-		F9E3332B1D47675000DD0C58 /* SOProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOProgressHUD.h; sourceTree = "<group>"; };
-		F9E3332C1D47675000DD0C58 /* SOProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOProgressHUD.m; sourceTree = "<group>"; };
 		F9FD01CA1D462ECB00A99825 /* SOBusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBusinessViewController.h; sourceTree = "<group>"; };
 		F9FD01CB1D462ECB00A99825 /* SOBusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBusinessViewController.m; sourceTree = "<group>"; };
 		F9FD01CC1D462ECB00A99825 /* SOBusinessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOBusinessViewController.xib; sourceTree = "<group>"; };
@@ -350,6 +351,20 @@
 		F9A2EF631CF2FDF00054AE1C /* 自定义 */ = {
 			isa = PBXGroup;
 			children = (
+				F9559BCC1D4A004A00BF6BC8 /* SOAlertView.h */,
+				F9559BCD1D4A004A00BF6BC8 /* SOAlertView.m */,
+				F9559BCE1D4A004A00BF6BC8 /* SOEmptyDataView.h */,
+				F9559BCF1D4A004A00BF6BC8 /* SOEmptyDataView.m */,
+				F9559BD01D4A004A00BF6BC8 /* SONoticeView.h */,
+				F9559BD11D4A004A00BF6BC8 /* SONoticeView.m */,
+				F9559BD21D4A004A00BF6BC8 /* SOProgressHUD.h */,
+				F9559BD31D4A004A00BF6BC8 /* SOProgressHUD.m */,
+				F9559BD41D4A004A00BF6BC8 /* SOSearchBar.h */,
+				F9559BD51D4A004A00BF6BC8 /* SOSearchBar.m */,
+				F9559BD61D4A004A00BF6BC8 /* SOUserHeaderView.h */,
+				F9559BD71D4A004A00BF6BC8 /* SOUserHeaderView.m */,
+				F9559BDE1D4A005C00BF6BC8 /* SOTextView.h */,
+				F9559BDF1D4A005C00BF6BC8 /* SOTextView.m */,
 			);
 			path = "自定义";
 			sourceTree = "<group>";
@@ -376,18 +391,6 @@
 			children = (
 				F9A2EF7C1CF30B7A0054AE1C /* SOGloble.h */,
 				F9A2EF7D1CF30B7A0054AE1C /* SOGloble.m */,
-				F9DE59B11D2A440600CB4CAB /* SOAlertView.h */,
-				F9DE59B21D2A440600CB4CAB /* SOAlertView.m */,
-				F9E3331B1D47025800DD0C58 /* SOEmptyDataView.h */,
-				F9E3331C1D47025800DD0C58 /* SOEmptyDataView.m */,
-				F9E333251D47606100DD0C58 /* SONoticeView.h */,
-				F9E333261D47606100DD0C58 /* SONoticeView.m */,
-				F9E3332B1D47675000DD0C58 /* SOProgressHUD.h */,
-				F9E3332C1D47675000DD0C58 /* SOProgressHUD.m */,
-				F91852761D4845CD00D04BC9 /* SOUserHeaderView.h */,
-				F91852771D4845CD00D04BC9 /* SOUserHeaderView.m */,
-				F9559BBA1D49B9FD00BF6BC8 /* SOSearchBar.h */,
-				F9559BBB1D49B9FD00BF6BC8 /* SOSearchBar.m */,
 			);
 			path = "通用";
 			sourceTree = "<group>";
@@ -407,7 +410,6 @@
 				F9DB427B1D48BDA8008D8E19 /* SOGroupViewController.xib */,
 				F9559BBD1D49DF1200BF6BC8 /* SOCreateGroupViewController.h */,
 				F9559BBE1D49DF1200BF6BC8 /* SOCreateGroupViewController.m */,
-				F9559BBF1D49DF1200BF6BC8 /* SOCreateGroupViewController.xib */,
 				F9559BC21D49E0C700BF6BC8 /* SOGroupDetailViewController.h */,
 				F9559BC31D49E0C700BF6BC8 /* SOGroupDetailViewController.m */,
 				F9559BC41D49E0C700BF6BC8 /* SOGroupDetailViewController.xib */,
@@ -545,7 +547,6 @@
 			files = (
 				F99D7EDF1D48656E00ED19ED /* SOExtendTableViewCell.xib in Resources */,
 				F9559BC61D49E0C700BF6BC8 /* SOGroupDetailViewController.xib in Resources */,
-				F9559BC11D49DF1200BF6BC8 /* SOCreateGroupViewController.xib in Resources */,
 				F9FD01D81D462EEC00A99825 /* SOUserCenterViewController.xib in Resources */,
 				F9A2EF761CF309A00054AE1C /* SOLoginViewController.xib in Resources */,
 				F9FDBEF91CEAFE5900056275 /* Assets.xcassets in Resources */,
@@ -618,6 +619,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9559BE01D4A005C00BF6BC8 /* SOTextView.m in Sources */,
 				F978FB771D07F75700FBC8BC /* SORootViewController.m in Sources */,
 				F978FB991D08124D00FBC8BC /* NSObject+Extend.m in Sources */,
 				F932BF2A1D226B08005311C0 /* SOBaseNavigationViewController.m in Sources */,
@@ -634,32 +636,32 @@
 				F92722761D23AD5D00B50C93 /* SOLoginNextViewController.m in Sources */,
 				F9DEC6D71D46FADD0048EE18 /* SODynamicObject.m in Sources */,
 				F9559BC01D49DF1200BF6BC8 /* SOCreateGroupViewController.m in Sources */,
+				F9559BD91D4A004A00BF6BC8 /* SOEmptyDataView.m in Sources */,
 				F9796DBE1D224FBD0079579E /* SOBaseView.m in Sources */,
 				F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */,
-				F9E333271D47606100DD0C58 /* SONoticeView.m in Sources */,
 				F9559BC51D49E0C700BF6BC8 /* SOGroupDetailViewController.m in Sources */,
 				F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */,
 				F918527B1D484F5100D04BC9 /* NSArray+Extend.m in Sources */,
+				F9559BDD1D4A004A00BF6BC8 /* SOUserHeaderView.m in Sources */,
 				F91852731D48434F00D04BC9 /* SONewFriendTableViewCell.m in Sources */,
-				F9559BBC1D49B9FD00BF6BC8 /* SOSearchBar.m in Sources */,
 				F978FB761D07F75700FBC8BC /* SOAppDelegate.m in Sources */,
-				F9E3331D1D47025800DD0C58 /* SOEmptyDataView.m in Sources */,
-				F9E3332D1D47675000DD0C58 /* SOProgressHUD.m in Sources */,
 				F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */,
 				F9A2EF7E1CF30B7A0054AE1C /* SOGloble.m in Sources */,
 				F9796DC11D2250440079579E /* SOAdvertisementView.m in Sources */,
+				F9559BDC1D4A004A00BF6BC8 /* SOSearchBar.m in Sources */,
 				F9E333211D4715E900DD0C58 /* SONetWork.m in Sources */,
 				F978FB7D1D07F84400FBC8BC /* SOLoginObject.m in Sources */,
 				F9DE59AF1D2A404800CB4CAB /* SOTabbarViewController.m in Sources */,
-				F91852781D4845CD00D04BC9 /* SOUserHeaderView.m in Sources */,
+				F9559BDB1D4A004A00BF6BC8 /* SOProgressHUD.m in Sources */,
+				F9559BDA1D4A004A00BF6BC8 /* SONoticeView.m in Sources */,
 				F978FB931D0804C000FBC8BC /* NSString+Extend.m in Sources */,
 				F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */,
 				F9559BB51D499F5600BF6BC8 /* SOChatViewController.m in Sources */,
 				F9FD01D21D462EDB00A99825 /* SODiscoveryViewController.m in Sources */,
 				F9DB427C1D48BDA8008D8E19 /* SOGroupViewController.m in Sources */,
 				F978FB8D1D0803A500FBC8BC /* UIView+HUD.m in Sources */,
-				F9DE59B31D2A440600CB4CAB /* SOAlertView.m in Sources */,
 				F927227B1D23AD7F00B50C93 /* SORegisterViewController.m in Sources */,
+				F9559BD81D4A004A00BF6BC8 /* SOAlertView.m in Sources */,
 				F99D7EDE1D48656E00ED19ED /* SOExtendTableViewCell.m in Sources */,
 				F9A2EF811CF310A00054AE1C /* SOGuideView.m in Sources */,
 				F9E3332A1D47666500DD0C58 /* UITableView+MJRefresh.m in Sources */,

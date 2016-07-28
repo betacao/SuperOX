@@ -6,8 +6,8 @@
 //  Copyright © 2016年 changxicao. All rights reserved.
 //
 
-#import "SOBaseViewController.h"
+#import "SOBaseScrollViewController.h"
 
-@interface SOCreateGroupViewController : SOBaseViewController
+@interface SOCreateGroupViewController : SOBaseScrollViewController
 
 @end

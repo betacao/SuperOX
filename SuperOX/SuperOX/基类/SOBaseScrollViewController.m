@@ -8,7 +8,7 @@
 
 #import "SOBaseScrollViewController.h"
 
-@interface SOBaseScrollViewController ()
+@interface SOBaseScrollViewController ()<UIScrollViewDelegate>
 
 
 @end
@@ -18,6 +18,7 @@
 - (void)viewDidLoad
 {
     self.scrollView = [[UIScrollView alloc] init];
+    self.scrollView.delegate = self;
     [self.view addSubview:self.scrollView];
     self.scrollView.sd_layout.spaceToSuperView(UIEdgeInsetsZero);
     [super viewDidLoad];

@@ -7,8 +7,11 @@
 //
 
 #import "SOChatListViewController.h"
+#import "UITableView+MJRefresh.h"
 
-@interface SOChatListViewController ()
+@interface SOChatListViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -17,6 +20,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+- (void)initView
+{
+    [self.tableView addHeaderRefesh:YES andFooter:NO footerTitle:nil];
+
 }
 
 - (void)didReceiveMemoryWarning

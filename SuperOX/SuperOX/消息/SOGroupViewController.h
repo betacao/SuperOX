@@ -8,6 +8,7 @@
 
 #import "SOBaseViewController.h"
 #import "SOBaseTableViewCell.h"
+#import "SOBaseView.h"
 
 @interface SOGroupViewController : SOBaseViewController
 
@@ -37,7 +38,7 @@
 
 @end
 
-@interface SHGGroupHeaderView : UIView
+@interface SHGGroupHeaderView : SOBaseView
 
 @property (strong, nonatomic) SHGGroupHeaderObject *object;
 
