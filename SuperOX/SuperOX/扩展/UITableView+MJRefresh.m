@@ -21,7 +21,7 @@
     if (isFooterRefresh){
         MJRefreshAutoStateFooter *footer = [MJRefreshAutoStateFooter footerWithRefreshingTarget:self refreshingAction:@selector(refreshFooter)];
         footer.stateLabel.textColor = [UIColor colorWithHexString:@"606060"];
-        footer.stateLabel.font = [UIFont systemFontOfSize:12.0f];
+        footer.stateLabel.font = FontFactor(12.0f);
         [footer setTitle:[footerTitle objectForKey:@(MJRefreshStateIdle)] forState:MJRefreshStateIdle];
         [footerTitle enumerateKeysAndObjectsUsingBlock:^(NSNumber *key, NSString *obj, BOOL * _Nonnull stop) {
             [footer setTitle:obj forState:key.integerValue];

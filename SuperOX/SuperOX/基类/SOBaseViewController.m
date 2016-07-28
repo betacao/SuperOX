@@ -10,9 +10,6 @@
 
 @interface SOBaseViewController ()
 
-@property (strong, nonatomic) UIImageView *bgImageView;
-@property (strong, nonatomic) UIImageView *topImageView;
-
 @end
 
 @implementation SOBaseViewController
@@ -23,19 +20,8 @@
     [self initView];
     [self addAutoLayout];
     [self addReactiveCocoa];
+    [self loadData];
     [self addLeftNavigationItem:nil normalImage:[UIImage imageNamed:@"common_backImage"] highlightedImage:nil];
-
-    self.bgImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg"]];
-    [self.view addSubview:self.bgImageView];
-    [self.view sendSubviewToBack:self.bgImageView];
-
-    self.topImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bar_top_bg"]];
-    [self.view insertSubview:self.topImageView aboveSubview:self.bgImageView];
-
-    self.bgImageView.sd_layout.spaceToSuperView(UIEdgeInsetsZero);
-
-    self.topImageView.sd_layout.leftSpaceToView(self.view, 0.0f).rightSpaceToView(self.view, 0.0f).topSpaceToView(self.view, 0.0f).heightIs(self.topImageView.image.size.height);
-
 
 }
 

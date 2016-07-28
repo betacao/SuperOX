@@ -10,6 +10,7 @@
 #import "SOEmptyDataView.h"
 #import "SONoticeView.h"
 #import "SONewFriendTableViewCell.h"
+#import "SOMessageSegmentViewController.h"
 #import "UITableView+MJRefresh.h"
 #import "NSArray+Extend.h"
 
@@ -44,7 +45,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self loadDataWithTarget:@"first" dynamicID:@"-1"];
+//    [self loadDataWithTarget:@"first" dynamicID:@"-1"];
 }
 
 - (void)initView
@@ -64,6 +65,31 @@
 {
     self.tableView.sd_layout
     .spaceToSuperView(UIEdgeInsetsMake(0.0f, 0.0f, kTabBarHeight, 0.0f));
+}
+
+- (UIBarButtonItem *)leftBarButtonItem
+{
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *image = [UIImage imageNamed:@"newNews"];
+    [leftButton setImage:image forState:UIControlStateNormal];
+    [[leftButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        SOMessageSegmentViewController *controller = [[SOMessageSegmentViewController alloc] init];
+        [self.navigationController pushViewController:controller animated:YES];
+    }];
+    [leftButton sizeToFit];
+    return [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+}
+
+- (UIBarButtonItem *)rightBarButtonItem
+{
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *image = [UIImage imageNamed:@"sendCard"];
+    [rightButton setImage:image forState:UIControlStateNormal];
+    [[rightButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+
+    }];
+    [rightButton sizeToFit];
+    return [[UIBarButtonItem alloc] initWithCustomView:rightButton];
 }
 
 - (NSMutableArray *)recommendArray

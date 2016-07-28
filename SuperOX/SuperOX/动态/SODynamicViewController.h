@@ -14,4 +14,7 @@
 
 + (instancetype)sharedController;
 
+- (UIBarButtonItem *)leftBarButtonItem;
+- (UIBarButtonItem *)rightBarButtonItem;
+
 @end

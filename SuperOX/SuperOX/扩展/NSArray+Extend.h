@@ -17,6 +17,7 @@
 
 - (NSArray *)transformedArrayUsingHandler:(id (^)(id originalObject, NSUInteger index))handler;
 - (NSArray *)reverseArray;
+
 @end
 
 
@@ -33,4 +34,5 @@
 - (void)moveObjectAtIndex:(NSUInteger)fromIdx toIndex:(NSUInteger)toIdx;
 - (void)insertNewestUniqueObject:(id)anObject;
 - (void)insertNewestUniqueObject:(id)anObject atIndex:(NSInteger)index;
+
 @end

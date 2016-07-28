@@ -76,10 +76,12 @@
 
     return [NSArray arrayWithArray:mutableArray];
 }
+
 @end
 
 
 @implementation NSMutableArray (Extend)
+
 
 + (NSMutableArray *)nullArrayWithCapacity:(NSUInteger)capacity
 {

@@ -60,10 +60,8 @@
 
     self.view.backgroundColor = Color(@"efeeef");
 
-    if ([[NSUserDefaults standardUserDefaults]objectForKey:KEY_PHONE]){
-        self.textUser.text = [[NSUserDefaults standardUserDefaults]objectForKey:KEY_PHONE];
-    }
-
+    self.textUser.text = [[NSUserDefaults standardUserDefaults]objectForKey:KEY_PHONE];
+    
 }
 
 - (void)addAutoLayout

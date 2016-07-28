@@ -13,12 +13,12 @@
 
 + (instancetype)shareManager
 {
-    static SOLoginManager *sharedGlobleInstance = nil;
+    static SOLoginManager *manager = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
-        sharedGlobleInstance = [[self alloc] init];
+        manager = [[self alloc] init];
     });
-    return sharedGlobleInstance;
+    return manager;
 }
 
 + (void)autoLoginBlock:(void (^)(BOOL))block
@@ -41,8 +41,9 @@
 
             NSString *token = [dictionary objectForKey:@"token"];
             [[NSUserDefaults standardUserDefaults] setObject:token forKey:KEY_TOKEN];
-            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:KEY_AUTOLOGIN];
+
             block(YES);
+            [SOLoginManager loginToEaseMob:KUID password:[[NSUserDefaults standardUserDefaults] objectForKey:KEY_PASSWORD]];
         }
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         block(NO);
@@ -55,9 +56,9 @@
     [SONetWork postWithURL:[kApiPath stringByAppendingString:@"/login/validate"] parameters:@{@"phone":phone} success:^(NSURLSessionDataTask *task, id responseObject, NSString *string) {
         [view hideHud];
         NSDictionary *dictionary = [string jsonValueDecoded];
-        [[NSUserDefaults standardUserDefaults] setObject:phone forKey:KEY_PHONE];
         NSString *state = [dictionary objectForKey:@"state"];
         block([state boolValue]);
+        [[NSUserDefaults standardUserDefaults] setObject:phone forKey:KEY_PHONE];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [view hideHud];
         [view showWithText:error.localizedDescription];
@@ -84,13 +85,23 @@
 
         NSString *token = [dictionary objectForKey:@"token"];
         [[NSUserDefaults standardUserDefaults] setObject:token forKey:KEY_TOKEN];
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:KEY_AUTOLOGIN];
-
         block(YES);
+
+        [[NSUserDefaults standardUserDefaults] setObject:password forKey:KEY_PASSWORD];
+        [SOLoginManager loginToEaseMob:KUID password:password];
 
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [view hideHud];
         [view showWithText:error.localizedDescription];
     }];
 }
+
++ (void)loginToEaseMob:(NSString *)userID password:(NSString *)password
+{
+    EMError *error = [[EMClient sharedClient] loginWithUsername:userID password:password];
+    if (!error) {
+        [[EMClient sharedClient].options setIsAutoLogin:YES];
+    }
+}
+
 @end

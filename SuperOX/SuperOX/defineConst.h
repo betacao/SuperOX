@@ -13,11 +13,13 @@
 
 #define kHostName @"http://120.26.114.154:8080/api"
 #define kImageHostName @"http://daniuquan-test.oss-cn-qingdao.aliyuncs.com/"
+#define KEY_HUANXIN @"daniuquan123#daniuquan"
 
 #else
 
 #define kHostName @"http://www.daniuq.com/api"
 #define kImageHostName @"http://daniuquan.oss-cn-qingdao.aliyuncs.com/"
+#define KEY_HUANXIN @"daniuquan123#daniuquanproduction"
 
 #endif
 

@@ -11,6 +11,7 @@
 #import "SOBusinessViewController.h"
 #import "SODiscoveryViewController.h"
 #import "SOUserCenterViewController.h"
+#import "NSArray+Extend.h"
 
 @interface SOTabbarViewController ()<UITabBarControllerDelegate>
 
@@ -103,11 +104,23 @@
 - (void)setIndex:(NSInteger)index
 {
     _index = index;
+    UIViewController *viewController = [self.viewControllers objectAtIndex:index];
+    if ([viewController respondsToSelector:@selector(leftBarButtonItem)]) {
+        self.navigationItem.leftBarButtonItem = [viewController performSelector:@selector(leftBarButtonItem)];
+    } else {
+        self.navigationItem.leftBarButtonItem = nil;
+    }
+    if ([viewController respondsToSelector:@selector(rightBarButtonItem)]) {
+        self.navigationItem.rightBarButtonItem = [viewController performSelector:@selector(rightBarButtonItem)];
+    } else {
+        self.navigationItem.rightBarButtonItem = nil;
+    }
     self.title = [self.titleArray objectAtIndex:index];
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
+
     self.index = [self.viewControllers indexOfObject:viewController];
 }
 

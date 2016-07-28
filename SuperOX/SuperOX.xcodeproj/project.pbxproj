@@ -19,6 +19,16 @@
 		F927227B1D23AD7F00B50C93 /* SORegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92722791D23AD7F00B50C93 /* SORegisterViewController.m */; };
 		F927227C1D23AD7F00B50C93 /* SORegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F927227A1D23AD7F00B50C93 /* SORegisterViewController.xib */; };
 		F932BF2A1D226B08005311C0 /* SOBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F932BF291D226B08005311C0 /* SOBaseNavigationViewController.m */; };
+		F9559BB51D499F5600BF6BC8 /* SOChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BB31D499F5600BF6BC8 /* SOChatViewController.m */; };
+		F9559BB61D499F5600BF6BC8 /* SOChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9559BB41D499F5600BF6BC8 /* SOChatViewController.xib */; };
+		F9559BB91D49AFFA00BF6BC8 /* SOEaseMobManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BB81D49AFFA00BF6BC8 /* SOEaseMobManager.m */; };
+		F9559BBC1D49B9FD00BF6BC8 /* SOSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BBB1D49B9FD00BF6BC8 /* SOSearchBar.m */; };
+		F9559BC01D49DF1200BF6BC8 /* SOCreateGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BBE1D49DF1200BF6BC8 /* SOCreateGroupViewController.m */; };
+		F9559BC11D49DF1200BF6BC8 /* SOCreateGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9559BBF1D49DF1200BF6BC8 /* SOCreateGroupViewController.xib */; };
+		F9559BC51D49E0C700BF6BC8 /* SOGroupDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BC31D49E0C700BF6BC8 /* SOGroupDetailViewController.m */; };
+		F9559BC61D49E0C700BF6BC8 /* SOGroupDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9559BC41D49E0C700BF6BC8 /* SOGroupDetailViewController.xib */; };
+		F9559BCA1D49E29100BF6BC8 /* SOChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9559BC81D49E29100BF6BC8 /* SOChatListViewController.m */; };
+		F9559BCB1D49E29100BF6BC8 /* SOChatListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9559BC91D49E29100BF6BC8 /* SOChatListViewController.xib */; };
 		F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */; };
 		F978FB761D07F75700FBC8BC /* SOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB731D07F75700FBC8BC /* SOAppDelegate.m */; };
 		F978FB771D07F75700FBC8BC /* SORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F978FB751D07F75700FBC8BC /* SORootViewController.m */; };
@@ -31,12 +41,15 @@
 		F9796DC11D2250440079579E /* SOAdvertisementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9796DC01D2250440079579E /* SOAdvertisementView.m */; };
 		F99D7EDE1D48656E00ED19ED /* SOExtendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F99D7EDC1D48656E00ED19ED /* SOExtendTableViewCell.m */; };
 		F99D7EDF1D48656E00ED19ED /* SOExtendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F99D7EDD1D48656E00ED19ED /* SOExtendTableViewCell.xib */; };
+		F9A27D661D499BA100362FA0 /* SOMessageSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A27D651D499BA100362FA0 /* SOMessageSegmentViewController.m */; };
 		F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */; };
 		F9A2EF711CF2FED70054AE1C /* SOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF6F1CF2FED70054AE1C /* SOBaseViewController.m */; };
 		F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF731CF309A00054AE1C /* SOLoginViewController.m */; };
 		F9A2EF761CF309A00054AE1C /* SOLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A2EF741CF309A00054AE1C /* SOLoginViewController.xib */; };
 		F9A2EF7E1CF30B7A0054AE1C /* SOGloble.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF7D1CF30B7A0054AE1C /* SOGloble.m */; };
 		F9A2EF811CF310A00054AE1C /* SOGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A2EF801CF310A00054AE1C /* SOGuideView.m */; };
+		F9DB427C1D48BDA8008D8E19 /* SOGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DB427A1D48BDA8008D8E19 /* SOGroupViewController.m */; };
+		F9DB427D1D48BDA8008D8E19 /* SOGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DB427B1D48BDA8008D8E19 /* SOGroupViewController.xib */; };
 		F9DE59AF1D2A404800CB4CAB /* SOTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE59AD1D2A404800CB4CAB /* SOTabbarViewController.m */; };
 		F9DE59B01D2A404800CB4CAB /* SOTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9DE59AE1D2A404800CB4CAB /* SOTabbarViewController.xib */; };
 		F9DE59B31D2A440600CB4CAB /* SOAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DE59B21D2A440600CB4CAB /* SOAlertView.m */; };
@@ -83,6 +96,22 @@
 		F927227A1D23AD7F00B50C93 /* SORegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SORegisterViewController.xib; sourceTree = "<group>"; };
 		F932BF281D226B08005311C0 /* SOBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseNavigationViewController.h; sourceTree = "<group>"; };
 		F932BF291D226B08005311C0 /* SOBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseNavigationViewController.m; sourceTree = "<group>"; };
+		F9559BB21D499F5600BF6BC8 /* SOChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOChatViewController.h; sourceTree = "<group>"; };
+		F9559BB31D499F5600BF6BC8 /* SOChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOChatViewController.m; sourceTree = "<group>"; };
+		F9559BB41D499F5600BF6BC8 /* SOChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOChatViewController.xib; sourceTree = "<group>"; };
+		F9559BB71D49AFFA00BF6BC8 /* SOEaseMobManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOEaseMobManager.h; sourceTree = "<group>"; };
+		F9559BB81D49AFFA00BF6BC8 /* SOEaseMobManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOEaseMobManager.m; sourceTree = "<group>"; };
+		F9559BBA1D49B9FD00BF6BC8 /* SOSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSearchBar.h; sourceTree = "<group>"; };
+		F9559BBB1D49B9FD00BF6BC8 /* SOSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSearchBar.m; sourceTree = "<group>"; };
+		F9559BBD1D49DF1200BF6BC8 /* SOCreateGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCreateGroupViewController.h; sourceTree = "<group>"; };
+		F9559BBE1D49DF1200BF6BC8 /* SOCreateGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCreateGroupViewController.m; sourceTree = "<group>"; };
+		F9559BBF1D49DF1200BF6BC8 /* SOCreateGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOCreateGroupViewController.xib; sourceTree = "<group>"; };
+		F9559BC21D49E0C700BF6BC8 /* SOGroupDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOGroupDetailViewController.h; sourceTree = "<group>"; };
+		F9559BC31D49E0C700BF6BC8 /* SOGroupDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOGroupDetailViewController.m; sourceTree = "<group>"; };
+		F9559BC41D49E0C700BF6BC8 /* SOGroupDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOGroupDetailViewController.xib; sourceTree = "<group>"; };
+		F9559BC71D49E29100BF6BC8 /* SOChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOChatListViewController.h; sourceTree = "<group>"; };
+		F9559BC81D49E29100BF6BC8 /* SOChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOChatListViewController.m; sourceTree = "<group>"; };
+		F9559BC91D49E29100BF6BC8 /* SOChatListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOChatListViewController.xib; sourceTree = "<group>"; };
 		F978FB6E1D07F40A00FBC8BC /* SOBaseScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseScrollViewController.h; sourceTree = "<group>"; };
 		F978FB6F1D07F40A00FBC8BC /* SOBaseScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseScrollViewController.m; sourceTree = "<group>"; };
 		F978FB721D07F75700FBC8BC /* SOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOAppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +136,8 @@
 		F99D7EDC1D48656E00ED19ED /* SOExtendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOExtendTableViewCell.m; sourceTree = "<group>"; };
 		F99D7EDD1D48656E00ED19ED /* SOExtendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOExtendTableViewCell.xib; sourceTree = "<group>"; };
 		F99D7EE01D48673900ED19ED /* SOMainPageConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOMainPageConst.h; sourceTree = "<group>"; };
+		F9A27D641D499BA100362FA0 /* SOMessageSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOMessageSegmentViewController.h; sourceTree = "<group>"; };
+		F9A27D651D499BA100362FA0 /* SOMessageSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOMessageSegmentViewController.m; sourceTree = "<group>"; };
 		F9A2EF6C1CF2FED70054AE1C /* SOBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseTableViewCell.h; sourceTree = "<group>"; };
 		F9A2EF6D1CF2FED70054AE1C /* SOBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOBaseTableViewCell.m; sourceTree = "<group>"; };
 		F9A2EF6E1CF2FED70054AE1C /* SOBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOBaseViewController.h; sourceTree = "<group>"; };
@@ -120,6 +151,9 @@
 		F9A2EF7F1CF310A00054AE1C /* SOGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOGuideView.h; sourceTree = "<group>"; };
 		F9A2EF801CF310A00054AE1C /* SOGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOGuideView.m; sourceTree = "<group>"; };
 		F9A2EF821CF3E4390054AE1C /* defineString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defineString.h; sourceTree = "<group>"; };
+		F9DB42791D48BDA8008D8E19 /* SOGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOGroupViewController.h; sourceTree = "<group>"; };
+		F9DB427A1D48BDA8008D8E19 /* SOGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOGroupViewController.m; sourceTree = "<group>"; };
+		F9DB427B1D48BDA8008D8E19 /* SOGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOGroupViewController.xib; sourceTree = "<group>"; };
 		F9DE59AC1D2A404800CB4CAB /* SOTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOTabbarViewController.h; sourceTree = "<group>"; };
 		F9DE59AD1D2A404800CB4CAB /* SOTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOTabbarViewController.m; sourceTree = "<group>"; };
 		F9DE59AE1D2A404800CB4CAB /* SOTabbarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOTabbarViewController.xib; sourceTree = "<group>"; };
@@ -352,8 +386,36 @@
 				F9E3332C1D47675000DD0C58 /* SOProgressHUD.m */,
 				F91852761D4845CD00D04BC9 /* SOUserHeaderView.h */,
 				F91852771D4845CD00D04BC9 /* SOUserHeaderView.m */,
+				F9559BBA1D49B9FD00BF6BC8 /* SOSearchBar.h */,
+				F9559BBB1D49B9FD00BF6BC8 /* SOSearchBar.m */,
 			);
 			path = "通用";
+			sourceTree = "<group>";
+		};
+		F9DB42781D48BD61008D8E19 /* 消息 */ = {
+			isa = PBXGroup;
+			children = (
+				F9559BB71D49AFFA00BF6BC8 /* SOEaseMobManager.h */,
+				F9559BB81D49AFFA00BF6BC8 /* SOEaseMobManager.m */,
+				F9A27D641D499BA100362FA0 /* SOMessageSegmentViewController.h */,
+				F9A27D651D499BA100362FA0 /* SOMessageSegmentViewController.m */,
+				F9559BC71D49E29100BF6BC8 /* SOChatListViewController.h */,
+				F9559BC81D49E29100BF6BC8 /* SOChatListViewController.m */,
+				F9559BC91D49E29100BF6BC8 /* SOChatListViewController.xib */,
+				F9DB42791D48BDA8008D8E19 /* SOGroupViewController.h */,
+				F9DB427A1D48BDA8008D8E19 /* SOGroupViewController.m */,
+				F9DB427B1D48BDA8008D8E19 /* SOGroupViewController.xib */,
+				F9559BBD1D49DF1200BF6BC8 /* SOCreateGroupViewController.h */,
+				F9559BBE1D49DF1200BF6BC8 /* SOCreateGroupViewController.m */,
+				F9559BBF1D49DF1200BF6BC8 /* SOCreateGroupViewController.xib */,
+				F9559BC21D49E0C700BF6BC8 /* SOGroupDetailViewController.h */,
+				F9559BC31D49E0C700BF6BC8 /* SOGroupDetailViewController.m */,
+				F9559BC41D49E0C700BF6BC8 /* SOGroupDetailViewController.xib */,
+				F9559BB21D499F5600BF6BC8 /* SOChatViewController.h */,
+				F9559BB31D499F5600BF6BC8 /* SOChatViewController.m */,
+				F9559BB41D499F5600BF6BC8 /* SOChatViewController.xib */,
+			);
+			path = "消息";
 			sourceTree = "<group>";
 		};
 		F9E3331E1D4715D300DD0C58 /* 网络框架 */ = {
@@ -398,6 +460,7 @@
 				F9A2EF7B1CF30B450054AE1C /* 通用 */,
 				F9A2EF5D1CF2FD720054AE1C /* 我的 */,
 				F9A2EF5E1CF2FD720054AE1C /* 业务 */,
+				F9DB42781D48BD61008D8E19 /* 消息 */,
 				F9A2EF621CF2FDF00054AE1C /* 注册 */,
 				F9A2EF631CF2FDF00054AE1C /* 自定义 */,
 				F9FDBEF81CEAFE5900056275 /* Assets.xcassets */,
@@ -481,12 +544,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F99D7EDF1D48656E00ED19ED /* SOExtendTableViewCell.xib in Resources */,
+				F9559BC61D49E0C700BF6BC8 /* SOGroupDetailViewController.xib in Resources */,
+				F9559BC11D49DF1200BF6BC8 /* SOCreateGroupViewController.xib in Resources */,
 				F9FD01D81D462EEC00A99825 /* SOUserCenterViewController.xib in Resources */,
 				F9A2EF761CF309A00054AE1C /* SOLoginViewController.xib in Resources */,
 				F9FDBEF91CEAFE5900056275 /* Assets.xcassets in Resources */,
 				F9FD01CE1D462ECB00A99825 /* SOBusinessViewController.xib in Resources */,
+				F9559BCB1D49E29100BF6BC8 /* SOChatListViewController.xib in Resources */,
 				F91E8E8F1D41AD2000A4BAF4 /* SODynamicViewController.xib in Resources */,
+				F9DB427D1D48BDA8008D8E19 /* SOGroupViewController.xib in Resources */,
 				F91852751D4843A100D04BC9 /* SONewFriendTableViewCell.xib in Resources */,
+				F9559BB61D499F5600BF6BC8 /* SOChatViewController.xib in Resources */,
 				F9DE59B01D2A404800CB4CAB /* SOTabbarViewController.xib in Resources */,
 				F927227C1D23AD7F00B50C93 /* SORegisterViewController.xib in Resources */,
 				F9FDBEF71CEAFE5900056275 /* Main.storyboard in Resources */,
@@ -554,20 +622,26 @@
 				F978FB991D08124D00FBC8BC /* NSObject+Extend.m in Sources */,
 				F932BF2A1D226B08005311C0 /* SOBaseNavigationViewController.m in Sources */,
 				F9E3331A1D47014F00DD0C58 /* SODynamicManager.m in Sources */,
+				F9559BB91D49AFFA00BF6BC8 /* SOEaseMobManager.m in Sources */,
 				F9FD01D71D462EEC00A99825 /* SOUserCenterViewController.m in Sources */,
+				F9A27D661D499BA100362FA0 /* SOMessageSegmentViewController.m in Sources */,
 				F978FB801D07F85300FBC8BC /* SOLoginManager.m in Sources */,
 				F9FD01CD1D462ECB00A99825 /* SOBusinessViewController.m in Sources */,
 				F9E333241D47377D00DD0C58 /* SHGEncryptionAlgorithm.m in Sources */,
+				F9559BCA1D49E29100BF6BC8 /* SOChatListViewController.m in Sources */,
 				F9DE59B61D2A471F00CB4CAB /* UIButton+Extend.m in Sources */,
 				F91E8E8E1D41AD2000A4BAF4 /* SODynamicViewController.m in Sources */,
 				F92722761D23AD5D00B50C93 /* SOLoginNextViewController.m in Sources */,
 				F9DEC6D71D46FADD0048EE18 /* SODynamicObject.m in Sources */,
+				F9559BC01D49DF1200BF6BC8 /* SOCreateGroupViewController.m in Sources */,
 				F9796DBE1D224FBD0079579E /* SOBaseView.m in Sources */,
 				F978FB701D07F40A00FBC8BC /* SOBaseScrollViewController.m in Sources */,
 				F9E333271D47606100DD0C58 /* SONoticeView.m in Sources */,
+				F9559BC51D49E0C700BF6BC8 /* SOGroupDetailViewController.m in Sources */,
 				F9A2EF751CF309A00054AE1C /* SOLoginViewController.m in Sources */,
 				F918527B1D484F5100D04BC9 /* NSArray+Extend.m in Sources */,
 				F91852731D48434F00D04BC9 /* SONewFriendTableViewCell.m in Sources */,
+				F9559BBC1D49B9FD00BF6BC8 /* SOSearchBar.m in Sources */,
 				F978FB761D07F75700FBC8BC /* SOAppDelegate.m in Sources */,
 				F9E3331D1D47025800DD0C58 /* SOEmptyDataView.m in Sources */,
 				F9E3332D1D47675000DD0C58 /* SOProgressHUD.m in Sources */,
@@ -580,7 +654,9 @@
 				F91852781D4845CD00D04BC9 /* SOUserHeaderView.m in Sources */,
 				F978FB931D0804C000FBC8BC /* NSString+Extend.m in Sources */,
 				F9A2EF701CF2FED70054AE1C /* SOBaseTableViewCell.m in Sources */,
+				F9559BB51D499F5600BF6BC8 /* SOChatViewController.m in Sources */,
 				F9FD01D21D462EDB00A99825 /* SODiscoveryViewController.m in Sources */,
+				F9DB427C1D48BDA8008D8E19 /* SOGroupViewController.m in Sources */,
 				F978FB8D1D0803A500FBC8BC /* UIView+HUD.m in Sources */,
 				F9DE59B31D2A440600CB4CAB /* SOAlertView.m in Sources */,
 				F927227B1D23AD7F00B50C93 /* SORegisterViewController.m in Sources */,

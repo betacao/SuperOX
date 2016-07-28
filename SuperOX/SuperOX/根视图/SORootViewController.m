@@ -47,8 +47,8 @@
 
 - (void)moveToHomePage
 {
-    BOOL flag = [[NSUserDefaults standardUserDefaults] boolForKey:KEY_AUTOLOGIN];
-    if (flag){
+    BOOL isAutoLogin = [EMClient sharedClient].options.isAutoLogin;
+    if (isAutoLogin){
         [self autoLogin];
     } else{
         [self showLoginViewController];
