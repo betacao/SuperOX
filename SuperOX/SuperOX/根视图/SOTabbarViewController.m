@@ -7,11 +7,6 @@
 //
 
 #import "SOTabbarViewController.h"
-#import "SODynamicViewController.h"
-#import "SOBusinessViewController.h"
-#import "SODiscoveryViewController.h"
-#import "SOUserCenterViewController.h"
-#import "NSArray+Extend.h"
 
 @interface SOTabbarViewController ()<UITabBarControllerDelegate>
 

@@ -45,6 +45,27 @@
 @end
 
 
+@interface SODynamicCommentObject : NSObject
+
+@property(strong, nonatomic)  NSString *cdetail;
+@property(strong, nonatomic)  NSString *cid;
+@property(strong, nonatomic)  NSString *cnickname;
+@property(strong, nonatomic)  NSString *rid;
+@property(strong, nonatomic)  NSString *replyid;
+@property(strong, nonatomic)  NSString *rnickname;
+
+@end
+
+
+@interface SODynamicPraiseObject: NSObject
+
+@property(strong, nonatomic)  NSString *pnickname;
+@property(strong, nonatomic)  NSString *puserid;
+@property(strong, nonatomic)  NSString *ppotname;
+
+@end
+
+
 @interface SONewFriendObject : NSObject
 
 @property (strong, nonatomic) NSString *uid;

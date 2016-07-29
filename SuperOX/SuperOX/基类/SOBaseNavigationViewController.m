@@ -31,7 +31,7 @@
 
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-//    if ([viewController isKindOfClass:[SHGBusinessNewDetailViewController class]]) {
+//    if ([viewController isKindOfClass:[SOBusinessNewDetailViewController class]]) {
 //
 //        [self.navigationBar setShadowImage:[[UIImage alloc] init]];
 //        [self.navigationBar setBackgroundImage:[CommonMethod imageWithColor:Color(@"f04f46")] forBarMetrics:UIBarMetricsDefault];
@@ -45,7 +45,7 @@
     } else {
         self.currentController = viewController;
     }
-    //    if (![viewController isKindOfClass:[SHGBusinessNewDetailViewController class]]) {
+    //    if (![viewController isKindOfClass:[SOBusinessNewDetailViewController class]]) {
     [self.navigationBar setShadowImage:nil];
     [self.navigationBar setBackgroundImage:[UIImage imageWithColor:Color(@"d43c33")] forBarMetrics:UIBarMetricsDefault];
     //    }

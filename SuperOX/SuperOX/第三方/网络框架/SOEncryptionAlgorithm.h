@@ -1,5 +1,5 @@
 //
-//  SHGEncryptionAlgorithm.h
+//  SOEncryptionAlgorithm.h
 //  Finance
 //
 //  Created by changxicao on 16/3/30.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SHGEncryptionAlgorithm : NSObject
+@interface SOEncryptionAlgorithm : NSObject
 /******************************************************************************
  函数名称 : + (NSString *)base64StringFromText:(NSString *)text
  函数描述 : 将文本转换为base64格式字符串

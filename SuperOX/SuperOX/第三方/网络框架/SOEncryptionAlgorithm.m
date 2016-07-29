@@ -1,12 +1,12 @@
 //
-//  SHGEncryptionAlgorithm.m
+//  SOEncryptionAlgorithm.m
 //  Finance
 //
 //  Created by changxicao on 16/3/30.
 //  Copyright © 2016年 HuMin. All rights reserved.
 //
 
-#import "SHGEncryptionAlgorithm.h"
+#import "SOEncryptionAlgorithm.h"
 
 //引入IOS自带密码库
 #import <CommonCrypto/CommonCryptor.h>
@@ -16,7 +16,7 @@
 
 static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
-@implementation SHGEncryptionAlgorithm
+@implementation SOEncryptionAlgorithm
 
 + (NSString *)base64StringFromText:(NSString *)text
 {

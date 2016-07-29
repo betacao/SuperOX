@@ -53,6 +53,17 @@
 @end
 
 
+@implementation SODynamicCommentObject
+
+
+@end
+
+@implementation SODynamicPraiseObject
+
+
+@end
+
+
 @implementation SONewFriendObject
 
 

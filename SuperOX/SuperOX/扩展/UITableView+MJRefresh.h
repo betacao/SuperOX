@@ -15,6 +15,6 @@
 @end
 
 
-@interface SHGGifHeader : MJRefreshHeader
+@interface SOGifHeader : MJRefreshHeader
 
 @end

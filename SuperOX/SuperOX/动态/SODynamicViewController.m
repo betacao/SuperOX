@@ -10,9 +10,12 @@
 #import "SOEmptyDataView.h"
 #import "SONoticeView.h"
 #import "SONewFriendTableViewCell.h"
+#import "SORecommendTableViewCell.h"
+#import "SOExtendTableViewCell.h"
+#import "SOMainPageTableViewCell.h"
+
 #import "SOMessageSegmentViewController.h"
 #import "UITableView+MJRefresh.h"
-#import "NSArray+Extend.h"
 
 @interface SODynamicViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -45,7 +48,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    [self loadDataWithTarget:@"first" dynamicID:@"-1"];
+    //    [self loadDataWithTarget:@"first" dynamicID:@"-1"];
 }
 
 - (void)initView
@@ -298,7 +301,7 @@
 - (NSString *)refreshMinRid
 {
     NSString *dynamicID = @"";
-    for(NSInteger i = self.dataArray.count - 1; i >=0; i--){
+    for(NSInteger i = self.dataArray.count - 1; i >= 0; i--){
         SODynamicObject *object = [self.dataArray objectAtIndex:i];
         if([object isKindOfClass:[SODynamicObject class]]){
             if([object.postType isEqualToString:@"normal"] || [object.postType isEqualToString:@"normalpc"] || [object.postType isEqualToString:@"business"]){
@@ -322,6 +325,50 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSObject *object = [self.dataArray objectAtIndex: indexPath.row];
+    if([object isKindOfClass:[NSArray class]]){
+        NSString *identifier1 = @"SORecommendTableViewCell";
+        SORecommendTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier1];
+        if (!cell){
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"SORecommendTableViewCell" owner:self options:nil] lastObject];
+        }
+        cell.objectArray = (NSArray *)object;
+        return cell;
+
+    } else if ([object isKindOfClass:[SONewFriendObject class]]){
+
+        NSString *identifier2 = @"SONewFriendTableViewCell";
+        SONewFriendTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier2];
+        if (!cell){
+            cell = [[[NSBundle mainBundle] loadNibNamed:@"SONewFriendTableViewCell" owner:self options:nil] lastObject];
+        }
+        cell.object = (SONewFriendObject *)object;
+        return cell;
+
+    } else {
+        SODynamicObject *dynamicObject = (SODynamicObject *)object;
+        if (![dynamicObject.postType isEqualToString:@"ad"]){
+            if ([dynamicObject.status boolValue]){
+                NSString *identifier3 = @"SOMainPageTableViewCell";
+                SOMainPageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier3];
+                if (!cell){
+                    cell = [[[NSBundle mainBundle] loadNibNamed:@"SOMainPageTableViewCell" owner:self options:nil] lastObject];
+                }
+                cell.object = dynamicObject;
+                return cell;
+            }
+        } else{
+            if ([dynamicObject.status boolValue]){
+                NSString *identifier4 = @"SOExtendTableViewCell";
+                SOExtendTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier4];
+                if (!cell){
+                    cell = [[[NSBundle mainBundle] loadNibNamed:@"SOExtendTableViewCell" owner:self options:nil] lastObject];
+                }
+                cell.object = dynamicObject;
+                return cell;
+            }
+        }
+    }
     return nil;
 }
 

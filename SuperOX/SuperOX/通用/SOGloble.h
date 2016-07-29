@@ -77,4 +77,15 @@
  */
 + (void)recordUserAction:(NSString *)recordIdStr type:(NSString *)typeStr;
 
+/**
+ @brief 适应CTTextDisplayView 需要格式话字符串
+
+ @param string 传入的字符串
+
+ @return 返回的字符串
+
+ @since 1.8.2
+ */
++ (NSString *)formatStringToHtml:(NSString *)string;
+
 @end

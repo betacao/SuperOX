@@ -14,7 +14,7 @@
 
 @end
 
-@interface SHGGroupObject : NSObject
+@interface SOGroupObject : NSObject
 
 @property (strong, nonatomic) NSString *text;
 @property (assign, nonatomic) BOOL imageViewHidden;
@@ -23,14 +23,14 @@
 
 @end
 
-@interface SHGGroupTableViewCell : SOBaseTableViewCell
+@interface SOGroupTableViewCell : SOBaseTableViewCell
 
-@property (strong, nonatomic) SHGGroupObject *object;
+@property (strong, nonatomic) SOGroupObject *object;
 
 @end
 
 
-@interface SHGGroupHeaderObject : NSObject
+@interface SOGroupHeaderObject : NSObject
 
 @property (assign, nonatomic) NSInteger count;
 @property (strong, nonatomic) UIImage *image;
@@ -38,8 +38,8 @@
 
 @end
 
-@interface SHGGroupHeaderView : SOBaseView
+@interface SOGroupHeaderView : SOBaseView
 
-@property (strong, nonatomic) SHGGroupHeaderObject *object;
+@property (strong, nonatomic) SOGroupHeaderObject *object;
 
 @end

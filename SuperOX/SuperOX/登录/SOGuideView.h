@@ -1,5 +1,5 @@
 //
-//  SHGGuideView.h
+//  SOGuideView.h
 //  Finance
 //
 //  Created by changxicao on 16/5/19.

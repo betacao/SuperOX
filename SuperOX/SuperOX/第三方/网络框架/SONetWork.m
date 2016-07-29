@@ -7,7 +7,7 @@
 //
 
 #import "SONetWork.h"
-#import "SHGEncryptionAlgorithm.h"
+#import "SOEncryptionAlgorithm.h"
 
 @interface SONetWork()
 
@@ -129,7 +129,7 @@
 
     NSString *code = signCode;
     for (NSInteger i = 0; i < 3; i++) {
-        code = [SHGEncryptionAlgorithm textFromBase64String:code];
+        code = [SOEncryptionAlgorithm textFromBase64String:code];
     }
     secret = [secret stringByAppendingString:code];
     for (NSInteger i = 0; i < 3; i++) {

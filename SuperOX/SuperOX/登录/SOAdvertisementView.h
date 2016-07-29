@@ -16,7 +16,7 @@ typedef void(^SOAdvertisementViewDismissBlock)(void);
 
 @end
 
-@interface SHGAdvertisementManager : NSObject
+@interface SOAdvertisementManager : NSObject
 
 + (YYWebImageManager *)adImageManager;
 

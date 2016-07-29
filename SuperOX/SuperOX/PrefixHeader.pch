@@ -24,6 +24,7 @@
 #import "NSString+Extend.h"
 #import "UIView+HUD.h"
 #import "UIButton+Extend.h"
+#import "NSArray+Extend.h"
 
 //*******************************//
 #import "defineConst.h"
@@ -32,6 +33,11 @@
 #import "SOGloble.h"
 #import "SONetWork.h"
 #import "SOTabbarViewController.h"
+#import "SODynamicViewController.h"
+#import "SOBusinessViewController.h"
+#import "SODiscoveryViewController.h"
+#import "SOUserCenterViewController.h"
 #import "SOUserHeaderView.h"
+#import "SOGlobleOperation.h"
 
 #endif /* PrefixHeader_pch */

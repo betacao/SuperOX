@@ -22,7 +22,7 @@
     self.backgroundColor = self.imageView.backgroundColor = [UIColor clearColor];
     [self addSubview:self.imageView];
 
-    [SHGAdvertisementManager loadRemoteAdvertisement];
+    [SOAdvertisementManager loadRemoteAdvertisement];
 }
 
 - (void)addAutoLayout
@@ -38,12 +38,12 @@
 {
     _dissmissBlock = dissmissBlock;
     __weak typeof(self)weakSelf = self;
-    [SHGAdvertisementManager loadLocalAdvertisementBlock:^(BOOL show, NSString *photoUrl) {
+    [SOAdvertisementManager loadLocalAdvertisementBlock:^(BOOL show, NSString *photoUrl) {
         NSString *imageName = [NSString stringWithFormat:@"%ldx%ld",(long)(SCREENWIDTH * SCALE), (long)(SCREENHEIGHT * SCALE)];
         UIImage *image = [UIImage imageNamed:imageName];
 
         if (show && photoUrl) {
-            [weakSelf.imageView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",kImageHostName,photoUrl]] placeholder:image options:kNilOptions manager:[SHGAdvertisementManager adImageManager] progress:nil transform:nil completion:nil];
+            [weakSelf.imageView setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",kImageHostName,photoUrl]] placeholder:image options:kNilOptions manager:[SOAdvertisementManager adImageManager] progress:nil transform:nil completion:nil];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 if (dissmissBlock) {
                     dissmissBlock();
@@ -68,11 +68,11 @@
 
 
 
-@interface SHGAdvertisementManager()
+@interface SOAdvertisementManager()
 
 @end
 
-@implementation SHGAdvertisementManager
+@implementation SOAdvertisementManager
 
 + (void)loadLocalAdvertisementBlock:(void (^)(BOOL, NSString *))block
 {

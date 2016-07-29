@@ -85,19 +85,19 @@
 {
     if (!_titleArray) {
 
-        SHGGroupHeaderObject *object0 = [[SHGGroupHeaderObject alloc] init];
+        SOGroupHeaderObject *object0 = [[SOGroupHeaderObject alloc] init];
         object0.image = [UIImage imageNamed:@"message_arrowRight"];
         object0.text = @"推荐群组 (%ld)";
 
-        SHGGroupHeaderObject *object1 = [[SHGGroupHeaderObject alloc] init];
+        SOGroupHeaderObject *object1 = [[SOGroupHeaderObject alloc] init];
         object1.image = [UIImage imageNamed:@"message_arrowRight"];
         object1.text = @"推荐群组 (%ld)";
 
-        SHGGroupHeaderObject *object2 = [[SHGGroupHeaderObject alloc] init];
+        SOGroupHeaderObject *object2 = [[SOGroupHeaderObject alloc] init];
         object2.image = [UIImage imageNamed:@"message_arrowRight"];
         object2.text = @"我创建的群组 (%ld)";
 
-        SHGGroupHeaderObject *object3 = [[SHGGroupHeaderObject alloc] init];
+        SOGroupHeaderObject *object3 = [[SOGroupHeaderObject alloc] init];
         object3.image = [UIImage imageNamed:@"message_arrowRight"];
         object3.text = @"我加入的群组 (%ld)";
 
@@ -106,10 +106,10 @@
     return _titleArray;
 }
 
-- (void)SHGGroupHeaderViewClick:(UITapGestureRecognizer *)recognizer
+- (void)SOGroupHeaderViewClick:(UITapGestureRecognizer *)recognizer
 {
-    SHGGroupHeaderView *view = (SHGGroupHeaderView *)recognizer.view;
-    SHGGroupHeaderObject *object = view.object;
+    SOGroupHeaderView *view = (SOGroupHeaderView *)recognizer.view;
+    SOGroupHeaderObject *object = view.object;
     NSInteger index = [self.titleArray indexOfObject:object];
     isExpand[index] = !isExpand[index];
     NSIndexSet *set =[NSIndexSet indexSetWithIndex:index];
@@ -143,11 +143,11 @@
     if (section == 0) {
         return nil;
     }
-    SHGGroupHeaderView *view = [[SHGGroupHeaderView alloc] init];
-    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(SHGGroupHeaderViewClick:)];
+    SOGroupHeaderView *view = [[SOGroupHeaderView alloc] init];
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(SOGroupHeaderViewClick:)];
     [view addGestureRecognizer:recognizer];
 
-    SHGGroupHeaderObject *object = [self.titleArray objectAtIndex:section];
+    SOGroupHeaderObject *object = [self.titleArray objectAtIndex:section];
     if (isExpand[section] == YES){
         object.image = [UIImage imageNamed:@"message_arrowDown"];
     } else{
@@ -170,9 +170,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *CellIdentifier = @"SHGGroupTableViewCell";
-    SHGGroupTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    SHGGroupObject *object = [[SHGGroupObject alloc] init];
+    NSString *CellIdentifier = @"SOGroupTableViewCell";
+    SOGroupTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    SOGroupObject *object = [[SOGroupObject alloc] init];
     switch (indexPath.section) {
         case 0:{
             object.text = @"新建群组";
@@ -220,7 +220,7 @@
         }
     }
     if (!cell){
-        cell = [[SHGGroupTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[SOGroupTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.object = object;
     return cell;
@@ -270,15 +270,15 @@
 @end
 
 
-#pragma mark ------SHGGroupObject
-@implementation SHGGroupObject
+#pragma mark ------SOGroupObject
+@implementation SOGroupObject
 
 
 
 @end
 
-#pragma mark ------SHGGroupTableViewCell
-@interface SHGGroupTableViewCell()
+#pragma mark ------SOGroupTableViewCell
+@interface SOGroupTableViewCell()
 
 @property (strong, nonatomic) UIButton *leftButton;
 @property (strong, nonatomic) UILabel *titleLabel;
@@ -287,7 +287,7 @@
 
 @end
 
-@implementation SHGGroupTableViewCell
+@implementation SOGroupTableViewCell
 
 - (void)initView
 {
@@ -342,7 +342,7 @@
 
 }
 
-- (void)setObject:(SHGGroupObject *)object
+- (void)setObject:(SOGroupObject *)object
 {
     _object = object;
     self.titleLabel.frame = CGRectZero;
@@ -367,16 +367,16 @@
 @end
 
 
-#pragma mark ------SHGGroupHeaderView
+#pragma mark ------SOGroupHeaderView
 
-@interface SHGGroupHeaderView()
+@interface SOGroupHeaderView()
 @property (strong, nonatomic) UIButton *leftButton;
 @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UIView *lineView;
 
 @end
 
-@implementation SHGGroupHeaderView
+@implementation SOGroupHeaderView
 
 - (void)initView
 {
@@ -423,7 +423,7 @@
 
 }
 
-- (void)setObject:(SHGGroupHeaderObject *)object
+- (void)setObject:(SOGroupHeaderObject *)object
 {
     _object = object;
     [self.leftButton setImage:object.image forState:UIControlStateNormal];
@@ -434,8 +434,8 @@
 
 @end
 
-#pragma mark ------SHGGroupHeaderObject
-@implementation SHGGroupHeaderObject
+#pragma mark ------SOGroupHeaderObject
+@implementation SOGroupHeaderObject
 
 
 

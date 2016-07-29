@@ -22,7 +22,6 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
     [self bringSubviewToFront:hud];
     hud.mode = MBProgressHUDModeIndeterminate;
-    hud.opacity = 0.0f;
     hud.removeFromSuperViewOnHide = YES;
 }
 
@@ -56,11 +55,10 @@
     hud.mode = MBProgressHUDModeCustomView;
     hud.customView = label;
     hud.removeFromSuperViewOnHide = YES;
-    hud.opacity = 0.85f;
     hud.margin = MarginFactor(18.0f);
     hud.userInteractionEnabled = [enable boolValue];
     if ([duration floatValue] > 0.0f) {
-        [hud hide:YES afterDelay:[duration floatValue]];
+        [hud hideAnimated:YES afterDelay:[duration floatValue]];
     }
 }
 
@@ -68,7 +66,7 @@
 {
     for (UIView *subView in self.subviews) {
         if ([subView isKindOfClass:[MBProgressHUD class]]) {
-            [((MBProgressHUD *)subView) hide:YES];
+            [((MBProgressHUD *)subView) hideAnimated:YES];
         }
     }
 }

@@ -14,7 +14,7 @@
 - (void)addHeaderRefesh:(BOOL)isHeaderFresh andFooter:(BOOL)isFooterRefresh footerTitle:(NSDictionary *)footerTitle
 {
     if (isHeaderFresh){
-        SHGGifHeader *header = [SHGGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHeader)];
+        SOGifHeader *header = [SOGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHeader)];
         header.backgroundColor = [UIColor whiteColor];
         self.mj_header = header;
     }
@@ -43,13 +43,13 @@
 
 @end
 
-@interface SHGGifHeader ()
+@interface SOGifHeader ()
 
 @property (strong, nonatomic) SOProgressHUD *progressHud;
 
 @end
 
-@implementation SHGGifHeader
+@implementation SOGifHeader
 
 #pragma mark - 重写方法
 #pragma mark 在这里做一些初始化配置（比如添加子控件）
