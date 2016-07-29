@@ -55,6 +55,7 @@
         _segmentControl.tintColor = [UIColor clearColor];
         _segmentControl.layer.borderColor =  [UIColor whiteColor].CGColor;
         _segmentControl.layer.borderWidth = 1.0;
+        _segmentControl.selected = NO;
         _segmentControl.selectedSegmentIndex = 0;
 
         //设置标题的颜色 字体和大小 阴影和阴影颜色

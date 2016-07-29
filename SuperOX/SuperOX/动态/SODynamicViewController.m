@@ -48,7 +48,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //    [self loadDataWithTarget:@"first" dynamicID:@"-1"];
+    [self loadDataWithTarget:@"first" dynamicID:@"-1"];
 }
 
 - (void)initView
@@ -67,7 +67,7 @@
 - (void)addAutoLayout
 {
     self.tableView.sd_layout
-    .spaceToSuperView(UIEdgeInsetsMake(0.0f, 0.0f, kTabBarHeight, 0.0f));
+    .spaceToSuperView(UIEdgeInsetsZero);
 }
 
 - (UIBarButtonItem *)leftBarButtonItem
@@ -202,9 +202,9 @@
 
 - (void)requestRecommendFriends
 {
+    WEAK(self, weakSelf);
     [self.dataArray removeObject:self.recommendArray];
     [self.recommendArray removeAllObjects];
-    WEAK(self, weakSelf);
     [SODynamicManager loadRecommendFriends:@{@"uid":KUID} block:^(NSArray *array) {
         [weakSelf.recommendArray addObjectsFromArray:array];
         [weakSelf insertRecomandArray];
@@ -213,9 +213,9 @@
 
 - (void)loadRegisterPushFriend
 {
+    WEAK(self, weakSelf);
     [self.dataArray removeObject:self.friendObject];
     self.friendObject = nil;
-    WEAK(self, weakSelf);
     [SODynamicManager loadRegisterPushFriend:@{@"uid":KUID} block:^(SONewFriendObject *object) {
         weakSelf.friendObject = object;
         [weakSelf insertNewFriendArray];
@@ -320,6 +320,26 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    SODynamicObject *object = [self.dataArray objectAtIndex:indexPath.row];
+    if([object isKindOfClass:[SODynamicObject class]]){
+        if (![object.postType isEqualToString:@"ad"]){
+            if ([object.status boolValue]){
+                CGFloat height = [tableView cellHeightForIndexPath:indexPath model:object keyPath:@"object" cellClass:[SOMainPageTableViewCell class] contentViewWidth:SCREENWIDTH];
+                return height;
+            }
+        } else{
+            CGFloat height = [tableView cellHeightForIndexPath:indexPath model:object keyPath:@"object" cellClass:[SOExtendTableViewCell class] contentViewWidth:SCREENWIDTH];
+            return height;
+        }
+
+    } else if([object isKindOfClass:[NSArray class]]){
+        CGFloat height = [tableView cellHeightForIndexPath:indexPath model:object keyPath:@"objectArray" cellClass:[SORecommendTableViewCell class] contentViewWidth:SCREENWIDTH];
+        return height;
+
+    } else if ([object isKindOfClass:[SONewFriendObject class]]){
+        CGFloat height = [tableView cellHeightForIndexPath:indexPath model:object keyPath:@"object" cellClass:[SONewFriendTableViewCell class] contentViewWidth:SCREENWIDTH];
+        return height;
+    }
     return 0.0f;
 }
 

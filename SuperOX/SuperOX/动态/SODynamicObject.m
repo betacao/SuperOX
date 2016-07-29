@@ -10,13 +10,15 @@
 
 @implementation SODynamicObject
 
-+ (NSDictionary *)modelContainerPropertyGenericClass {
++ (NSDictionary *)modelContainerPropertyGenericClass
+{
     return @{@"attach" : [NSArray class],
-             @"comments" : [NSArray class],
+             @"comments" : [SODynamicCommentObject class],
              @"heads" : [NSArray class]};
 }
 
-+ (NSDictionary *)modelCustomPropertyMapper {
++ (NSDictionary *)modelCustomPropertyMapper
+{
     return @{@"attach" : @"attach",
              @"attachType" : @"attachtype",
              @"businessID" : @"businessid",
@@ -49,6 +51,7 @@
              @"displayPosition" : @"displayposition",
              @"shareTitle" : @"sharetitle"};
 }
+
 
 @end
 

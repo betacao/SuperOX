@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class SODynamicCommentObject;
+
 @interface SODynamicObject : NSObject
 
 @property (strong, nonatomic) NSArray *attach;//图片
@@ -15,7 +17,7 @@
 @property (strong, nonatomic) NSString *businessID;
 @property (assign, nonatomic) BOOL businessStatus;
 @property (strong, nonatomic) NSString *cmmtnum;
-@property (strong, nonatomic) NSArray *comments;
+@property (strong, nonatomic) NSArray<SODynamicCommentObject *> *comments;
 @property (strong, nonatomic) NSString *company;
 @property (strong, nonatomic) NSString *currcity; //城市
 @property (strong, nonatomic) NSString *detail;

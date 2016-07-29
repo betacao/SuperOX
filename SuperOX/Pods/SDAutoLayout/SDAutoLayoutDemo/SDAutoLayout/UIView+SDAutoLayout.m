@@ -1190,7 +1190,14 @@
             }
             self.fixedHeight = nil;
         }
-        
+        if ([self isKindOfClass:[UILabel class]]) {
+            CGRect frame = self.frame;
+            frame.origin.x = ceilf(frame.origin.x);
+            frame.origin.y = ceilf(frame.origin.y);
+            frame.size.width = ceilf(frame.size.width);
+            frame.size.height = ceilf(frame.size.height);
+            self.frame = frame;
+        }
         if (self.didFinishAutoLayoutBlock) {
             self.didFinishAutoLayoutBlock(self.frame);
         }
@@ -1257,7 +1264,14 @@
     if (model.heightEqualWidth) {
         view.height_sd = view.width_sd;
     }
-    
+    if ([view isKindOfClass:[UILabel class]]) {
+        CGRect frame = view.frame;
+        frame.origin.x = ceilf(frame.origin.x);
+        frame.origin.y = ceilf(frame.origin.y);
+        frame.size.width = ceilf(frame.size.width);
+        frame.size.height = ceilf(frame.size.height);
+        view.frame = frame;
+    }
     if (view.didFinishAutoLayoutBlock) {
         view.didFinishAutoLayoutBlock(view.frame);
     }
