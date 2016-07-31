@@ -6,11 +6,11 @@
 //  Copyright © 2016年 HuMin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SOBaseView.h"
 
 typedef void(^SOGuideViewBlock)();
 
-@interface SOGuideView : UIView
+@interface SOGuideView : SOBaseView
 
 @property (copy, nonatomic) SOGuideViewBlock block;
 

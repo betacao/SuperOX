@@ -4,7 +4,7 @@ platform :ios, '7.0'
 target 'SuperOX' do
     pod 'AFNetworking'
     pod 'MJRefresh'
-    pod 'MBProgressHUD'
+    pod 'MBProgressHUD','~>0.9.2'
     pod 'YYKit'
     pod 'MagicalRecord'
     pod 'SDAutoLayout'

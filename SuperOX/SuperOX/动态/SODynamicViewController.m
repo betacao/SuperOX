@@ -27,8 +27,6 @@
 @property (strong, nonatomic) NSMutableArray *listArray;
 @property (strong, nonatomic) NSMutableArray *adArray;
 
-@property (strong, nonatomic) NSMutableArray *recommendArray;
-@property (strong, nonatomic) SONewFriendObject *friendObject;
 @property (assign, nonatomic) BOOL needRefreshTableView;
 
 @end

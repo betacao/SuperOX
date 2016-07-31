@@ -12,7 +12,11 @@
 @interface UIView (HUD)
 
 - (void)showLoading;
+
+- (void)showGrayLoading;
+
 - (void)showWithText:(NSString *)text;
+
 - (void)hideHud;
 
 - (void)showWithText:(NSString *)text enable:(BOOL)enable duration:(NSTimeInterval)duration;

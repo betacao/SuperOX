@@ -96,6 +96,7 @@
 
 - (void)layoutSubviews
 {
+    [super layoutSubviews];
     switch (self.type) {
         case SOProgressHUDTypeNormal: {
             CGRect bounds = [UIScreen mainScreen].bounds;
@@ -164,7 +165,6 @@
         default:
             break;
     }
-
 
 }
 

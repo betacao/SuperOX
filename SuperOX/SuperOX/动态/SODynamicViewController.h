@@ -12,6 +12,9 @@
 
 @interface SODynamicViewController : SOBaseViewController
 
+@property (strong, nonatomic) NSMutableArray *recommendArray;
+@property (strong, nonatomic) SONewFriendObject *friendObject;
+
 + (instancetype)sharedController;
 
 - (UIBarButtonItem *)leftBarButtonItem;

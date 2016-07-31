@@ -6,9 +6,9 @@
 //  Copyright © 2016年 HuMin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "SOBaseView.h"
 
-@interface SOAuthenticationView : UIView
+@interface SOAuthenticationView : SOBaseView
 
 @property (assign, nonatomic) BOOL showGray;
 

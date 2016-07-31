@@ -34,7 +34,7 @@
 - (void)updateHeaderView:(NSString *)sourceUrl userID:(NSString *)userId
 {
     self.userId = userId;
-    [self.imageView setImageWithURL:[NSURL URLWithString:sourceUrl] placeholder:[UIImage imageNamed:@"default_head"] options:kNilOptions completion:nil];
+    [self.imageView.layer setImageWithURL:[NSURL URLWithString:sourceUrl] placeholder:[UIImage imageNamed:@"default_head"] options:kNilOptions completion:nil];
 }
 
 - (void)tapUserHeaderView

@@ -18,7 +18,7 @@ PODS:
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
-  - MBProgressHUD (1.0.0)
+  - MBProgressHUD (0.9.2)
   - MJRefresh (3.1.12)
   - MOBFoundation (2.0.8)
   - ReactiveCocoa (2.5):
@@ -45,7 +45,7 @@ DEPENDENCIES:
   - AFNetworking
   - HyphenateFullSDK
   - MagicalRecord
-  - MBProgressHUD
+  - MBProgressHUD (~> 0.9.2)
   - MJRefresh
   - MOBFoundation
   - ReactiveCocoa
@@ -62,7 +62,7 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   HyphenateFullSDK: 0640f9710da83da7a08928f074da718ed3368277
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MOBFoundation: 6f2006b941bd4002e2689a638d04c6b535c4cc64
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
@@ -71,6 +71,6 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   YYKit: 843d1b26e20b82c695790c9a89907eaa1e99907f
 
-PODFILE CHECKSUM: 3e920bc740397e0c68fc8790323469c2074797c6
+PODFILE CHECKSUM: 0c0457b6e57edfd38c144b45b70ea6bdd3897dda
 
 COCOAPODS: 1.0.1

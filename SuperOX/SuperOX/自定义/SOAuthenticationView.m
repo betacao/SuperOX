@@ -20,23 +20,6 @@
 
 @implementation SOAuthenticationView
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        [self initView];
-        [self addAutoLayout];
-    }
-    return self;
-}
-
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-    [self initView];
-    [self addAutoLayout];
-}
-
 - (void)initView
 {
     self.leftImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"v_gray"]];

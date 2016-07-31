@@ -48,15 +48,9 @@
 
 @implementation SOMainPageTableViewCell
 
-- (void)awakeFromNib
-{
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
-    [self initView];
-    [self addAutoLayout];
-}
-
 - (void)initView
 {
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.titleLabel.delegate = self;
     self.titleLabel.styleModel = self.titleStyleModel;
 
@@ -243,6 +237,7 @@
     }
     return _titleStyleModel;
 }
+
 - (void)setObject:(SODynamicObject *)object
 {
     _object = object;
@@ -269,7 +264,7 @@
 
 - (void)loadUserInfo:(SODynamicObject *)object
 {
-    [self.headerView updateHeaderView:[kApiPath stringByAppendingString:object.potName] userID:object.userID];
+    [self.headerView updateHeaderView:[kImagePath stringByAppendingString:object.potName] userID:object.userID];
     [self.authenticationView updateWithVStatus:object.userStatus enterpriseStatus:object.businessStatus];
 
     NSString *name = object.nickName;
@@ -589,13 +584,6 @@
 @end
 
 @implementation SOMainPageBusinessView
-
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-    [self initView];
-    [self addAutoLayout];
-}
 
 - (void)initView
 {

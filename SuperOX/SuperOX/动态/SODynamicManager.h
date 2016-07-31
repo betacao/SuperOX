@@ -16,4 +16,5 @@
 + (void)loadRegisterPushFriend:(NSDictionary *)param block:(void(^)(SONewFriendObject *object))block;
 
 + (void)loadRecommendFriends:(NSDictionary *)param block:(void(^)(NSArray *array))block;
+
 @end

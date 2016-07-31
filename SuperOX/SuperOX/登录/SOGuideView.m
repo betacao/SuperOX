@@ -20,28 +20,23 @@
 
 @implementation SOGuideView
 
-- (instancetype)init
+- (void)initView
 {
-    self = [super init];
-    if (self) {
-        self.scrollView = [[UIScrollView alloc] init];
-        self.scrollView.pagingEnabled = YES;
-        self.scrollView.delegate = self;
-        self.scrollView.showsHorizontalScrollIndicator = NO;
-        self.scrollView.bounces = NO;
+    self.scrollView = [[UIScrollView alloc] init];
+    self.scrollView.pagingEnabled = YES;
+    self.scrollView.delegate = self;
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.bounces = NO;
 
-        NSString *imageName = [NSString stringWithFormat:@"guide%ld", (long)SCREENHEIGHT];
-        self.imageArray = @[[UIImage imageNamed:[imageName stringByAppendingString:@"_1"]], [UIImage imageNamed:[imageName stringByAppendingString:@"_2"]], [UIImage imageNamed:[imageName stringByAppendingString:@"_3"]]];
-        [self addSubview:self.scrollView];
+    NSString *imageName = [NSString stringWithFormat:@"guide%ld", (long)SCREENHEIGHT];
+    self.imageArray = @[[UIImage imageNamed:[imageName stringByAppendingString:@"_1"]], [UIImage imageNamed:[imageName stringByAppendingString:@"_2"]], [UIImage imageNamed:[imageName stringByAppendingString:@"_3"]]];
+    [self addSubview:self.scrollView];
 
-        self.pageControl = [[UIPageControl alloc] init];
-        self.pageControl.pageIndicatorTintColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pageControl_unselect"]];
-        self.pageControl.currentPageIndicatorTintColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pageControl_select"]];
-        self.pageControl.numberOfPages = self.imageArray.count;
-        [self addSubview:self.pageControl];
-        [self addAutoLayout];
-    }
-    return self;
+    self.pageControl = [[UIPageControl alloc] init];
+    self.pageControl.pageIndicatorTintColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pageControl_unselect"]];
+    self.pageControl.currentPageIndicatorTintColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"pageControl_select"]];
+    self.pageControl.numberOfPages = self.imageArray.count;
+    [self addSubview:self.pageControl];
 }
 
 - (void)addAutoLayout

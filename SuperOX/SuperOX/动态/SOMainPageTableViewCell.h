@@ -9,15 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "SOBusinessObject.h"
 #import "SODynamicObject.h"
+#import "SOBaseTableViewCell.h"
+#import "SOBaseView.h"
 
-@interface SOMainPageTableViewCell : UITableViewCell
+@interface SOMainPageTableViewCell : SOBaseTableViewCell
 
 @property (strong ,nonatomic) SODynamicObject *object;
 
 @end
 
 
-@interface SOMainPageBusinessView : UIView
+@interface SOMainPageBusinessView : SOBaseView
 
 @property (strong, nonatomic) SOBusinessObject *object;
 

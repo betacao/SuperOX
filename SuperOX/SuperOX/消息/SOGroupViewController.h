@@ -7,7 +7,6 @@
 //
 
 #import "SOBaseViewController.h"
-#import "SOBaseTableViewCell.h"
 #import "SOBaseView.h"
 
 @interface SOGroupViewController : SOBaseViewController
@@ -23,7 +22,7 @@
 
 @end
 
-@interface SOGroupTableViewCell : SOBaseTableViewCell
+@interface SOGroupTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) SOGroupObject *object;
 

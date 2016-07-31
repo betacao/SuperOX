@@ -67,10 +67,9 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     self.viewArray = @[self.firstContentView, self.secondContentView, self.thirdContentView, self.fourthContentView];
     [self.contentView sd_addSubviews:self.viewArray];
-    [self initView];
-    [self addAutoLayout];
 }
 
 - (void)initView
@@ -235,7 +234,7 @@
         UILabel *detailLabel = [view viewWithTag:105];
         UIButton *button = [view viewWithTag:106];
 
-        [headerView updateHeaderView:[kApiPath stringByAppendingString:object.headimg] userID:object.uid];
+        [headerView updateHeaderView:[kImagePath stringByAppendingString:object.headimg] userID:object.uid];
 
         NSString *name = object.username;
         if (object.username.length > 4){

@@ -8,6 +8,7 @@
 
 #import "UIView+HUD.h"
 #import "NSObject+Extend.h"
+#import "SOProgressHUD.h"
 
 @implementation UIView (HUD)
 
@@ -17,12 +18,31 @@
     [self performSelectorOnMainThread:@selector(showOnMainThread) withObject:nil waitUntilDone:YES];
 }
 
+- (void)showGrayLoading
+{
+    [self performSelectorOnMainThread:@selector(hideHudOnMainThread) withObject:nil waitUntilDone:YES];
+    [self performSelectorOnMainThread:@selector(showGratOnMainThread) withObject:nil waitUntilDone:YES];
+}
+
 - (void)showOnMainThread
 {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
-    [self bringSubviewToFront:hud];
-    hud.mode = MBProgressHUDModeIndeterminate;
-    hud.removeFromSuperViewOnHide = YES;
+    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:self animated:YES];
+    SOProgressHUD *progressHud = [[SOProgressHUD alloc] initWithFrame:self.bounds];
+    HUD.opacity = 0.0f;
+    HUD.mode = MBProgressHUDModeCustomView;
+    HUD.customView = progressHud;
+    HUD.removeFromSuperViewOnHide = YES;
+}
+
+- (void)showGratOnMainThread
+{
+    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:self animated:YES];
+    SOProgressHUD *progressHud = [[SOProgressHUD alloc] initWithFrame:self.bounds];
+    progressHud.type = SOProgressHUDTypeGray;
+    HUD.opacity = 0.0f;
+    HUD.mode = MBProgressHUDModeCustomView;
+    HUD.customView = progressHud;
+    HUD.removeFromSuperViewOnHide = YES;
 }
 
 
@@ -55,10 +75,11 @@
     hud.mode = MBProgressHUDModeCustomView;
     hud.customView = label;
     hud.removeFromSuperViewOnHide = YES;
+    hud.opacity = 0.85f;
     hud.margin = MarginFactor(18.0f);
     hud.userInteractionEnabled = [enable boolValue];
     if ([duration floatValue] > 0.0f) {
-        [hud hideAnimated:YES afterDelay:[duration floatValue]];
+        [hud hide:YES afterDelay:[duration floatValue]];
     }
 }
 
@@ -66,7 +87,7 @@
 {
     for (UIView *subView in self.subviews) {
         if ([subView isKindOfClass:[MBProgressHUD class]]) {
-            [((MBProgressHUD *)subView) hideAnimated:YES];
+            [((MBProgressHUD *)subView) hide:YES];
         }
     }
 }
